@@ -51,7 +51,13 @@ const Navbar = () => {
             </div>
           </a>
         </div>
-        <button className="absolute left-0 flex h-header-sm items-center p-4 text-sm font-bold duration-200 hover:opacity-50 md:ml-4 lg:hidden">
+        {/* Mobile - Hamburger menu */}
+        <button
+          className="absolute left-0 flex h-header-sm items-center p-4 text-sm font-bold duration-200 hover:opacity-50 md:ml-4 lg:hidden"
+          onClick={() => {
+            setDialogOpen(!dialogOpen)
+          }}
+        >
           <svg
             width="24"
             height="18"

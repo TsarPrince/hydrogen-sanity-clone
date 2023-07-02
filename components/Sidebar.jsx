@@ -59,7 +59,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       style={{
                         background: 'rgb(255, 168, 27)',
                         WebkitMask:
-                          'url("https://cdn.sanity.io/images/g2b4qblu/production/1a629777129eaef7d363b5af85e98ae69037baf8-133x146.svg") center center / contain no-repeat',
+                          'url(/masks/2.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">
@@ -77,7 +77,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       style={{
                         background: 'rgb(61, 117, 68)',
                         WebkitMask:
-                          'url("https://cdn.sanity.io/images/g2b4qblu/production/a7d7aeecd12bb7fb9162fa5f0410385dafac51a1-131x146.svg") center center / contain no-repeat',
+                          'url(/masks/3.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">
@@ -95,7 +95,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       style={{
                         background: 'rgb(59, 83, 202)',
                         WebkitMask:
-                          'url("https://cdn.sanity.io/images/g2b4qblu/production/9cb69b79bb98176739fe714aa72c8b1644c97999-132x146.svg") center center / contain no-repeat',
+                          'url(/masks/1.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">
@@ -114,7 +114,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       style={{
                         background: 'rgb(236, 80, 57)',
                         WebkitMask:
-                          'url("https://cdn.sanity.io/images/g2b4qblu/production/60b7987913afc73fca2a516ae609680bfd156ed7-133x146.svg") center center / contain no-repeat',
+                          'url(/masks/4.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">

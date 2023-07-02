@@ -230,8 +230,8 @@ const Main = () => {
                   className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.01]"
                   style={{
                     WebkitMask:
-                      'url(https://cdn.sanity.io/images/g2b4qblu/production/9cb69b79bb98176739fe714aa72c8b1644c97999-132x146.svg) center center / contain no-repeat',
-                    mask: 'url(https://cdn.sanity.io/images/g2b4qblu/production/9cb69b79bb98176739fe714aa72c8b1644c97999-132x146.svg) center center / contain no-repeat',
+                      'url(/masks/1.svg) center center / contain no-repeat',
+                    mask: 'url(/masks/1.svg) center center / contain no-repeat',
                   }}
                 >
                   <div className="h-full w-full bg-[#3b53ca]"></div>
@@ -323,8 +323,8 @@ const Main = () => {
                   className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.01]"
                   style={{
                     WebkitMask:
-                      'url(https://cdn.sanity.io/images/g2b4qblu/production/1a629777129eaef7d363b5af85e98ae69037baf8-133x146.svg) center center / contain no-repeat',
-                    mask: 'url(https://cdn.sanity.io/images/g2b4qblu/production/1a629777129eaef7d363b5af85e98ae69037baf8-133x146.svg) center center / contain no-repeat',
+                      'url(/masks/2.svg) center center / contain no-repeat',
+                    mask: 'url(/masks/2.svg) center center / contain no-repeat',
                   }}
                 >
                   <div className="h-full w-full bg-[#ffa81b]"></div>
