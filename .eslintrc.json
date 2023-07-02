@@ -16,6 +16,7 @@
   },
   "plugins": ["react", "simple-import-sort"],
   "rules": {
+    "no-unused-vars": "warn",
     "prettier/prettier": "warn",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
