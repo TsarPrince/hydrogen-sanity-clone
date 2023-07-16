@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 import Sidebar from './Sidebar'
 
-const Navbar = () => {
+const Navbar = ({ blendIntoColor = 'bg-white' }) => {
   const [trigger, setTrigger] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
 
@@ -27,12 +28,12 @@ const Navbar = () => {
         <div className="absolute inset-0">
           <div
             className={`${
-              trigger ? 'bg-white' : 'bg-peach'
+              trigger ? 'bg-white' : blendIntoColor
             } absolute inset-0 bg-opacity-90 backdrop-blur-lg backdrop-filter duration-500 opacity-100`}
           ></div>
 
           {/* Main logo */}
-          <a href="/">
+          <Link href="/">
             <div className="absolute bottom-0 left-1/2 top-0 flex w-[400px] -translate-x-1/2 items-center lg:w-[400px]">
               <p
                 className={`text-lg lg:text-xl font-bold absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 transition-all duration-500 ${
@@ -49,7 +50,7 @@ const Navbar = () => {
                 coldwell banker
               </p>
             </div>
-          </a>
+          </Link>
         </div>
         {/* Mobile - Hamburger menu */}
         <button

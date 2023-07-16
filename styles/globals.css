@@ -84,3 +84,25 @@ html {
   position: relative;
   flex: 0 0 100%;
 }
+
+.embla__progress {
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+  height: 0.3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  overflow: hidden;
+}
+.embla__progress__bar {
+  z-index: 2;
+  background-color: #3d7544;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}

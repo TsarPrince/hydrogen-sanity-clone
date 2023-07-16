@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Sidebar = ({ dialogOpen, setDialogOpen }) => {
@@ -49,7 +50,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
             <div className="px-8">
               <div className="text-lg font-bold">Collections</div>
               <div className="relative mt-3 grid grid-cols-2 gap-2">
-                <a href="/collections/everything">
+                <Link href="/Active">
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(255, 238, 211)' }}
@@ -66,8 +67,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       Active
                     </div>
                   </div>
-                </a>
-                <a href="/collections/bathroom">
+                </Link>
+                <Link href="/Pending">
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(207, 232, 229)' }}
@@ -84,8 +85,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       Pending
                     </div>
                   </div>
-                </a>
-                <a href="/collections/living">
+                </Link>
+                <Link href="/Coming%20Soon">
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(227, 216, 255)' }}
@@ -103,8 +104,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       Soon
                     </div>
                   </div>
-                </a>
-                <a href="/collections/prints">
+                </Link>
+                <Link href="/Hold">
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(255, 229, 240)' }}
@@ -118,10 +119,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">
-                      Sold
+                      Hold
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-8 px-8">
