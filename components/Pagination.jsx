@@ -1,5 +1,5 @@
-import React from 'react'
 import Link from 'next/link'
+import React from 'react'
 
 const Pagination = ({ standardStatus, pagination }) => {
   const pages = []
@@ -7,11 +7,9 @@ const Pagination = ({ standardStatus, pagination }) => {
     for (let i = 1; i <= pagination.pageCount; i++) {
       if (
         i === 1 ||
-        (pagination.pageCount >= 2 && i === 2) ||
         i === pagination.page ||
         i === pagination.page - 1 ||
         i === pagination.page + 1 ||
-        i === pagination.pageCount - 1 ||
         i === pagination.pageCount
       ) {
         pages.push(i)
@@ -33,10 +31,10 @@ const Pagination = ({ standardStatus, pagination }) => {
                     }}
                   >
                     <button
-                      className={`min-w-[40px] border p-2 border-gray rounded transition ${
+                      className={`min-w-[40px] border p-2 rounded transition ${
                         page === pagination.page
                           ? 'text-blue-500 border-blue-500 hover:border-blue-500/50'
-                          : 'hover:bg-lightGray'
+                          : 'hover:bg-lightGray border-gray'
                       }`}
                     >
                       {page}
@@ -56,10 +54,10 @@ const Pagination = ({ standardStatus, pagination }) => {
                   }}
                 >
                   <button
-                    className={`min-w-[40px] border p-2 border-gray rounded transition ${
+                    className={`min-w-[40px] border p-2 rounded transition ${
                       page === pagination.page
                         ? 'text-blue-500 border-blue-500 hover:border-blue-500/50'
-                        : 'hover:bg-lightGray'
+                        : 'hover:bg-lightGray border-gray'
                     }`}
                   >
                     {page}

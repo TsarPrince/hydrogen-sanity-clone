@@ -50,7 +50,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
             <div className="px-8">
               <div className="text-lg font-bold">Collections</div>
               <div className="relative mt-3 grid grid-cols-2 gap-2">
-                <Link href="/Active">
+                <Link
+                  href="/Active"
+                  onClick={() => setDialogOpen(!setDialogOpen)}
+                >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(255, 238, 211)' }}
@@ -68,7 +71,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/Pending">
+                <Link
+                  href="/Pending"
+                  onClick={() => setDialogOpen(!dialogOpen)}
+                >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(207, 232, 229)' }}
@@ -86,7 +92,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/Coming%20Soon">
+                <Link
+                  href="/Coming Soon"
+                  onClick={() => setDialogOpen(!dialogOpen)}
+                >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(227, 216, 255)' }}
@@ -105,7 +114,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/Hold">
+                <Link href="/Hold" onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: 'rgb(255, 229, 240)' }}

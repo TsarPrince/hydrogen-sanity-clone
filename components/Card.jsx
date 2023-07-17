@@ -26,7 +26,7 @@ const Card = ({
           href={{
             pathname: '/property',
             query: {
-              status: StandardStatus,
+              standardStatus: StandardStatus,
               id: ListingId,
               page,
               pageSize,

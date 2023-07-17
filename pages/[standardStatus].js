@@ -1,49 +1,26 @@
 import { useRouter } from 'next/router'
-import React, { useContext, useEffect } from 'react'
-import useSWR from 'swr'
+import React, { useEffect } from 'react'
 
 import Card from '../components/Card'
 import ErrorComponent from '../components/ErrorComponent'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
-import { AppContext } from '../context/appContext'
-import axios from '../lib/axios'
-
-const fetcher = (...args) => axios.get(...args).then((data) => data.data)
+import useFetch from '../hooks/useFetch'
 
 const StandardStatus = () => {
-  console.log('StandardStatus')
   const router = useRouter()
+  const { page, pageSize } = router.query
   const standardStatus = router.query.standardStatus?.replace(/\+/g, ' ')
-  let { page, pageSize } = router.query
-  if (!page) page = 1
-  if (!pageSize) pageSize = 10
 
-  const { data, setData } = useContext(AppContext)
+  const { data, error, isLoading } = useFetch({
+    page,
+    pageSize,
+    standardStatus,
+  })
 
-  const {
-    data: fetchedData,
-    error,
-    isLoading,
-  } = useSWR(
-    `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[StandardStatus][$eq]=${standardStatus?.replace(
-      / /g,
-      '%20'
-    )}`,
-    fetcher,
-    {
-      revalidateIfStale: false,
-      revalidateOnFocus: false,
-    }
-  )
-
-  useEffect(() => {
-    setData({ ...data, [standardStatus]: fetchedData })
-  }, [fetchedData])
-
-  const properties = data?.[standardStatus]?.data
-  const pagination = data?.[standardStatus]?.meta?.pagination
+  const properties = data?.data
+  const pagination = data?.meta?.pagination
 
   if (error) return <ErrorComponent />
 
