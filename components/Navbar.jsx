@@ -184,7 +184,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
               >
                 <div className="flex items-center text-offBlack border hover:border-darkGray/50 duration-200 pr-2 mr-2">
                   <input
-                    placeholder="Search here..."
+                    placeholder="City, Street or Pricing"
                     required
                     type="text"
                     className="bg-transparent border-none focus:ring-0"

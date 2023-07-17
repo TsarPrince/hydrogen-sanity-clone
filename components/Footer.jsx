@@ -81,8 +81,9 @@ const Footer = () => {
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
         <div className="mx-auto max-w-[47rem] px-4 py-12 text-center text-xl leading-caption md:px-8">
           <div>
-            This demo shows how Sanity.io can power remarkable storefronts on
-            Shopify&apos;s Hydrogen framework.
+            Supplied Open House Information is subject to change without notice.
+            All information should be independently reviewed and verified for
+            accuracy.
           </div>
           <div className="mt-8 grid grid-cols-1 gap-3 text-left text-sm leading-caption md:grid-cols-3">
             <a
