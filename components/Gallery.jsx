@@ -44,14 +44,20 @@ export default function Gallery({ media }) {
   }
 
   return (
-    <div className="relative h-[calc(100vh-100px)] bg-lightGray" tabIndex={-1}>
-      <div className="h-full overflow-hidden" ref={emblaRef}>
-        <div className="flex h-full">
+    <div
+      className="relative h-[calc(100vh-70px)] lg:h-[calc(100vh-100px)] bg-lightGray"
+      tabIndex={-1}
+    >
+      <div className="h-full overflow-hidden flex" ref={emblaRef}>
+        <div className="flex items-center md:items-start w-full md:h-full">
           {/* Slides */}
           {media.map((med, key) => {
             return (
-              <div key={key} className="w-full relative flex shrink-0 grow-0">
-                <img src={med} className="select-none mx-auto object-cover" />
+              <div key={key} className="w-full md:h-full shrink-0 grow-0">
+                <img
+                  src={med}
+                  className="h-full select-none mx-auto object-cover"
+                />
               </div>
             )
           })}

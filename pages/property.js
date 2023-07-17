@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, { useContext } from 'react'
+import React from 'react'
 
 import ErrorComponent from '../components/ErrorComponent'
 import Gallery from '../components/Gallery'
@@ -25,9 +25,19 @@ const IndivdualProperty = () => {
 
   if (!property) {
     if (isLoading) {
-      return <LoadingState />
+      return (
+        <>
+          <Navbar />
+          <LoadingState />
+        </>
+      )
     } else {
-      return <ErrorComponent />
+      return (
+        <>
+          <Navbar />
+          <ErrorComponent />
+        </>
+      )
     }
   }
   const {
@@ -63,7 +73,7 @@ const IndivdualProperty = () => {
   }
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[70px] lg:mt-[100px]">
       <Navbar />
       <>
         <Gallery media={Photos.data?.map((media) => media.attributes.url)} />
