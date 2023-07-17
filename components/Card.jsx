@@ -16,6 +16,7 @@ const Card = ({
   StandardStatus,
   page,
   pageSize,
+  q,
 }) => {
   const [loaded, setLoaded] = useState(false)
   return (
@@ -23,15 +24,27 @@ const Card = ({
       <div className="aspect-square border border-[lightGray] relative flex items-center justify-center overflow-hidden rounded bg-lightGray object-cover transition-[border-radius] duration-500 ease-out hover:rounded-xl">
         <Link
           className="absolute left-0 top-0 h-full w-full"
-          href={{
-            pathname: '/property',
-            query: {
-              standardStatus: StandardStatus,
-              id: ListingId,
-              page,
-              pageSize,
-            },
-          }}
+          href={
+            q
+              ? {
+                  pathname: '/propertySearch',
+                  query: {
+                    q,
+                    id: ListingId,
+                    page,
+                    pageSize,
+                  },
+                }
+              : {
+                  pathname: '/property',
+                  query: {
+                    standardStatus: StandardStatus,
+                    id: ListingId,
+                    page,
+                    pageSize,
+                  },
+                }
+          }
         >
           <>
             <div

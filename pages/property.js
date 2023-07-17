@@ -38,7 +38,6 @@ const IndivdualProperty = () => {
     // If error occurs during fetch
     // or if property is not found
     else {
-      console.log(error)
       return (
         <>
           <Navbar />
@@ -83,7 +82,7 @@ const IndivdualProperty = () => {
     <div className="mt-[70px] lg:mt-[100px]">
       <Navbar />
       <>
-        <Gallery media={Photos.data?.map((media) => media.attributes.url)} />
+        <Gallery media={Photos?.data?.map((media) => media.attributes.url)} />
         <div className="w-full lg:w-[calc(100%-315px)]">
           <div className="portableText max-w-[660px] px-4 pb-24 pt-8 md:px-8">
             <div className="first:mt-0 last:mb-0 relative my-12 w-screen px-6 md:px-8 -ml-6 md:-ml-8">

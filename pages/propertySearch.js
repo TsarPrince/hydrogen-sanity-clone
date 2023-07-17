@@ -5,19 +5,17 @@ import ErrorComponent from '../components/ErrorComponent'
 import Gallery from '../components/Gallery'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
-import useFetch from '../hooks/useFetch'
+import useFetchQuery from '../hooks/useFetchQuery'
 
 const IndivdualProperty = () => {
   const { query } = useRouter()
 
-  const { id, page, pageSize, standardStatus } = query
+  const { id, page, pageSize, q } = query
 
-  const status = decodeURI(standardStatus)
-
-  const { data, error, isLoading } = useFetch({
+  const { data, error, isLoading } = useFetchQuery({
     page,
     pageSize,
-    standardStatus: status,
+    q,
   })
 
   const property = data?.data.filter(
@@ -38,7 +36,6 @@ const IndivdualProperty = () => {
     // If error occurs during fetch
     // or if property is not found
     else {
-      console.log(error)
       return (
         <>
           <Navbar />
@@ -83,7 +80,7 @@ const IndivdualProperty = () => {
     <div className="mt-[70px] lg:mt-[100px]">
       <Navbar />
       <>
-        <Gallery media={Photos.data?.map((media) => media.attributes.url)} />
+        <Gallery media={Photos?.data?.map((media) => media.attributes.url)} />
         <div className="w-full lg:w-[calc(100%-315px)]">
           <div className="portableText max-w-[660px] px-4 pb-24 pt-8 md:px-8">
             <div className="first:mt-0 last:mb-0 relative my-12 w-screen px-6 md:px-8 -ml-6 md:-ml-8">
