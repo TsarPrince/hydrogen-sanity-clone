@@ -19,9 +19,9 @@ const StandardStatus = () => {
 
   let query = ''
   if (Number(q)) {
-    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}&filters[$or][2][ListPrice][$eq]=${q}`
+    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}&filters[$or][2][ListPrice][$eq]=${q}`
   } else {
-    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}`
+    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}`
   }
 
   const { data, error, isLoading } = useSWR(query, fetcher, {

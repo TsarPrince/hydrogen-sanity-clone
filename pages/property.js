@@ -10,7 +10,7 @@ import useFetch from '../hooks/useFetch'
 const IndivdualProperty = () => {
   const { query } = useRouter()
 
-  const { id, page, pageSize, standardStatus } = query
+  const { id, page, pageSize, standardStatus, q } = query
 
   const status = decodeURI(standardStatus)
 
