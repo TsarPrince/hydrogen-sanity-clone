@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import useFetchQuery from '../hooks/useFetchQuery'
+import { prettifyNumber } from '../utils'
 
 const IndivdualProperty = () => {
   const { query } = useRouter()
@@ -90,7 +91,7 @@ const IndivdualProperty = () => {
                   style={{ color: '#3d7544' }}
                 >
                   <div className="max-w-[60rem] text-2xl md:text-4xl">
-                    ${ListPrice}
+                    ${prettifyNumber(ListPrice)}
                   </div>
                   <div className="mt-4">
                     <a

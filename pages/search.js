@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import qs from 'qs'
 import React from 'react'
 import useSWR from 'swr'
 
@@ -17,17 +18,69 @@ const StandardStatus = () => {
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
-  let query = ''
-  if (Number(q)) {
-    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}&filters[$or][2][ListPrice][$eq]=${q}`
-  } else {
-    query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[$or][0][City][$containsi]=${q}&filters[$or][1][StreetName][$containsi]=${q}`
-  }
+  const jsonToUrlEncodedQuery = qs.stringify(
+    {
+      sort: ['ListPrice:DESC', 'id:ASC'],
+      pagination: {
+        page,
+        pageSize,
+      },
+      populate: 'Photos',
+      filters: {
+        $or: [
+          {
+            City: {
+              $containsi: q,
+            },
+          },
+          {
+            StreetName: {
+              $containsi: q,
+            },
+          },
+          {
+            PropertyType: {
+              $containsi: q,
+            },
+          },
+          {
+            HighSchoolDistrict: {
+              $containsi: q,
+            },
+          },
+          {
+            PostalCode: {
+              $containsi: q,
+            },
+          },
+          {
+            ListingId: {
+              $containsi: q,
+            },
+          },
+          // search on Numerical fields startshere
+          Number(q)
+            ? {
+                ListPrice: {
+                  $eq: q,
+                },
+              }
+            : {},
+        ],
+      },
+    },
+    {
+      encodeValuesOnly: true, // prettify URL
+    }
+  )
+
+  let query = `/api/properties?${jsonToUrlEncodedQuery}`
 
   const { data, error, isLoading } = useSWR(query, fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,
   })
+  console.log(data)
 
   const properties = data?.data
   const pagination = data?.meta?.pagination

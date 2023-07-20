@@ -2,11 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
+import { prettifyNumber } from '../utils'
+
 const Card = ({
   ListingId,
   City,
   StreetName,
   StreetNumber,
+  StreetSuffix,
   ListPrice,
   LotSizeArea,
   LotSizeUnits,
@@ -14,11 +17,16 @@ const Card = ({
   PhotosCount,
   PropertyType,
   StandardStatus,
+  StateOrProvince,
+  PostalCode,
   page,
   pageSize,
   q,
 }) => {
   const [loaded, setLoaded] = useState(false)
+
+  const formattedListPrice = prettifyNumber(ListPrice)
+
   return (
     <div className="group relative">
       <div className="aspect-square border border-[lightGray] relative flex items-center justify-center overflow-hidden rounded bg-lightGray object-cover transition-[border-radius] duration-500 ease-out hover:rounded-xl">
@@ -100,7 +108,9 @@ const Card = ({
               },
             }}
           >
-            {`${StreetName}, ${StreetNumber}, ${City}`}
+            {`${StreetNumber}, ${StreetName}, ${
+              StreetSuffix ? StreetSuffix + ',' : ''
+            } ${City}, ${StateOrProvince}, ${PostalCode}`}
           </Link>
           <div className="text-darkGray">{`${PropertyType} — ${LotSizeArea} ${LotSizeUnits}`}</div>
           <div className="text-darkGray">{`${PhotosCount} ${
@@ -111,7 +121,7 @@ const Card = ({
           {/* <span className="text-darkGray">
             <div className="mr-2.5 line-through decoration-red">$35.00</div>
           </span> */}
-          <div>${ListPrice}</div>
+          <div>${formattedListPrice}</div>
         </div>
       </div>
     </div>

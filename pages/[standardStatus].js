@@ -22,7 +22,13 @@ const StandardStatus = () => {
   const properties = data?.data
   const pagination = data?.meta?.pagination
 
-  if (error) return <ErrorComponent />
+  if (error)
+    return (
+      <>
+        <Navbar />
+        <ErrorComponent />
+      </>
+    )
 
   return (
     <div className="mt-[100px]">

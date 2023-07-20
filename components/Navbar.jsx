@@ -49,9 +49,9 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
               <p
                 className={`${
                   trigger ? 'opacity-0' : ''
-                }  lg:font-bold lg:text-lg text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
+                }  lg:font-bold lg:text-md text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
               >
-                coldwell banker
+                COLDWELL BANKER
               </p>
             </div>
           </Link>
@@ -154,19 +154,19 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
             </div>
           </div>
           <div className="flex items-center">
-            <a className="linkTextNavigation" href="/pages/story">
+            <Link className="linkTextNavigation" href="/">
               Buy
-            </a>
+            </Link>
           </div>
           <div className="flex items-center">
-            <a className="linkTextNavigation" href="/pages/process">
+            <Link className="linkTextNavigation" href="/">
               Sell
-            </a>
+            </Link>
           </div>
           <div className="flex items-center">
-            <a className="linkTextNavigation" href="/pages/about">
+            <Link className="linkTextNavigation" href="/">
               About
-            </a>
+            </Link>
           </div>
         </nav>
         <div className="absolute right-0 flex h-full items-center md:mr-4">
@@ -182,12 +182,12 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                   })
                 }}
               >
-                <div className="flex items-center text-offBlack border hover:border-darkGray/50 duration-200 pr-2 mr-2">
+                <div className="flex items-center xl:w-[27rem] w-[18rem] text-offBlack border hover:border-darkGray/50 duration-200 pr-2 mr-2">
                   <input
-                    placeholder="City, Street or Pricing"
+                    placeholder="City, Neighborhood, Address, School, Zip, or MLS#"
                     required
                     type="text"
-                    className="bg-transparent border-none focus:ring-0"
+                    className="bg-transparent flex flex-1 border-none focus:ring-0"
                     value={q}
                     onChange={(e) => setQ(e.target.value)}
                   />
@@ -205,9 +205,9 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
               </form>
             </div>
           </div>
-          <a
+          <Link
             className="hidden h-[2.4rem] items-center rounded-sm bg-darkGray bg-opacity-0 p-2 lg:flex hover:bg-opacity-10"
-            href="/account"
+            href="/"
           >
             <svg
               width="17"
@@ -222,7 +222,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                 strokeWidth="1.2"
               ></path>
             </svg>
-          </a>
+          </Link>
           <div className="ml-2 mr-4 flex h-full items-center justify-center py-4">
             <button
               className="aspect-square w-[2.375rem] place-content-center rounded-full border border-offBlack fill-offBlack text-sm font-bold duration-200 hover:border-opacity-50"

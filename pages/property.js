@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import useFetch from '../hooks/useFetch'
+import { prettifyNumber } from '../utils'
 
 const IndivdualProperty = () => {
   const { query } = useRouter()
@@ -48,11 +49,14 @@ const IndivdualProperty = () => {
   }
   const {
     ListingId,
-    StreetSuffix,
     City,
     HighSchoolDistrict,
-    StreetName,
+    ListOfficeName,
     StreetNumber,
+    StreetName,
+    StreetSuffix,
+    StateOrProvince,
+    PostalCode,
     ListPrice,
     LotSizeDimensions,
     LotSizeArea,
@@ -66,11 +70,15 @@ const IndivdualProperty = () => {
   } = property.attributes
 
   const listItemsToRender = {
+    ListingId,
     StreetSuffix,
     StreetName,
     StreetNumber,
+    StateOrProvince,
+    PostalCode,
     City,
     HighSchoolDistrict,
+    ListOfficeName,
     LotSizeDimensions,
     LotSizeArea: `${LotSizeArea} ${LotSizeUnits}`,
     PropertyType,
@@ -92,7 +100,7 @@ const IndivdualProperty = () => {
                   style={{ color: '#3d7544' }}
                 >
                   <div className="max-w-[60rem] text-2xl md:text-4xl">
-                    ${ListPrice}
+                    ${prettifyNumber(ListPrice)}
                   </div>
                   <div className="mt-4">
                     <a

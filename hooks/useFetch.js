@@ -1,3 +1,4 @@
+import qs from 'qs'
 import useSWR from 'swr'
 
 import axios from '../lib/axios'
@@ -9,15 +10,32 @@ const useFetch = ({ page, pageSize, standardStatus }) => {
   if (!pageSize) pageSize = 10
   if (!standardStatus) standardStatus = 'Active'
 
-  const query = `/api/properties?pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort=id&populate=Photos&filters[StandardStatus][$eq]=${standardStatus?.replace(
-    / /g,
-    '%20'
-  )}`
+  const jsonToUrlEncodedQuery = qs.stringify(
+    {
+      // sort: ['ListPrice:DESC', 'id:ASC'],
+      sort: ['id:ASC'],
+      pagination: {
+        page,
+        pageSize,
+      },
+      populate: 'Photos',
+      filters: {
+        StandardStatus: {
+          $eq: standardStatus?.replace(/\+/g, '%20'),
+        },
+      },
+    },
+    {
+      encodeValuesOnly: true, // prettify URL
+    }
+  )
 
+  const query = `/api/properties?${jsonToUrlEncodedQuery}`
   const { data, error, isLoading } = useSWR(query, fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,
   })
+  console.log(data)
 
   return { data, error, isLoading }
 }
