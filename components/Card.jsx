@@ -108,9 +108,8 @@ const Card = ({
               },
             }}
           >
-            {`${StreetNumber}, ${StreetName}, ${
-              StreetSuffix ? StreetSuffix + ',' : ''
-            } ${City}, ${StateOrProvince}, ${PostalCode}`}
+            {StreetNumber} {StreetName} {StreetSuffix}, {City} {StateOrProvince}{' '}
+            {PostalCode}
           </Link>
           <div className="text-darkGray">{`${PropertyType} — ${LotSizeArea} ${LotSizeUnits}`}</div>
           <div className="text-darkGray">{`${PhotosCount} ${

@@ -67,24 +67,17 @@ const IndivdualProperty = () => {
     StandardStatus,
     PublicRemarks,
     ZoningDescription,
+    Contingency,
+    DaysOnMarket,
+    Basement,
+    LotSizeSquareFeet,
+    NST_SqFtTotal,
+    GarageSpaces,
+    TaxAnnualAmount,
+    NST_LakeAcres,
+    BedroomsTotal,
+    BathroomsTotalInteger,
   } = property.attributes
-
-  const listItemsToRender = {
-    ListingId,
-    StreetSuffix,
-    StreetName,
-    StreetNumber,
-    StateOrProvince,
-    PostalCode,
-    City,
-    HighSchoolDistrict,
-    ListOfficeName,
-    LotSizeDimensions,
-    LotSizeArea: `${LotSizeArea} ${LotSizeUnits}`,
-    PropertyType,
-    StandardStatus,
-    ZoningDescription,
-  }
 
   return (
     <div className="mt-[70px] lg:mt-[100px]">
@@ -115,150 +108,44 @@ const IndivdualProperty = () => {
               </div>
             </div>
 
+            <ul className="first:mt-0 last:mb-0 my-8 space-y-0.5 leading-paragraph list-outside ml-8">
+              <li className="font-bold uppercase">
+                {StandardStatus} {Contingency !== 'None' && Contingency}
+              </li>
+              <li className="font-bold uppercase">
+                {StreetNumber} {StreetName} {StreetSuffix}, {City}{' '}
+                {StateOrProvince} {PostalCode}
+              </li>
+              <li className="font-bold uppercase">{PropertyType}</li>
+              <li>
+                {(DaysOnMarket && prettifyNumber(DaysOnMarket)) || '—'} Days on
+                Market
+              </li>
+              <li>{BedroomsTotal} Bedrooms</li>
+              <li>{BathroomsTotalInteger} Bathrooms</li>
+              <li>
+                {LotSizeSquareFeet || NST_SqFtTotal || '—'} Total Finished SqFt
+              </li>
+              <li>{Basement?.join(', ') || '—'} Basement</li>
+              <li>
+                {LotSizeArea} {LotSizeUnits}
+              </li>
+              <li>{GarageSpaces || '—'} Garage Stalls</li>
+              <li>
+                {HighSchoolDistrict}{' '}
+                <span className=""> High School District</span>
+              </li>
+              <li>${prettifyNumber(TaxAnnualAmount)} Annual Taxes</li>
+              <li>{NST_LakeAcres || '—'} LakeFront</li>
+              <li>{ListOfficeName}</li>
+            </ul>
+
             <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
               Description
             </h2>
             <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
               {PublicRemarks}
             </p>
-            <ul className="first:mt-0 last:mb-0 my-8 space-y-0.5 leading-paragraph list-outside ml-8">
-              {Object.keys(listItemsToRender).map((item, key) => (
-                <li key={key}>
-                  <span className="text-darkGray">
-                    {item.replace(/([A-Z])/g, ' $1')}:
-                  </span>{' '}
-                  {listItemsToRender[item]}
-                </li>
-              ))}
-            </ul>
-            <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
-              Shipping &amp; Returns
-            </h2>
-            <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
-              We ship all of our products by courier. For next day delivery,
-              please order before 2pm. If for any reason you are not completely
-              satisfied with your order, we offer a 30 day returns policy for a
-              full refund. Products must not have been used and must still be in
-              a sellable condition.{' '}
-              <a
-                className="inline-flex items-center underline transition-opacity duration-200 hover:opacity-60"
-                href="/pages/shipping"
-              >
-                Read our full policy
-              </a>
-              .
-            </p>
-            <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
-              FAQ
-            </h2>
-            <div className="first:mt-0 last:mb-0 my-8">
-              <div className="flex flex-col border-b border-b-gray">
-                <button
-                  className="flex items-center justify-between py-4 text-lg font-bold transition-opacity duration-200 ease-out hover:opacity-60"
-                  id="headlessui-disclosure-button-:R2pj4p:"
-                  type="button"
-                  aria-expanded="false"
-                  data-headlessui-state=""
-                >
-                  <div className="truncate">
-                    How do I take care of my items?
-                  </div>
-                  <div className="ml-4 shrink-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
-                        fill="#3A3E3E"
-                      ></path>
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 3C12.4142 3 12.75 3.33579 12.75 3.75V20.25C12.75 20.6642 12.4142 21 12 21C11.5858 21 11.25 20.6642 11.25 20.25V3.75C11.25 3.33579 11.5858 3 12 3Z"
-                        fill="#3A3E3E"
-                      ></path>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-              <div className="flex flex-col border-b border-b-gray">
-                <button
-                  className="flex items-center justify-between py-4 text-lg font-bold transition-opacity duration-200 ease-out hover:opacity-60"
-                  id="headlessui-disclosure-button-:R39j4p:"
-                  type="button"
-                  aria-expanded="false"
-                  data-headlessui-state=""
-                >
-                  <div className="truncate">
-                    What if I’m unhappy with my order?
-                  </div>
-                  <div className="ml-4 shrink-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
-                        fill="#3A3E3E"
-                      ></path>
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 3C12.4142 3 12.75 3.33579 12.75 3.75V20.25C12.75 20.6642 12.4142 21 12 21C11.5858 21 11.25 20.6642 11.25 20.25V3.75C11.25 3.33579 11.5858 3 12 3Z"
-                        fill="#3A3E3E"
-                      ></path>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-              <div className="flex flex-col border-b border-b-gray">
-                <button
-                  className="flex items-center justify-between py-4 text-lg font-bold transition-opacity duration-200 ease-out hover:opacity-60"
-                  id="headlessui-disclosure-button-:R3pj4p:"
-                  type="button"
-                  aria-expanded="false"
-                  data-headlessui-state=""
-                >
-                  <div className="truncate">
-                    Are your products environmentally friendly?
-                  </div>
-                  <div className="ml-4 shrink-0">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
-                        fill="#3A3E3E"
-                      ></path>
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 3C12.4142 3 12.75 3.33579 12.75 3.75V20.25C12.75 20.6642 12.4142 21 12 21C11.5858 21 11.25 20.6642 11.25 20.25V3.75C11.25 3.33579 11.5858 3 12 3Z"
-                        fill="#3A3E3E"
-                      ></path>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph"></p>
           </div>
         </div>
       </>

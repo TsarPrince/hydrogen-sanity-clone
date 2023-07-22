@@ -94,24 +94,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="portableText text-xs text-darkGray">
-          <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
-            Information is based on information submitted to NorthstarMLS and
-            the MLS GRID.
-            <br /> All data is obtained from various sources and may not have
-            been verified by broker or MLS GRID.
-            <br />
-          </p>
-        </div>
       </div>
 
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
-        <div className="mx-auto max-w-[47rem] px-4 py-12 text-center text-md leading-caption md:px-8">
+        <div className="mx-auto max-w-[66rem] px-4 py-12 text-center text-md leading-caption md:px-8">
           <div>
-            Supplied Open House Information is subject to change without notice.
-            All information should be independently reviewed and verified for
-            accuracy.
+            Information on this website is based on data submitted to
+            NorthstarMLS and MLS GRID. The data is obtained from various sources
+            and may not have been verified by the broker or MLS GRID. We
+            recommend independently reviewing and verifying all information for
+            accuracy. The availability of properties may vary, and some listings
+            may be excluded. By searching Northstar MLS listings, you agree to
+            the NorthstarMLS End User License Agreement.
           </div>
 
           <Link

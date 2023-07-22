@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar blendIntoColor={true} />
       <Sidebar />
       <Header />
-      <Main />
+      {/* <Main /> */}
     </div>
   )
 }
