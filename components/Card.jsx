@@ -21,38 +21,30 @@ const Card = ({
   PostalCode,
   page,
   pageSize,
+  // params for defining which query to use for cache
   q,
+  standardStatus,
 }) => {
   const [loaded, setLoaded] = useState(false)
 
   const formattedListPrice = prettifyNumber(ListPrice)
 
-  let href = {}
-  if (q)
-    href = {
-      pathname: '/propertySearch',
-      query: {
-        q,
-        id: ListingId,
-        page,
-        pageSize,
-      },
-    }
-  if (StandardStatus) {
-    href = {
-      pathname: '/property',
-      query: {
-        standardStatus: StandardStatus,
-        id: ListingId,
-        page,
-        pageSize,
-      },
-    }
-  }
   return (
     <div className="group relative">
       <div className="aspect-square border border-[lightGray] relative flex items-center justify-center overflow-hidden rounded bg-lightGray object-cover transition-[border-radius] duration-500 ease-out hover:rounded-xl">
-        <Link className="absolute left-0 top-0 h-full w-full" href={href}>
+        <Link
+          className="absolute left-0 top-0 h-full w-full"
+          href={{
+            pathname: '/property',
+            query: {
+              q,
+              standardStatus,
+              id: ListingId,
+              page,
+              pageSize,
+            },
+          }}
+        >
           <>
             <div
               className={`w-full h-full bg-cover bg-center  ${

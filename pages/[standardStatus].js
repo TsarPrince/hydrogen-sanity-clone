@@ -47,6 +47,7 @@ const StandardStatus = () => {
                 {...property.attributes}
                 page={page}
                 pageSize={pageSize}
+                standardStatus={standardStatus}
               />
             ))}
           </div>

@@ -1,17 +1,12 @@
 import { useRouter } from 'next/router'
-import qs from 'qs'
 import React from 'react'
-import useSWR from 'swr'
 
 import Card from '../components/Card'
 import ErrorComponent from '../components/ErrorComponent'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
-import PaginationSearch from '../components/PaginationSearch'
-import axios from '../lib/axios'
-import { getPropertiesByListPrice } from '../utils/queries'
-
-const fetcher = (...args) => axios.get(...args).then((data) => data.data)
+import Pagination from '../components/Pagination'
+import useFetch from '../hooks/useFetch'
 
 const StandardStatus = () => {
   const router = useRouter()
@@ -19,15 +14,7 @@ const StandardStatus = () => {
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
-  const jsonToUrlEncodedQuery = getPropertiesByListPrice(page, pageSize)
-
-  let query = `/api/properties?${jsonToUrlEncodedQuery}`
-
-  const { data, error, isLoading } = useSWR(query, fetcher, {
-    revalidateIfStale: false,
-    revalidateOnFocus: false,
-  })
-  console.log(data)
+  const { data, error, isLoading } = useFetch({ page, pageSize })
 
   const properties = data?.data
   const pagination = data?.meta?.pagination
@@ -59,7 +46,7 @@ const StandardStatus = () => {
         )}
 
         {/* Pagination */}
-        <PaginationSearch pagination={pagination} />
+        <Pagination pagination={pagination} />
       </div>
     </div>
   )

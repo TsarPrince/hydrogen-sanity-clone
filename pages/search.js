@@ -1,15 +1,12 @@
 import { useRouter } from 'next/router'
-import qs from 'qs'
 import React from 'react'
-import useSWR from 'swr'
 
 import Card from '../components/Card'
 import ErrorComponent from '../components/ErrorComponent'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
-import PaginationSearch from '../components/PaginationSearch'
-import useFetchQuery from '../hooks/useFetchQuery'
-import { getPropertiesByQueryParams } from '../utils/queries'
+import Pagination from '../components/Pagination'
+import useFetch from '../hooks/useFetch'
 
 const StandardStatus = () => {
   const router = useRouter()
@@ -17,7 +14,7 @@ const StandardStatus = () => {
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
-  const { data, error, isLoading } = useFetchQuery({
+  const { data, error, isLoading } = useFetch({
     page,
     pageSize,
     q,
@@ -72,7 +69,7 @@ const StandardStatus = () => {
         )}
 
         {/* Pagination */}
-        <PaginationSearch pagination={pagination} q={q} />
+        <Pagination pagination={pagination} q={q} />
       </div>
     </div>
   )

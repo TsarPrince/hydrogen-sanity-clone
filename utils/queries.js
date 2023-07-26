@@ -59,7 +59,7 @@ const getPropertiesByQueryParams = (page, pageSize, q) =>
           },
           {
             ListingId: {
-              $containsi: q,
+              $eq: q,
             },
           },
           // search on Numerical fields startshere

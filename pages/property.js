@@ -13,12 +13,11 @@ const IndivdualProperty = () => {
 
   const { id, page, pageSize, standardStatus, q } = query
 
-  const status = decodeURI(standardStatus)
-
   const { data, error, isLoading } = useFetch({
     page,
     pageSize,
-    standardStatus: status,
+    standardStatus: decodeURI(standardStatus),
+    q,
   })
 
   const property = data?.data.filter(
