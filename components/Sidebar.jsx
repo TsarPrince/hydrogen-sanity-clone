@@ -56,7 +56,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                 >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    style={{ background: 'rgb(255, 238, 211)' }}
+                    // style={{ background: 'rgb(255, 238, 211)' }}
+                    style={{ background: '#ffa81b' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
@@ -77,7 +78,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                 >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    style={{ background: 'rgb(207, 232, 229)' }}
+                    // style={{ background: 'rgb(207, 232, 229)' }}
+                    style={{ background: '#3d7544' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
@@ -98,7 +100,8 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                 >
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    style={{ background: 'rgb(227, 216, 255)' }}
+                    // style={{ background: 'rgb(227, 216, 255)' }}
+                    style={{ background: '#3b53ca' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
@@ -114,10 +117,11 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/Hold" onClick={() => setDialogOpen(!dialogOpen)}>
+                <Link href="/" onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    style={{ background: 'rgb(255, 229, 240)' }}
+                    // style={{ background: 'rgb(255, 229, 240)' }}
+                    style={{ background: '#ec5039' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
@@ -128,7 +132,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       }}
                     ></div>
                     <div className="relative text-center text-lg font-bold group-hover:underline text-white">
-                      Hold
+                      Sell
                     </div>
                   </div>
                 </Link>

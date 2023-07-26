@@ -1,7 +1,7 @@
-import qs from 'qs'
 import useSWR from 'swr'
 
 import axios from '../lib/axios'
+import { getPropertiesByStandardStatus } from '../utils/queries'
 
 const fetcher = (...args) => axios.get(...args).then((data) => data.data)
 
@@ -10,24 +10,10 @@ const useFetch = ({ page, pageSize, standardStatus }) => {
   if (!pageSize) pageSize = 10
   if (!standardStatus) standardStatus = 'Active'
 
-  const jsonToUrlEncodedQuery = qs.stringify(
-    {
-      // sort: ['ListPrice:DESC', 'id:ASC'],
-      sort: ['id:ASC'],
-      pagination: {
-        page,
-        pageSize,
-      },
-      populate: 'Photos',
-      filters: {
-        StandardStatus: {
-          $eq: standardStatus?.replace(/\+/g, '%20'),
-        },
-      },
-    },
-    {
-      encodeValuesOnly: true, // prettify URL
-    }
+  const jsonToUrlEncodedQuery = getPropertiesByStandardStatus(
+    page,
+    pageSize,
+    standardStatus
   )
 
   const query = `/api/properties?${jsonToUrlEncodedQuery}`
