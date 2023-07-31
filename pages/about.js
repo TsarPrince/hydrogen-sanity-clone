@@ -175,27 +175,38 @@ const About = () => {
           raised the bar, and speaks for itself:
           <br />
           <br />
-          Proprietary Marketing MinnesotaForeclosures.com
+          Proprietary Marketing
+          <br />
+          <br /> MinnesotaForeclosures.com <br />
+          <br />
+          SaintPaulForeclosures.com
+          <br />
+          <br /> MinneapolisForeclosures.com
+          <br />
+          <br /> NONMLS.com
+          <br />
+          <br /> Over 300+ REO properties sold as listing agent
+          <br />
+          <br /> Over 1,000+ managed properties
+          <br />
+          <br /> Over 10,000+ portfolio valuations
+          <br />
+          <br /> Rigorous buyer qualification
+          <br />
+          <br /> Property visits during redemption within 6 hours
+          <br />
+          <br /> Property re-key, within 6 hours
+          <br />
+          <br /> Cash for Keys property visits within 6 hours
+          <br />
+          <br /> Broker Price Opinions within 6 hours
+          <br />
+          <br /> Open houses and online auctions
           <br />
           <br />
-          SaintPaulForeclosures.com MinneapolisForeclosures.com NONMLS.com Over
+          Installation of signs within 12 hours
           <br />
-          <br />
-          300+ REO properties sold as listing agent Over 1,000+ managed
-          <br />
-          <br />
-          properties Over 10,000+ portfolio valuations Rigorous buyer
-          <br />
-          <br />
-          qualification Property visits during redemption within 6 hours
-          <br />
-          <br />
-          Property re-key, within 6 hours Cash for Keys property visits within 6
-          <br />
-          <br />
-          hours Broker Price Opinions within 6 hours Open houses and online
-          auctions Installation of signs within 12 hours Adobe Acrobat
-          Professional - PDF management
+          <br /> Adobe Acrobat Professional - PDF management
         </p>
       </div>
 
