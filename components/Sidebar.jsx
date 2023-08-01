@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
+import Searchbar from './Searchbar'
+
 const Sidebar = ({ dialogOpen, setDialogOpen }) => {
   return (
     <div className="right-0 transition-all">
@@ -47,6 +49,9 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                 </svg>
               </button>
             </header>
+            <div className="px-8 pb-10 lg:hidden">
+              <Searchbar setDialogOpen={setDialogOpen} />
+            </div>
             <div className="px-8">
               <div className="text-lg font-bold">Collections</div>
               <div className="relative mt-3 grid grid-cols-2 gap-2">
