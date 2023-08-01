@@ -5,18 +5,14 @@ const Header = () => {
   return (
     <>
       <div className="flex flex-col items-center rounded-b-xl bg-peach px-4 pb-4 pt-24 md:px-8 md:pb-8 md:pt-34">
-        <h1 className="mb-7 max-w-[60rem] whitespace-pre-line text-center text-3xl md:text-5xl">
-          Minnesota
-          <br /> Real Estate
+        <h1 className="mb-7 max-w-[72rem] whitespace-pre-line text-center text-3xl md:text-5xl">
+          Minnesota Real Estate
         </h1>
         <div className="mt-4 leading-paragraph max-w-4xl text-center">
           We take pride in presenting an extensive and diverse collection of
           real estate listings, catering to every taste and preference. Whether
-          you&apos;re seeking a cozy apartment, a luxurious mansion, a serene
-          countryside retreat, or a bustling commercial space, we have it all
-          under one roof. Whether you&apos;re seeking a cozy apartment, a
-          luxurious mansion, a serene countryside retreat, or a bustling
-          commercial space, we have it all under one roof.
+          you&apos;re seeking a cozy loft, luxurious mansion, serene countryside
+          retreat, or bustling commercial space, we have it all under one roof.
         </div>
 
         {/* <Link

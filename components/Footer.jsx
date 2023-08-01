@@ -108,33 +108,6 @@ const Footer = () => {
             may be excluded. By searching Northstar MLS listings, you agree to
             the NorthstarMLS End User License Agreement.
           </div>
-
-          <Link
-            className="mt-8 inline-flex items-center justify-center gap-1 text-lg text-[#508EEA] hover:opacity-70"
-            href="/"
-          >
-            <span>Learn more</span>
-            <svg
-              width="11"
-              height="10"
-              viewBox="0 0 11 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 5H10"
-                stroke="#508EEA"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                d="M6.14258 1L9.99972 5L6.14258 9"
-                stroke="#508EEA"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-            </svg>
-          </Link>
         </div>
       </div>
     </footer>

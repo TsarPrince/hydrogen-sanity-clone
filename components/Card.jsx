@@ -51,7 +51,7 @@ const Card = ({
                 loaded ? 'blur-0 animate-none' : 'blur-md animate-pulse'
               }`}
               style={{
-                backgroundImage: `url(${Photos?.data?.[0]?.attributes.formats.thumbnail.url})`,
+                backgroundImage: `url(${Photos?.data?.[0]?.attributes.formats?.thumbnail.url})`,
               }}
             >
               <img

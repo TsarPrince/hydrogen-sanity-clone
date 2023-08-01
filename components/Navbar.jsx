@@ -200,7 +200,8 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
               </form>
             </div>
           </div>
-          <Link
+          {/* Account */}
+          {/* <Link
             className="hidden h-[2.4rem] items-center rounded-sm bg-darkGray bg-opacity-0 p-2 lg:flex hover:bg-opacity-10"
             href="/"
           >
@@ -217,8 +218,10 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                 strokeWidth="1.2"
               ></path>
             </svg>
-          </Link>
-          <div className="ml-2 mr-4 flex h-full items-center justify-center py-4">
+          </Link> */}
+
+          {/* No of Quick Adds */}
+          {/* <div className="ml-2 mr-4 flex h-full items-center justify-center py-4">
             <button
               className="aspect-square w-[2.375rem] place-content-center rounded-full border border-offBlack fill-offBlack text-sm font-bold duration-200 hover:border-opacity-50"
               type="button"
@@ -227,7 +230,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
             >
               0
             </button>
-          </div>
+          </div> */}
         </div>
       </header>
     </>
