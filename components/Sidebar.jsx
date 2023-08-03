@@ -62,17 +62,17 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(255, 238, 211)' }}
-                    style={{ background: '#ffa81b' }}
+                    style={{ background: '#fff2e1' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: 'rgb(255, 168, 27)',
+                        background: '#fff2e1',
                         WebkitMask:
                           'url(/masks/2.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline text-white">
+                    <div className="relative text-center text-lg font-bold group-hover:underline ">
                       Active
                     </div>
                   </div>
@@ -84,17 +84,17 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(207, 232, 229)' }}
-                    style={{ background: '#3d7544' }}
+                    style={{ background: '#c3e2e6' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: 'rgb(61, 117, 68)',
+                        background: '#c3e2e6',
                         WebkitMask:
                           'url(/masks/3.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline text-white">
+                    <div className="relative text-center text-lg font-bold group-hover:underline ">
                       Pending
                     </div>
                   </div>
@@ -106,17 +106,17 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(227, 216, 255)' }}
-                    style={{ background: '#3b53ca' }}
+                    style={{ background: '#f7dae5' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: 'rgb(59, 83, 202)',
+                        background: '#f7dae5',
                         WebkitMask:
                           'url(/masks/1.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline text-white">
+                    <div className="relative text-center text-lg font-bold group-hover:underline ">
                       Coming <br />
                       Soon
                     </div>
@@ -126,17 +126,17 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(255, 229, 240)' }}
-                    style={{ background: '#ec5039' }}
+                    style={{ background: '#cfccdf' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: 'rgb(236, 80, 57)',
+                        background: '#cfccdf',
                         WebkitMask:
                           'url(/masks/4.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline text-white">
+                    <div className="relative text-center text-lg font-bold group-hover:underline">
                       Sell
                     </div>
                   </div>

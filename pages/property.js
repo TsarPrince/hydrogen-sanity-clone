@@ -94,7 +94,7 @@ const IndivdualProperty = () => {
                   <div className="max-w-[60rem] text-2xl md:text-4xl">
                     ${prettifyNumber(ListPrice)}
                   </div>
-                  <div className="mt-4">
+                  {/* <div className="mt-4">
                     <a
                       className="flex h-[2.5rem] items-center justify-center overflow-hidden rounded-full p-4 text-sm font-bold duration-200 ease-out disabled:opacity-20 disabled:bg-opacity-100 bg-offBlack hover:opacity-80 text-white"
                       style={{ background: '#3d7544' }}
@@ -102,7 +102,7 @@ const IndivdualProperty = () => {
                     >
                       Quick Add
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -70,11 +70,11 @@ const Card = ({
               />
             </div>
             {/* Quick Add */}
-            <div className="absolute bottom-0 right-4 translate-y-full pb-4 duration-200 ease-in-out group-hover:block group-hover:translate-y-0">
+            {/* <div className="absolute bottom-0 right-4 translate-y-full pb-4 duration-200 ease-in-out group-hover:block group-hover:translate-y-0">
               <button className="flex h-[2.5rem] items-center justify-center overflow-hidden rounded-full p-4 text-sm font-bold duration-200 ease-out disabled:opacity-20 disabled:bg-opacity-100 bg-offBlack hover:opacity-80 text-white">
                 Quick add
               </button>
-            </div>
+            </div> */}
           </>
 
           <div className="absolute left-4 top-4">
@@ -103,9 +103,9 @@ const Card = ({
             {PostalCode}
           </Link>
           <div className="text-darkGray">{`${PropertyType} — ${LotSizeArea} ${LotSizeUnits}`}</div>
-          <div className="text-darkGray">{`${PhotosCount} ${
+          {/* <div className="text-darkGray">{`${PhotosCount} ${
             PhotosCount > 1 ? 'Photos' : 'Photo'
-          }`}</div>
+          }`}</div> */}
         </div>
         <div className="mt-3 flex font-bold">
           {/* <span className="text-darkGray">

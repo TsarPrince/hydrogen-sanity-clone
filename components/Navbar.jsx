@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
@@ -35,14 +36,15 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
 
           {/* Main logo */}
           <Link href="/">
-            <div className="absolute bottom-0 left-1/2 top-0 flex w-[400px] -translate-x-1/2 items-center lg:w-[400px]">
-              <p
-                className={`text-lg lg:text-xl font-bold absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 transition-all duration-500 ${
+            <div className="absolute bottom-0 left-1/2 top-0 flex w-[400px] -translate-x-1/2 items-center lg:w-[300px]">
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 top-4 lg:top-6 ${
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
                 }`}
               >
-                WILEN REALTY
-              </p>
+                <img className="h-4 lg:h-6" src="/wilen.webp"></img>
+                {/* WILEN REALTY */}
+              </div>
               <p
                 className={`${
                   trigger ? 'opacity-0' : ''
