@@ -24,7 +24,9 @@ const About = () => {
                 className="mr-auto flex flex-col items-start"
                 style={{ color: 'rgb(255, 138, 28)' }}
               >
-                <div className="max-w-[60rem] text-2xl md:text-4xl">Hello.</div>
+                <div className="max-w-[60rem] text-2xl md:text-4xl">
+                  Sell with us.
+                </div>
               </div>
             </div>
             <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
