@@ -11,7 +11,9 @@ const Searchbar = ({ setDialogOpen }) => {
       <form
         onSubmit={(e) => {
           e.preventDefault()
-          setDialogOpen(false)
+          if (setDialogOpen) {
+            setDialogOpen(false)
+          }
           router.push({
             pathname: '/search',
             query: { q },
