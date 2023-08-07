@@ -122,7 +122,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/sell" onClick={() => setDialogOpen(!dialogOpen)}>
+                <Link href="/about" onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(255, 229, 240)' }}
