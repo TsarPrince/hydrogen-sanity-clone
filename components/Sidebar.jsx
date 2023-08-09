@@ -24,7 +24,12 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
         >
           <div className="pb-10">
             <header className="flex h-header-sm items-center justify-between px-8 lg:h-header-lg">
-              <div className="text-xl font-bold leading-none">Properties</div>
+              <div>
+                {' '}
+                <h2 className="text-[22px] xl:text-xl font-bold">
+                  Explore & <br /> Discover Real Estate
+                </h2>
+              </div>
               {/* Close button */}
               <button type="button" onClick={() => setDialogOpen(!dialogOpen)}>
                 <svg
@@ -53,7 +58,6 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
               <Searchbar setDialogOpen={setDialogOpen} />
             </div>
             <div className="px-8">
-              <div className="text-lg font-bold">Collections</div>
               <div className="relative mt-3 grid grid-cols-2 gap-2">
                 <Link
                   href="/Active"
@@ -72,15 +76,12 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                           'url(/masks/2.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline ">
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
                       Active
                     </div>
                   </div>
                 </Link>
-                <Link
-                  href="/Pending"
-                  onClick={() => setDialogOpen(!dialogOpen)}
-                >
+                <div onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
                     className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     // style={{ background: 'rgb(207, 232, 229)' }}
@@ -94,11 +95,21 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                           'url(/masks/3.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline ">
-                      Pending
+                    <div className="relative text-center text-md sm:text-lg font-bold ">
+                      We&apos;re Always Open <br />
+                      <a className="hover:underline" href="tel:+612-400-9000">
+                        612-400-9000
+                      </a>{' '}
+                      <br />
+                      <a
+                        className="hover:underline"
+                        href="mailto:hello@1mw.com"
+                      >
+                        hello@1mw.com
+                      </a>
                     </div>
                   </div>
-                </Link>
+                </div>
                 <Link
                   href="/Coming Soon"
                   onClick={() => setDialogOpen(!dialogOpen)}
@@ -116,7 +127,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                           'url(/masks/1.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline ">
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
                       Coming <br />
                       Soon
                     </div>
@@ -136,7 +147,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                           'url(/masks/4.svg) center center / contain no-repeat',
                       }}
                     ></div>
-                    <div className="relative text-center text-lg font-bold group-hover:underline">
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline">
                       Sell
                     </div>
                   </div>
