@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="px-4 lg:px-8 mt-40 mb-20">
-        {/* 1  */}
+        {/* 1 */}
         <article className="mb-10">
           <img
             className="mb-5 lg:mb-10 rounded-lg w-full"
