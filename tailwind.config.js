@@ -20,6 +20,7 @@ module.exports = {
     },
     fontFamily: {
       sans: '"DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     fontSize: {
       // 12px
