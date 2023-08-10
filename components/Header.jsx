@@ -4,17 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-      <div className="flex flex-col items-center rounded-b-xl bg-peach px-4 pb-4 pt-24 md:px-8 md:pb-8 md:pt-34">
-        <h1 className="mb-7 max-w-[72rem] whitespace-pre-line text-center text-3xl md:text-5xl">
-          Minnesota Real Estate
-        </h1>
-        <div className="mt-4 leading-paragraph max-w-4xl text-center">
-          We take pride in presenting an extensive and diverse collection of
-          real estate listings, catering to every taste and preference. Whether
-          you&apos;re seeking a cozy loft, luxurious mansion, serene countryside
-          retreat, or bustling commercial space, we have it all under one roof.
-        </div>
-
+      <div className="flex flex-col items-center rounded-b-xl bg-peach px-4 pb-4 pt-24 md:px-8 md:pb-8 md:pt-20">
         {/* <Link
           href="/Active"
           className="flex h-[2.5rem] items-center justify-center overflow-hidden rounded-full p-4 text-sm font-bold duration-200 ease-out disabled:opacity-20 disabled:bg-opacity-100 bg-offBlack hover:opacity-80 text-white"
@@ -45,6 +35,16 @@ const Header = () => {
               /> */}
             </div>
           </div>
+        </div>
+
+        <h1 className="mt-7 max-w-[72rem] whitespace-pre-line text-center text-3xl md:text-5xl">
+          Minnesota Real Estate
+        </h1>
+        <div className="mt-4 leading-paragraph max-w-4xl text-center">
+          We take pride in presenting an extensive and diverse collection of
+          real estate listings, catering to every taste and preference. Whether
+          you&apos;re seeking a cozy loft, luxurious mansion, serene countryside
+          retreat, or bustling commercial space, we have it all under one roof.
         </div>
       </div>
     </>
