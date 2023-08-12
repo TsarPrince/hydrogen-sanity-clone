@@ -33,6 +33,11 @@ const Footer = () => {
           </div>
           <div className="my-16 w-full max-w-[22rem] columns-2 gap-x-8 self-start text-md font-bold md:my-0 md:max-w-[27rem]">
             <div className="mb-6">
+              <Link className="linkTextNavigation" href="/terms-privacy">
+                Terms Privacy
+              </Link>
+            </div>
+            <div className="mb-6">
               <Link className="linkTextNavigation" href="/">
                 Buy
               </Link>
