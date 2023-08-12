@@ -4,17 +4,19 @@ const TermsPrivacy = () => {
   return (
     <>
       <Navbar />
-      <div className="px-4 lg:px-8 mt-40 mb-20 text-black">
-        <h1 className="font-bold text-[50px] mb-4">Table of Contents</h1>
-        <ul className="font-medium text-xl mb-10">
+      <div className="px-4 lg:px-8 my-24 lg:mt-40 lg:mb-20 text-black">
+        <h1 className="font-bold text-2xl lg:text-[50px] mb-4">
+          Table of Contents
+        </h1>
+        <ul className="font-medium text-lg lg:text-xl mb-10">
           <li className="mb-2">1. Terms & Conditions of Use</li>
           <li className="mb-2">2. Privacy Policy</li>
           <li className="mb-2">3. NorthstarMLS End User License Agreement</li>
         </ul>
-        <h2 className="font-bold text-[30px] my-4">
+        <h2 className="font-bold text-xl lg:text-[30px] my-4">
           Terms & Conditions of Use
         </h2>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Welcome to 1mw.com and affiliated websites (the &quot;Web Site&quot;).
           The goal of this Web Site is to provide you with access to the most
           comprehensive network of residential real estate products/services and
@@ -33,7 +35,7 @@ const TermsPrivacy = () => {
           such modifications, alterations, or updates, you agree to be bound by
           such revised Terms.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           In accordance with our goals, this Web Site will permit you to link to
           many other web sites that may or may not be affiliated with this Web
           Site and/or Us, and that may have terms of use that differ from, or
@@ -41,25 +43,27 @@ const TermsPrivacy = () => {
           such web sites through links provided on this Web Site is governed by
           the terms of use and policies of those sites, not this Web Site.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-medium">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-medium">
           YOUR ACKNOWLEDGMENTS IF REGISTERING ON A VIRTUAL OFFICE WEBSITE
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           You acknowledge (i) entering into a lawful consumer-broker
           relationship with Us (ii) that you have a bona fide interest in the
           purchase, sale, or lease of real estate of the type being offered
           through Our Site and(iii) the ownership and validity of the MLS’s
           copyright in the MLS database.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">Privacy</p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
+          Privacy
+        </p>
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Registration data and certain other information about you are subject
           to our Privacy Statement.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Trademarks, copyrights and restrictions
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           This Web Site is controlled and operated by Wilen, 3033 Excelsior Blvd
           Minneapolis MN 55416. All content on this Web Site, including but not
           limited to text, images, illustrations, audio clips, and video clips,
@@ -102,10 +106,10 @@ const TermsPrivacy = () => {
           other materials on this Web Site without the prior written consent of
           Us.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Prohibited activities
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           You are specifically prohibited from any use of this Web Site, and You
           agree not to use or permit others to use this Web Site, for any of the
           following: (a) take any action that imposes an unreasonable or
@@ -129,8 +133,10 @@ const TermsPrivacy = () => {
           browsers, such as Microsoft Internet Explorer®, may be used without
           such permission.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">Links</p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
+          Links
+        </p>
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           This Web Site may contain links to other web sites (&quot;Linked
           Sites&quot;). The Linked Sites are provided for your convenience and
           information only and, as such, you access them at your own risk. The
@@ -142,10 +148,10 @@ const TermsPrivacy = () => {
           affiliates, or Providers. This website also incorporates Google Maps.
           Click Here for the Google Maps Terms of Use.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Disclaimer of warranties and liability
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           ALL CONTENT ON THIS WEB SITE IS PROVIDED &quot;AS IS&quot; AND WITHOUT
           WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. OTHER THAN THOSE
           WARRANTIES WHICH, UNDER THE U.S. LAWS APPLICABLE TO THESE TERMS, ARE
@@ -166,7 +172,7 @@ const TermsPrivacy = () => {
           SERVICE, AND/OR MERCHANDISE ACQUIRED PURSUANT TO YOUR USE OF THIS WEB
           SITE.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           ALL CONTENT ON THIS WEB SITE IS PROVIDED expenses, damages, and costs,
           including reasonable attorneys&apos; AS IS expenses, damages, and
           costs, including reasonable attorneys&apos; AND WITHOUT WARRANTIES OF
@@ -188,30 +194,30 @@ const TermsPrivacy = () => {
           ACCURACY, OR CURRENCY OF ANY INFORMATION CONTENT, SERVICE, AND/OR
           MERCHANDISE ACQUIRED PURSUANT TO YOUR USE OF THIS WEB SITE.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Indemnification
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           You agree to indemnify, defend, and hold harmless Wilen and the
           Providers, its and their officers, directors, employees, affiliates,
           agents, licensors, and suppliers from and against all losses,
           expenses, damages, and costs, including reasonable attorneys&apos;
           fees, resulting from any violation by you of these Terms.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Third-party rights
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           These Terms are for the benefit of Wilen and its Providers, its and
           their officers, directors, employees, affiliates, agents, licensors,
           and suppliers. Each of these individuals or entities shall have the
           right to assert and enforce these Terms directly against you on its or
           their behalf.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Jurisdictional issues
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Unless otherwise specified, the Content contained on this Web Site is
           presented solely for your convenience and/or information. This Web
           Site is controlled and operated by Wilen from its offices within
@@ -233,10 +239,10 @@ const TermsPrivacy = () => {
           provision shall be deemed severable from these Terms and shall not
           affect the validity and enforceability of any remaining provisions.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Entire agreement{' '}
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           The provisions and conditions of these Terms, and each obligation
           referenced herein, represent the entire Agreement between Wilen, its
           affiliated or related entities, and you, and supersede any prior
@@ -245,11 +251,13 @@ const TermsPrivacy = () => {
           published terms of use or understanding, the last published Terms or
           terms of use or understanding shall prevail.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-medium">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-medium">
           ANY RIGHTS NOT EXPRESSLY GRANTED HEREIN ARE RESERVED BY WILEN.
         </p>
-        <h2 className="font-bold text-[30px] mb-4 mt-10">Privacy Policy</h2>
-        <p className="text-lg leading-[140%] mb-4">
+        <h2 className="font-bold text-xl lg:text-[30px] mb-4 mt-10">
+          Privacy Policy
+        </h2>
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           This Privacy Policy (&quot;Policy&quot;) is intended to provide you
           with comprehensive information about how Wilen (&quot;we,&quot;
           &quot;us,&quot; or &quot;our&quot;) collects, uses, discloses, and
@@ -258,10 +266,10 @@ const TermsPrivacy = () => {
           &quot;Services&quot;). Please read this Policy carefully to understand
           our practices regarding your personal information.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           1. SCOPE OF OUR PRIVACY NOTICE
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           This Privacy Policy applies to the collection, use, disclosure, and
           processing of personal information related to: Our websites (each, a
           “Website”) and mobile applications (each, an “App”) that display or
@@ -283,16 +291,16 @@ const TermsPrivacy = () => {
           with this Privacy Policy, with respect to your personal information
           that is subject to that notice.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           2. OUR COLLECTION OF PERSONAL INFORMATION
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Generally, we collect your personal information on a voluntary basis.
           However, if you decline to provide certain personal information that
           is marked mandatory, you may not be able to access certain Services or
           we may be unable to fully respond to your inquiry.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We may collect personal information directly from individuals,
           automatically related to the use of the Services, and in some cases,
           from third parties (such as social networks, platform providers,
@@ -335,10 +343,10 @@ const TermsPrivacy = () => {
           ownership and tax records maintained by state, local, and county
           agencies.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           3. PURPOSES AND LEGAL BASIS FOR OUR PROCESSING
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Certain laws, including the EU General Data Protection Regulation
           (“GDPR”), UK and Brazil data protection law, and similar laws require
           that we inform applicable individuals of the legal basis for our use
@@ -361,10 +369,10 @@ const TermsPrivacy = () => {
           relationship management and improving our Services, including
           marketing and analytics
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           Marketing and advertising
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Fraud prevention, including misuse of company IT systems or money
           laundering Physical, IT, and network perimeter security Internal
           investigations Mergers, acquisitions, and reorganization, and other
@@ -422,7 +430,7 @@ const TermsPrivacy = () => {
           restructuring of all or part of our business. (Legal basis: our
           legitimate interests and/or compliance with laws)
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Auditing, reporting, corporate governance, and internal operations:
           including relating to financial, tax, and accounting audits; audits
           and assessments of our operations, privacy, security, and financial
@@ -434,10 +442,10 @@ const TermsPrivacy = () => {
           orders, and regulatory or law enforcement requests. (Legal basis: our
           legitimate interests and/or compliance with laws)
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           4. DISCLOSURE OF PERSONAL INFORMATION
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Auditing, reporting, corporate governance, and internal operations:
           including relating to financial, tax, and accounting audits; audits
           and assessments of our operations, privacy, security, and financial
@@ -449,10 +457,10 @@ const TermsPrivacy = () => {
           orders, and regulatory or law enforcement requests. (Legal basis: our
           legitimate interests and/or compliance with laws)
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           5. AGGREGATE AND NON-IDENTIFIABLE DATA
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We may also use and disclose aggregate, anonymous, and other
           non-identifiable data related to our business and the Services for
           quality control, analytics, research, development, and other purposes.
@@ -464,10 +472,10 @@ const TermsPrivacy = () => {
           privacy laws (such as to confirm whether our deidentification
           processes are reasonable and adequate).
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           6. COOKIES, TRACKING, AND ANALYTICS
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Our Services may use first-party and third-party cookies, pixel tags,
           plugins, and other tools to gather device, usage, and browsing
           information when users visit our Services. For instance, when you
@@ -517,10 +525,10 @@ const TermsPrivacy = () => {
           signals. However, you can review and update your cookie preferences on
           our Websites as discussed above.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           7. INTEREST-BASED ADVERTISING
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           On some of our Websites, we may work with third-party ad networks,
           analytics companies, measurement services, and others (“third-party ad
           companies”) to display advertising on our Services and to manage our
@@ -539,7 +547,7 @@ const TermsPrivacy = () => {
           more information about targeted or “interest-based advertising” and
           opt-out of many ad networks at the industry websites below:
         </p>
-        <ul className="text-lg leading-[140%] mb-4">
+        <ul className="text-md lg:text-lg leading-[140%] mb-4">
           <li>
             Canada:{' '}
             <a
@@ -571,10 +579,10 @@ const TermsPrivacy = () => {
             </a>
           </li>
         </ul>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           8. SOCIAL FEATURES AND THIRD-PARTY PLUG-INS
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           The Services may integrate with social sharing features and other
           related tools that let you log in to the Services or share actions you
           take on the Services. Your use of such features enables the sharing of
@@ -583,10 +591,10 @@ const TermsPrivacy = () => {
           privacy policies of those social sharing services for more information
           about how they handle the data you provide to or share through them.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           9. INTERNATIONAL TRANSFERS OF PERSONAL INFORMATION
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           Wilen is headquartered in the United States and has affiliates and
           service providers in multiple jurisdictions. As such, your personal
           information may be transferred to the United States and other
@@ -599,10 +607,10 @@ const TermsPrivacy = () => {
           transfer safeguards. You may request a copy or information about those
           safeguards by contacting us as detailed below.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           10. SECURITY
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We use technical, administrative, and physical controls in place to
           help protect personal information from unauthorized access, use, and
           disclosure. Even so, despite our efforts, no security measure is ever
@@ -610,10 +618,10 @@ const TermsPrivacy = () => {
           account has been compromised, please immediately notify us in
           accordance with Section 16. Contact Us.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           11. DATA RETENTION
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We will retain your personal information for the period necessary to
           fulfill the purposes outlined in this Privacy Policy unless a longer
           retention period is required or permitted by law. We may retain
@@ -624,10 +632,10 @@ const TermsPrivacy = () => {
           files we handle as a processor, we retain this personal information in
           accordance with our clients’ instructions.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           12. YOUR RIGHTS AND CHOICES
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We provide several ways for you to exercise certain privacy choices
           regarding your personal information processed by us, as described in
           this section. We are committed to respecting the privacy rights of
@@ -664,10 +672,10 @@ const TermsPrivacy = () => {
           impact the duty of confidentiality we owe to others, or if we are
           legally entitled to deal with the request in a different way.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           13. CHILDREN
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           The Services are not intended or directed to children under the age of
           16, and we do not knowingly collect any personal information or
           knowingly track the use of our Services from children. If we have
@@ -675,10 +683,10 @@ const TermsPrivacy = () => {
           years old has been collected, then we will take appropriate steps to
           try and delete such personal information.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           14. THIRD-PARTY WEBSITES
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           The Services may contain links to third-party services. We do not own,
           operate, or control the websites of third parties, including those of
           independently owned and operated franchisees. Accordingly, this
@@ -691,10 +699,10 @@ const TermsPrivacy = () => {
           liability for their actions, including actions related to the use and
           disclosure of personal information by those third parties.
         </p>
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           15. CHANGES TO THIS PRIVACY POLICY
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           We may amend this Privacy Policy at any time. If we make any material
           change in how we collect, use, disclose, or otherwise process personal
           information, we will prominently post a notice regarding such a change
@@ -704,10 +712,10 @@ const TermsPrivacy = () => {
           law, we may seek your prior consent to any material changes we make to
           this Privacy Policy.
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4 font-semibold">
+        <p className="text-md lg:text-lg leading-[140%] mb-4 font-semibold">
           16. CONTACT US
         </p>{' '}
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           If you have any questions or concerns about this Notice, please use
           the following contact information: Email:{' '}
           <a
@@ -719,11 +727,13 @@ const TermsPrivacy = () => {
           Address: 3033 Excelsior Blvd #100, Minneapolis, MN 55416 <br /> Thank
           you for your interest in our Privacy Policy.
         </p>
-        <h2 className="font-bold text-[30px] mb-4 mt-10">NorthStarMLS</h2>{' '}
-        <h2 className="font-bold text-[30px] my-4">
+        <h2 className="font-bold text-xl lg:text-[30px]  mb-4 mt-10">
+          NorthStarMLS
+        </h2>{' '}
+        <h2 className="font-bold text-xl lg:text-[30px] my-4">
           End User License Agreement
         </h2>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           The following terms and conditions govern all access to and use of
           this site. You accept, without limitation or alteration, all the terms
           and conditions contained herein. THIS AGREEMENT IS A BINDING CONTRACT
@@ -731,10 +741,10 @@ const TermsPrivacy = () => {
           LIABILITY TO YOU. CONSULT YOUR ATTORNEY BEFORE AGREEING IF YOU DO NOT
           UNDERSTAND ANY OF THE TERMS HERE.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           End-User License Agreement
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           This End-User License Agreement (“EULA”) is a legally binding contract
           between you; and the owner of this site, Mn Realty Co. (“Broker”); and
           Regional Multiple Listing Service of Minnesota, Inc., d/b/a
@@ -742,7 +752,7 @@ const TermsPrivacy = () => {
           site, Mn Realty Co. (“Developer”). (Collectively, Broker, RMLS, and
           Developer are the “Licensors.”)
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           You seek access to real estate listings that are made up of factual
           information and creative content. This “Licensed Content” appears on
           this “Licensed Site.” Licensors wish to grant you access to the
@@ -750,7 +760,7 @@ const TermsPrivacy = () => {
           this license. In consideration of the mutual covenants contained
           herein, you and Licensors hereby agree as follows:
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           1. Access permitted. Licensors agree to provide you online access via
           the World-Wide-Web to the Licensed Content and the Licensed Site for
           the duration of the current viewing session. You acknowledge that you
@@ -758,7 +768,7 @@ const TermsPrivacy = () => {
           Licensed Site. You agree not to attempt to access the Licensed Site
           after the termination of this EULA.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           2. Acknowledgement of Title. You acknowledge that all right, title,
           and interest in the copyrights and other intellectual property rights
           in the Licensed Site and the Licensed Content reside at all times in
@@ -769,7 +779,7 @@ const TermsPrivacy = () => {
           any Mark displayed on the Licensed Site or any other Marks of
           Licensors.
         </p>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           3. License. Licensors hereby grant you a revocable, limited,
           nonexclusive license during the term of this EULA to duplicate,
           distribute and display the Licensed Content and the Licensed Site,
@@ -779,7 +789,7 @@ const TermsPrivacy = () => {
           expressly granted in this EULA are reserved. 4. Limited Use. You will
           not:
         </p>
-        <ul className="text-lg leading-[140%] mb-4">
+        <ul className="text-md lg:text-lg leading-[140%] mb-4">
           <li>
             (a) Use the Licensed Site, Licensed Content, or both for any purpose
             other than a personal, non-commercial one;
@@ -799,13 +809,15 @@ const TermsPrivacy = () => {
             unlawful purpose.
           </li>
         </ul>
-        <p className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
           5. License revoked. Your license to use the Licensed Content and the
           Licensed Site is immediately revoked, without notice from Licensors,
           in the event that you breach any provision of this EULA.
         </p>
-        <p className="text-lg leading-[140%] mb-4">6. General terms.</p>
-        <ul className="text-lg leading-[140%] mb-4">
+        <p className="text-md lg:text-lg leading-[140%] mb-4">
+          6. General terms.
+        </p>
+        <ul className="text-md lg:text-lg leading-[140%] mb-4">
           <li>
             (a) Term and termination. Any party may terminate this EULA upon
             notice to another. In the event of termination, all licenses
