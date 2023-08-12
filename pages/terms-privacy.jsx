@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../components/Navbar'
 
 const TermsPrivacy = () => {
@@ -16,22 +15,23 @@ const TermsPrivacy = () => {
           Terms & Conditions of Use
         </h2>
         <p className="text-lg leading-[140%] mb-4">
-          Welcome to 1mw.com and affiliated websites (the "Web Site"). The goal
-          of this Web Site is to provide you with access to the most
+          Welcome to 1mw.com and affiliated websites (the &quot;Web Site&quot;).
+          The goal of this Web Site is to provide you with access to the most
           comprehensive network of residential real estate products/services and
           related links to meet your needs (the “Content”). Please read our
-          Terms of Use (the "Terms") carefully before continuing on with your
-          use of this Web Site. These Terms shall govern the use of the Web Site
-          and apply to all Internet traffic visiting the Web Site. By accessing
-          or using this Web Site, you agree to the Terms. The Terms are meant to
-          protect all of our Web Site visitors and your use of this Web Site
-          signifies your agreement with these Terms. IF YOU DO NOT AGREE WITH
-          THESE TERMS, DO NOT USE THIS WEB SITE. Wilen ("We", "Us", "Our")
-          reserves the right, in its sole discretion, to modify, alter or
-          otherwise update these Terms at any time. Such modifications shall be
-          effective immediately upon posting. By using this Web Site after we
-          have posted notice of such modifications, alterations, or updates, you
-          agree to be bound by such revised Terms.
+          Terms of Use (the &quot;Terms&quot;) carefully before continuing on
+          with your use of this Web Site. These Terms shall govern the use of
+          the Web Site and apply to all Internet traffic visiting the Web Site.
+          By accessing or using this Web Site, you agree to the Terms. The Terms
+          are meant to protect all of our Web Site visitors and your use of this
+          Web Site signifies your agreement with these Terms. IF YOU DO NOT
+          AGREE WITH THESE TERMS, DO NOT USE THIS WEB SITE. Wilen
+          (&quot;We&quot;, &quot;Us&quot;, &quot;Our&quot;) reserves the right,
+          in its sole discretion, to modify, alter or otherwise update these
+          Terms at any time. Such modifications shall be effective immediately
+          upon posting. By using this Web Site after we have posted notice of
+          such modifications, alterations, or updates, you agree to be bound by
+          such revised Terms.
         </p>
         <p className="text-lg leading-[140%] mb-4">
           In accordance with our goals, this Web Site will permit you to link to
@@ -68,27 +68,27 @@ const TermsPrivacy = () => {
           copyright laws and treaty provisions, privacy and publicity laws, and
           communication regulations and statutes) and are owned and controlled
           by Us or its affiliates, or by third-party content providers,
-          merchants, sponsors, and licensors (collectively "Providers") that
-          have licensed their content or the right to market their products
-          and/or services to Us. Content on this Web Site or any web site owned,
-          operated, licensed, or controlled by the Providers is solely for your
-          personal, non-commercial use. You may print a copy of the Content
-          and/or information contained herein for your personal, non-commercial
-          use only, but you may not copy, reproduce, republish, upload, post,
-          transmit, distribute, and/or exploit the Content or information in any
-          way (including by e-mail or other electronic means) for commercial use
-          without the prior written consent of Us or the Providers. You may
-          request consent by faxing a request to Wilen's Legal Department at
-          973-407-5950. Without the prior written consent of Us or the
-          Providers, your modification of the Content, use of the Content on any
-          other web site or networked computer environment, or use of the
-          Content for any purpose other than personal, non-commercial use
-          violates the rights of the owners of the wilenhomes.com and/or the
-          Provider copyrights, trademarks, or service marks and other
-          proprietary rights and is prohibited. As a condition of your use of
-          this Web Site, you warrant to Us that you will not use our Web Site
-          for any purpose that is unlawful or prohibited by these Terms,
-          including without limitation the posting or transmitting any
+          merchants, sponsors, and licensors (collectively
+          &quot;Providers&quot;) that have licensed their content or the right
+          to market their products and/or services to Us. Content on this Web
+          Site or any web site owned, operated, licensed, or controlled by the
+          Providers is solely for your personal, non-commercial use. You may
+          print a copy of the Content and/or information contained herein for
+          your personal, non-commercial use only, but you may not copy,
+          reproduce, republish, upload, post, transmit, distribute, and/or
+          exploit the Content or information in any way (including by e-mail or
+          other electronic means) for commercial use without the prior written
+          consent of Us or the Providers. You may request consent by faxing a
+          request to Wilen&apos;s Legal Department at 973-407-5950. Without the
+          prior written consent of Us or the Providers, your modification of the
+          Content, use of the Content on any other web site or networked
+          computer environment, or use of the Content for any purpose other than
+          personal, non-commercial use violates the rights of the owners of the
+          wilenhomes.com and/or the Provider copyrights, trademarks, or service
+          marks and other proprietary rights and is prohibited. As a condition
+          of your use of this Web Site, you warrant to Us that you will not use
+          our Web Site for any purpose that is unlawful or prohibited by these
+          Terms, including without limitation the posting or transmitting any
           threatening, libelous, defamatory, obscene, scandalous, inflammatory,
           pornographic, or profane material. If you violate any of these Terms,
           your permission to use our Web Site immediately terminates without the
@@ -109,35 +109,36 @@ const TermsPrivacy = () => {
           You are specifically prohibited from any use of this Web Site, and You
           agree not to use or permit others to use this Web Site, for any of the
           following: (a) take any action that imposes an unreasonable or
-          disproportionately large load on the Web Site's infrastructure,
-          including but not limited to "spam" or other such unsolicited mass
-          e-mailing techniques; (b) disclose to, or share with, the assigned
-          confirmation numbers and/or passwords with any unauthorized third
-          parties or using the assigned confirmation numbers and/or passwords
-          for any unauthorized purpose; (c) attempt to decipher, decompile,
-          disassemble, or reverse engineer any of the software or HTML code
-          comprising or in any way making up a part of this Web Site; (d)
-          upload, post, email, or otherwise transmit any information, Content,
-          or proprietary rights that You do not have a right to transmit under
-          any law or under contractual or fiduciary relationships; (e) violating
-          any applicable local, state, national, or international law, including
-          but not limited to, any regulations having the force of law; and (f)
-          using any robot, spider, intelligent agent, another automatic device,
-          or manual process to search, monitor, or copy Our Web pages, or the
-          Content without Our prior written permission, provided that generally
-          available third-party Web browsers, such as Microsoft Internet
-          Explorer®, may be used without such permission.
+          disproportionately large load on the Web Site&apos;s infrastructure,
+          including but not limited to &apos;spam&apos; or other such
+          unsolicited mass e-mailing techniques; (b) disclose to, or share with,
+          the assigned confirmation numbers and/or passwords with any
+          unauthorized third parties or using the assigned confirmation numbers
+          and/or passwords for any unauthorized purpose; (c) attempt to
+          decipher, decompile, disassemble, or reverse engineer any of the
+          software or HTML code comprising or in any way making up a part of
+          this Web Site; (d) upload, post, email, or otherwise transmit any
+          information, Content, or proprietary rights that You do not have a
+          right to transmit under any law or under contractual or fiduciary
+          relationships; (e) violating any applicable local, state, national, or
+          international law, including but not limited to, any regulations
+          having the force of law; and (f) using any robot, spider, intelligent
+          agent, another automatic device, or manual process to search, monitor,
+          or copy Our Web pages, or the Content without Our prior written
+          permission, provided that generally available third-party Web
+          browsers, such as Microsoft Internet Explorer®, may be used without
+          such permission.
         </p>
         <p className="text-lg leading-[140%] mb-4 font-semibold">Links</p>
         <p className="text-lg leading-[140%] mb-4">
-          This Web Site may contain links to other web sites ("Linked Sites").
-          The Linked Sites are provided for your convenience and information
-          only and, as such, you access them at your own risk. The content of
-          any Linked Sites is not under Our control, and We are not responsible
-          for, and do not endorse, such content, whether or not We are
-          affiliated with the owners of such Linked Sites. You may not establish
-          a hyperlink to this Web Site or provide any links that state or imply
-          any sponsorship or endorsement of your web site by Us, or our
+          This Web Site may contain links to other web sites (&quot;Linked
+          Sites&quot;). The Linked Sites are provided for your convenience and
+          information only and, as such, you access them at your own risk. The
+          content of any Linked Sites is not under Our control, and We are not
+          responsible for, and do not endorse, such content, whether or not We
+          are affiliated with the owners of such Linked Sites. You may not
+          establish a hyperlink to this Web Site or provide any links that state
+          or imply any sponsorship or endorsement of your web site by Us, or our
           affiliates, or Providers. This website also incorporates Google Maps.
           Click Here for the Google Maps Terms of Use.
         </p>
@@ -145,7 +146,7 @@ const TermsPrivacy = () => {
           Disclaimer of warranties and liability
         </p>
         <p className="text-lg leading-[140%] mb-4">
-          ALL CONTENT ON THIS WEB SITE IS PROVIDED "AS IS" AND WITHOUT
+          ALL CONTENT ON THIS WEB SITE IS PROVIDED &quot;AS IS&quot; AND WITHOUT
           WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. OTHER THAN THOSE
           WARRANTIES WHICH, UNDER THE U.S. LAWS APPLICABLE TO THESE TERMS, ARE
           IMPLIED BY LAW AND ARE INCAPABLE OF EXCLUSION, RESTRICTION, OR
@@ -166,25 +167,26 @@ const TermsPrivacy = () => {
           SITE.
         </p>
         <p className="text-lg leading-[140%] mb-4">
-          ALL CONTENT ON THIS WEB SITE IS PROVIDED "AS IS" AND WITHOUT
-          WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. OTHER THAN THOSE
-          WARRANTIES WHICH, UNDER THE U.S. LAWS APPLICABLE TO THESE TERMS, ARE
-          IMPLIED BY LAW AND ARE INCAPABLE OF EXCLUSION, RESTRICTION, OR
-          MODIFICATION, WILEN DISCLAIMS ANY AND ALL WARRANTIES, EXPRESS OR
-          IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
-          MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. NEITHER WILEN,
-          ITS AFFILIATED OR RELATED ENTITIES, NOR THE PROVIDERS, NOR ANY PERSON
-          INVOLVED IN THE CREATION, PRODUCTION, AND DISTRIBUTION OF THIS WEB
-          SITE WARRANT THAT THE FUNCTIONS CONTAINED IN THIS WEB SITE WILL BE
-          UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT
-          THE SERVER THAT MAKES THE CONTENT AVAILABLE WILL BE FREE OF VIRUSES OR
-          OTHER HARMFUL COMPONENTS. THE CONTENT THAT YOU ACCESS ON THIS WEB SITE
-          IS PROVIDED SOLELY FOR YOUR CONVENIENCE AND INFORMATION ONLY. WILEN
-          DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE RESULTS
-          THAT MAY BE OBTAINED FROM THE USE OF THIS WEB SITE, OR AS TO THE
-          RELIABILITY, ACCURACY, OR CURRENCY OF ANY INFORMATION CONTENT,
-          SERVICE, AND/OR MERCHANDISE ACQUIRED PURSUANT TO YOUR USE OF THIS WEB
-          SITE.
+          ALL CONTENT ON THIS WEB SITE IS PROVIDED expenses, damages, and costs,
+          including reasonable attorneys&apos; AS IS expenses, damages, and
+          costs, including reasonable attorneys&apos; AND WITHOUT WARRANTIES OF
+          ANY KIND EITHER EXPRESS OR IMPLIED. OTHER THAN THOSE WARRANTIES WHICH,
+          UNDER THE U.S. LAWS APPLICABLE TO THESE TERMS, ARE IMPLIED BY LAW AND
+          ARE INCAPABLE OF EXCLUSION, RESTRICTION, OR MODIFICATION, WILEN
+          DISCLAIMS ANY AND ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT
+          NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+          A PARTICULAR PURPOSE. NEITHER WILEN, ITS AFFILIATED OR RELATED
+          ENTITIES, NOR THE PROVIDERS, NOR ANY PERSON INVOLVED IN THE CREATION,
+          PRODUCTION, AND DISTRIBUTION OF THIS WEB SITE WARRANT THAT THE
+          FUNCTIONS CONTAINED IN THIS WEB SITE WILL BE UNINTERRUPTED OR
+          ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVER THAT
+          MAKES THE CONTENT AVAILABLE WILL BE FREE OF VIRUSES OR OTHER HARMFUL
+          COMPONENTS. THE CONTENT THAT YOU ACCESS ON THIS WEB SITE IS PROVIDED
+          SOLELY FOR YOUR CONVENIENCE AND INFORMATION ONLY. WILEN DOES NOT
+          WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE RESULTS THAT MAY BE
+          OBTAINED FROM THE USE OF THIS WEB SITE, OR AS TO THE RELIABILITY,
+          ACCURACY, OR CURRENCY OF ANY INFORMATION CONTENT, SERVICE, AND/OR
+          MERCHANDISE ACQUIRED PURSUANT TO YOUR USE OF THIS WEB SITE.
         </p>
         <p className="text-lg leading-[140%] mb-4 font-semibold">
           Indemnification
@@ -193,8 +195,8 @@ const TermsPrivacy = () => {
           You agree to indemnify, defend, and hold harmless Wilen and the
           Providers, its and their officers, directors, employees, affiliates,
           agents, licensors, and suppliers from and against all losses,
-          expenses, damages, and costs, including reasonable attorneys' fees,
-          resulting from any violation by you of these Terms.
+          expenses, damages, and costs, including reasonable attorneys&apos;
+          fees, resulting from any violation by you of these Terms.
         </p>
         <p className="text-lg leading-[140%] mb-4 font-semibold">
           Third-party rights
@@ -248,13 +250,13 @@ const TermsPrivacy = () => {
         </p>
         <h2 className="font-bold text-[30px] mb-4 mt-10">Privacy Policy</h2>
         <p className="text-lg leading-[140%] mb-4">
-          This Privacy Policy ("Policy") is intended to provide you with
-          comprehensive information about how Wilen ("we," "us," or "our")
-          collects, uses, discloses, and otherwise processes personal
-          information in connection with our services, websites, and
-          applications (collectively, the "Services"). Please read this Policy
-          carefully to understand our practices regarding your personal
-          information.
+          This Privacy Policy (&quot;Policy&quot;) is intended to provide you
+          with comprehensive information about how Wilen (&quot;we,&quot;
+          &quot;us,&quot; or &quot;our&quot;) collects, uses, discloses, and
+          otherwise processes personal information in connection with our
+          services, websites, and applications (collectively, the
+          &quot;Services&quot;). Please read this Policy carefully to understand
+          our practices regarding your personal information.
         </p>
         <p className="text-lg leading-[140%] mb-4 font-semibold">
           1. SCOPE OF OUR PRIVACY NOTICE
