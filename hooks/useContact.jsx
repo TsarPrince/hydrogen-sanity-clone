@@ -1,7 +1,7 @@
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 import { init } from 'emailjs-com'
-init('LyVl771Thy7bdQNK2')
+init('3GMfbhK_wWvhtTDCO')
 import { useState } from 'react'
 
 export default function useContact() {
@@ -19,7 +19,7 @@ export default function useContact() {
     setLoading(true)
 
     emailjs
-      .send('service_klc1ubt', 'template_k0lzk21', {
+      .send('wilenhomes', 'template_txjwpek', {
         phone: formData.phone,
         email: formData.email,
         home: formData.home,
