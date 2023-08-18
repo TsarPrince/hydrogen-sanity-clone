@@ -42,7 +42,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
                 }`}
               >
-                <img className="h-4 lg:h-6" src="/wilen.webp"></img>
+                <img className="max-w-[120px]" src="/wilen-logo.webp"></img>
                 {/* WILEN REALTY */}
               </div>
               <p

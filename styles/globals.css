@@ -111,3 +111,23 @@ html {
   bottom: 0;
   left: -100%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.swal2-styled {
+  background-color: #ffe1d1 !important;
+  padding: 10px 40px !important;
+  color: black !important;
+}
+
+.swal2-title {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.swal2-html-container {
+  color: #757575 !important;
+}

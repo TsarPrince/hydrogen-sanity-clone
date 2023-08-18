@@ -7,10 +7,12 @@ const Footer = () => {
     <footer className="-mt-overlap" role="contentinfo">
       <div className="align-start relative overflow-hidden xl:space-x-10 rounded-xl bg-peach px-4 py-8 md:px-8 md:py-16 flex flex-wrap xl:flex-nowrap items-start justify-between">
         <div className="w-full sm:w-1/2 xl:w-full max-w-xs  xl:mx-auto">
-          <h2 className="whitespace-pre-line text-3xl 2xl:text-[60px]">
-            WILEN
-          </h2>
-          <div className="mt-4">
+          <img
+            src="/wilen-logo.webp"
+            className="max-w-[220px]"
+            alt="wilen logo"
+          />
+          <div className="mt-5">
             <ul>
               <li className="mb-3">
                 <Link
@@ -85,7 +87,7 @@ const Footer = () => {
           <h2 className="whitespace-pre-line text-3xl 2xl:text-[60px] uppercase">
             Minnesota Real Estate
           </h2>
-          <div className="mt-4 leading-paragraph">
+          <div className="mt-5 leading-paragraph">
             <p>
               We take pride in presenting an extensive and diverse collection of
               real estate listings, catering to every taste and preference.
