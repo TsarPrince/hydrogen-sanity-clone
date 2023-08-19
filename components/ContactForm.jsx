@@ -7,19 +7,23 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="lg:max-w-xl mx-auto justify-center flex flex-col items-start"
+        className="max-w-full lg:max-w-xs xl:max-w-md justify-center flex flex-col items-start"
       >
-        <h2 className="whitespace-pre-line text-3xl 2xl:text-[60px] mb-5">
-          HELLO!
-        </h2>
-
+        <div className="flex items-center mb-5 space-x-2">
+          <h2 className="whitespace-pre-line text-2xl font-semibold">Hello!</h2>
+          <img
+            src="/wilen-logo.webp"
+            className="max-w-[120px] invert"
+            alt="wilen logo"
+          />
+        </div>
         <input
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           value={formData.phone}
           required
           type="number"
           placeholder="Phone"
-          className="border-b border-b-black/20 border-l-0 border-r-0 border-t-0 bg-transparent w-full mb-4 focus:border-black focus:outline-none focus-within:outline-black focus:ring-0"
+          className="border-b border-b-white/100 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
         <input
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -27,7 +31,7 @@ const ContactForm = () => {
           required
           type="email"
           placeholder="Email Address"
-          className="border-b border-b-black/20 border-l-0 border-r-0 border-t-0 bg-transparent w-full mb-4 focus:border-black focus:outline-none focus-within:outline-black focus:ring-0"
+          className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
         <input
           onChange={(e) => setFormData({ ...formData, home: e.target.value })}
@@ -35,7 +39,7 @@ const ContactForm = () => {
           required
           type="text"
           placeholder="Home Address"
-          className="border-b border-b-black/20 border-l-0 border-r-0 border-t-0 bg-transparent w-full mb-4 focus:border-black focus:outline-none focus-within:outline-black focus:ring-0"
+          className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
         <textarea
           onChange={(e) =>
@@ -43,7 +47,7 @@ const ContactForm = () => {
           }
           value={formData.message}
           required
-          className="border-b resize-none border-b-black/20 border-l-0 border-r-0 border-t-0 bg-transparent w-full mb-4 focus:border-black focus:outline-none focus-within:outline-black focus:ring-0"
+          className="border-b resize-none border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
           name="Message"
           id="message"
           placeholder="Message"
@@ -52,7 +56,7 @@ const ContactForm = () => {
         ></textarea>
         <button
           type="submit"
-          className="font-bold transition-all duration-300 ease-in-out text-xl hover:decoration-[0.1em] hover:underline-offset-[0.1em] hover:underline"
+          className="font-bold bg-peach border-peach border text-black px-12 py-3 mt-6 rounded-full  transition-all duration-300 ease-in-out text-xl hover:bg-transparent hover:text-peach"
         >
           {isLoading ? 'Sending...' : 'Send'}
         </button>
