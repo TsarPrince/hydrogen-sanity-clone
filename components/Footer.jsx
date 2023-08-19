@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="-mt-overlap" role="contentinfo">
       <div className="align-start relative overflow-hidden xl:space-x-10 rounded-xl bg-peach px-4 py-8 md:px-8 md:py-10">
-        <div className="w-full max-w-3xl mx-auto text-center mt-10 sm:mt-20 xl:mt-0">
-          <h2 className="whitespace-pre-line text-3xl 2xl:text-[80px]">
+        <div className="w-full max-w-3xl mx-auto text-center">
+          <h2 className="whitespace-pre-line text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[100px] font-medium">
             Minnesota Real Estate
           </h2>
           <div className="mt-5 leading-paragraph">
