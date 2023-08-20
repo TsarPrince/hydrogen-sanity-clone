@@ -6,9 +6,10 @@ import { useState } from 'react'
 
 export default function useContact() {
   const initialState = {
+    name: '',
     phone: '',
     email: '',
-    home: '',
+    propertyaddress: '',
     message: '',
   }
   const [formData, setFormData] = useState(initialState)
@@ -20,9 +21,10 @@ export default function useContact() {
 
     emailjs
       .send('wilenhomes', 'template_txjwpek', {
+        name: formData.name,
         phone: formData.phone,
         email: formData.email,
-        home: formData.home,
+        propertyaddress: formData.propertyaddress,
         message: formData.message,
       })
       .then(() => {

@@ -7,16 +7,21 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="max-w-full lg:max-w-xs xl:max-w-md justify-center flex flex-col items-start"
+        className="max-w-full lg:max-w-sm xl:max-w-md justify-center flex flex-col items-start"
       >
         <div className="flex items-center mb-5 space-x-2">
-          <h2 className="whitespace-pre-line text-2xl font-semibold">Hello!</h2>
-          <img
-            src="/wilen-logo.webp"
-            className="max-w-[120px] invert"
-            alt="wilen logo"
-          />
+          <h2 className="whitespace-pre-line text-[28px] sm:text-2xl font-semibold uppercase">
+            Let's Connect
+          </h2>
         </div>
+        <input
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          value={formData.name}
+          required
+          type="text"
+          placeholder="Name"
+          className="border-b border-b-white/100 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
+        />
         <input
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           value={formData.phone}
@@ -34,11 +39,13 @@ const ContactForm = () => {
           className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
         <input
-          onChange={(e) => setFormData({ ...formData, home: e.target.value })}
-          value={formData.home}
+          onChange={(e) =>
+            setFormData({ ...formData, propertyaddress: e.target.value })
+          }
+          value={formData.propertyaddress}
           required
           type="text"
-          placeholder="Home Address"
+          placeholder="Your Property Address"
           className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
         <textarea
