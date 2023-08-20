@@ -11,7 +11,7 @@ const ContactForm = () => {
       >
         <div className="flex items-center mb-5 space-x-2">
           <h2 className="whitespace-pre-line text-[28px] sm:text-2xl font-semibold uppercase">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
         </div>
         <input
