@@ -48,19 +48,17 @@ const ContactForm = () => {
           placeholder="Your Property Address"
           className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
         />
-        <textarea
+        <input
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
           value={formData.message}
           required
-          className="border-b resize-none border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
-          name="Message"
-          id="message"
+          type="text"
           placeholder="Message"
-          cols="30"
-          rows="5"
-        ></textarea>
+          className="border-b border-b-white/50 text-white placeholder:text-white/100 border-l-0 border-r-0 border-t-0 font-medium bg-transparent w-full mb-4 focus:border-white focus:placeholder:text-white focus:outline-none focus-within:outline-white focus:ring-0"
+        />
+
         <button
           type="submit"
           className="font-bold bg-peach border-peach border text-black px-12 py-3 mt-6 rounded-full  transition-all duration-300 ease-in-out text-xl hover:bg-transparent hover:text-peach"
