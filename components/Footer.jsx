@@ -15,7 +15,7 @@ const Footer = () => {
             <p className="font-bold text-xl">
               Our main focus is to provide the highest quality real estate
               services available anywhere; and to be an instrumental part of
-              each client&apos;`s successful real estate journey.
+              each client&apos;s successful real estate journey.
             </p>{' '}
           </div>
         </div>
@@ -23,9 +23,9 @@ const Footer = () => {
 
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
-        <div className="flex flex-wrap xl:flex-nowrap items-start pt-12 px-4 xl:px-8 justify-between ">
+        <div className="flex flex-wrap xl:flex-nowrap items-start pt-12 px-4 xl:px-8 justify-between xl:space-x-12">
           <div className="w-full sm:w-1/2 xl:w-full">
-            <div className="max-w-xl">
+            <div>
               <img
                 src="/footer-logoWILEN.png"
                 className="max-w-full sm:max-w-[400px] mb-6 sm:mb-8"
@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="w-full mt-8 sm:mt-12 xl:mt-0">
             <ContactForm />
           </div>
-          <div className="w-full hidden xl:flex justify-end">
+          <div className="w-full hidden xl:block">
             <FooterLinks />
           </div>
         </div>
