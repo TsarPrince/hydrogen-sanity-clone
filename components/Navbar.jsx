@@ -36,7 +36,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
 
           {/* Main logo */}
           <Link href="/">
-            <div className="absolute bottom-0 left-1/2 top-0 flex w-[250px] -translate-x-1/2 items-center lg:w-[550px]">
+            <div className="absolute bottom-0 left-1/2 top-0 flex w-[250px] -translate-x-1/2 items-center xl:w-[550px]">
               <div
                 className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 top-4 lg:top-6 w-full ${
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
