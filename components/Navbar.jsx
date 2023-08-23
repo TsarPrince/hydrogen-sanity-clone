@@ -31,27 +31,27 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
           <div
             className={`${
               trigger ? 'bg-white' : blendIntoColor
-            } absolute inset-0 backdrop-blur-lg backdrop-filter duration-500 opacity-100`}
+            } absolute inset-0 bg-opacity-90 backdrop-blur-lg backdrop-filter duration-500 opacity-100`}
           ></div>
 
           {/* Main logo */}
           <Link href="/">
-            <div className="absolute bottom-0 left-1/2 top-0 flex w-[250px] -translate-x-1/2 items-center lg:w-[400px] 2xl:w-[550px]">
+            <div className="absolute bottom-0 left-1/2 top-0 flex w-[400px] -translate-x-1/2 items-center lg:w-[300px]">
               <div
-                className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 top-4 lg:top-6 w-full ${
+                className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 top-4 lg:top-6 ${
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
                 }`}
               >
-                <img className="w-full" src="/header-logoWILEN.png"></img>
+                <img className="max-w-[120px]" src="/wilen-logo.webp"></img>
                 {/* WILEN REALTY */}
               </div>
-              {/* <p
+              <p
                 className={`${
                   trigger ? 'opacity-0' : ''
                 }  lg:font-bold lg:text-md text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
               >
                 COLDWELL BANKER
-              </p> */}
+              </p>
             </div>
           </Link>
         </div>
