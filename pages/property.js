@@ -78,6 +78,8 @@ const IndivdualProperty = () => {
     BathroomsTotalInteger,
   } = property.attributes
 
+  console.log(property.attributes)
+
   return (
     <div className="mt-[70px] lg:mt-[100px]">
       <Navbar />
@@ -123,7 +125,10 @@ const IndivdualProperty = () => {
               <li>{BedroomsTotal} Bedrooms</li>
               <li>{BathroomsTotalInteger} Bathrooms</li>
               <li>
-                {LotSizeSquareFeet || NST_SqFtTotal || '—'} Total Finished SqFt
+                {prettifyNumber(Math.round(LotSizeSquareFeet)) ||
+                  prettifyNumber(Math.round(NST_SqFtTotal)) ||
+                  '—'}{' '}
+                Total Finished SqFt
               </li>
               <li>{Basement?.join(', ') || '—'} Basement</li>
               <li>
@@ -135,7 +140,7 @@ const IndivdualProperty = () => {
                 <span className=""> High School District</span>
               </li>
               <li>${prettifyNumber(TaxAnnualAmount)} Annual Taxes</li>
-              <li>{NST_LakeAcres || '—'} LakeFront</li>
+              <li>{NST_LakeAcres ? 'Lakefront available' : 'No Lakefront'}</li>
               <li>{ListOfficeName}</li>
             </ul>
 
