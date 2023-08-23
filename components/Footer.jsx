@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="w-full mt-8 sm:mt-12 xl:mt-0">
             <ContactForm />
           </div>
-          <div className="w-full hidden xl:block">
+          <div className="w-full hidden xl:flex justify-center">
             <FooterLinks />
           </div>
         </div>
