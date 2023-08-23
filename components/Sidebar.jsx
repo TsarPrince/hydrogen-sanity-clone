@@ -96,17 +96,9 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                       }}
                     ></div>
                     <div className="relative text-center text-md sm:text-lg font-bold ">
-                      We&apos;re Always Open <br />
                       <a className="hover:underline" href="tel:+612-400-9000">
                         612-400-9000
                       </a>{' '}
-                      <br />
-                      <a
-                        className="hover:underline"
-                        href="mailto:hello@1mw.com"
-                      >
-                        hello@1mw.com
-                      </a>
                     </div>
                   </div>
                 </div>
