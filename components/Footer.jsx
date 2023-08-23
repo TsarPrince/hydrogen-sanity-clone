@@ -23,7 +23,7 @@ const Footer = () => {
 
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
-        <div className="flex flex-wrap xl:flex-nowrap items-start pt-12 px-4 xl:px-8 justify-between xl:space-x-12">
+        <div className="flex flex-wrap xl:flex-nowrap items-start pt-8 sm:pt-12 px-4 xl:px-8 justify-between xl:space-x-12">
           <div className="w-full sm:w-1/2 xl:w-full">
             <div>
               <img
