@@ -12,26 +12,22 @@ const Footer = () => {
             Minnesota Real Estate
           </h2>
           <div className="mt-5 xl:mt-8 leading-paragraph max-w-[970px] mx-auto">
-            <p className="font-bold text-xl">
-              Our main focus is to provide the highest quality real estate
-              services available anywhere; and to be an instrumental part of
-              each client&apos;s successful real estate journey.
-            </p>{' '}
+            <p className="font-bold text-xl">Discover Unrivaled Expertise</p>{' '}
           </div>
         </div>
       </div>
 
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
-        <div className="flex flex-wrap xl:flex-nowrap items-start pt-8 sm:pt-12 px-4 xl:px-8 justify-between">
+        <div className="flex flex-wrap xl:flex-nowrap items-start pt-8 sm:pt-12 px-4 xl:px-8 justify-between max-w-[1400px] mx-auto">
           <div className="w-full sm:w-1/2 xl:w-full">
-            <div className="lg:max-w-sm xl:max-w-lg">
+            <div className="lg:max-w-sm xl:max-w-xl">
               <img
                 src="/footer-logoWILEN.png"
                 className="max-w-full sm:max-w-[400px] mb-6 sm:mb-8"
                 alt="wilen logo"
               />
-              <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[28px] leading-[130%]">
+              <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[30px] leading-[130%]">
                 Wilen is made up of highly experienced, multidisciplinary real
                 estate professionals whose highest priority is serving you.
                 Utilizing our unprecedented resources, we will craft a unique
@@ -40,16 +36,18 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="w-full mt-8 sm:mt-0 sm:w-1/2 flex xl:w-full sm:justify-center">
+          <div className="w-full xl:mx-4  mt-8 sm:mt-0 xl:mt-12 sm:w-1/2 xl:hidden xl:w-full flex sm:justify-end xl:justify-center">
             <FooterLinks />
           </div>
           <div className="w-full mt-8 sm:mt-12 xl:mt-0">
             <ContactForm />
           </div>
         </div>
-
-        <div className="border-t mx-4 lg:mx-20 border-b-white mt-8 sm:mt-12">
-          <div className="mx-auto max-w-[66rem] sm:px-4 py-8 sm:py-12 text-center text-md leading-caption md:px-8">
+        <div className="w-full mx-4  mt-12  sm:w-1/2 hidden xl:flex xl:w-full sm:justify-center">
+          <FooterLinks />
+        </div>
+        <div className="mx-4 lg:mx-20 py-8 sm:py-12">
+          <div className="mx-auto max-w-[66rem] sm:px-4 text-center text-md leading-caption md:px-8">
             <p>
               <Link className="linkTextNavigation" href="/terms-privacy">
                 Agency Relationships Terms & Privacy Information

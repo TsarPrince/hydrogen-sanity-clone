@@ -4,8 +4,8 @@ import React from 'react'
 const FooterLinks = () => {
   return (
     <>
-      <ul>
-        <li className="mb-4">
+      <ul className="xl:flex xl:items-center space-y-4 xl:space-y-0 xl:space-x-6">
+        <li>
           <Link
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="/buy"
@@ -13,7 +13,7 @@ const FooterLinks = () => {
             BUY
           </Link>
         </li>
-        <li className="mb-4">
+        <li>
           <Link
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="/sell"
@@ -22,7 +22,7 @@ const FooterLinks = () => {
           </Link>
         </li>
 
-        <li className="mb-4">
+        <li>
           <a
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="tel:6124009000"
@@ -30,7 +30,7 @@ const FooterLinks = () => {
             612-400-9000
           </a>
         </li>
-        <li className="mb-4">
+        <li>
           <a
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="mailto:m@1mw.com"
@@ -38,7 +38,7 @@ const FooterLinks = () => {
             m@1mw.com
           </a>
         </li>
-        <li className="mb-4">
+        <li>
           <a
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="https://www.instagram.com/mikewilen"
@@ -48,7 +48,7 @@ const FooterLinks = () => {
             Instagram
           </a>
         </li>
-        <li className="mb-4">
+        <li>
           <a
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
             href="https://www.facebook.com/mikewilenrealestate"
