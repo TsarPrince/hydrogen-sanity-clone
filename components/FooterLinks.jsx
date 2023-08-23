@@ -21,14 +21,7 @@ const FooterLinks = () => {
             SELL
           </Link>
         </li>
-        <li className="mb-4">
-          <Link
-            className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
-            href="/abbout"
-          >
-            About
-          </Link>
-        </li>
+
         <li className="mb-4">
           <a
             className="linkTextNavigation font-semibold uppercase text-[20px] sm:text-[28px]"
