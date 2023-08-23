@@ -15,7 +15,7 @@ const Footer = () => {
             <p className="font-bold text-xl">
               Our main focus is to provide the highest quality real estate
               services available anywhere; and to be an instrumental part of
-              each client's successful real estate journey.
+              each client&apos;`s successful real estate journey.
             </p>{' '}
           </div>
         </div>
