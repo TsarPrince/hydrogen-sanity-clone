@@ -36,16 +36,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        {/* <h1 className="mt-7 max-w-[72rem] whitespace-pre-line text-center text-3xl md:text-5xl">
-          Minnesota Real Estate
-        </h1>
-        <div className="mt-4 leading-paragraph max-w-4xl text-center">
-          We take pride in presenting an extensive and diverse collection of
-          real estate listings, catering to every taste and preference. Whether
-          you&apos;re seeking a cozy loft, luxurious mansion, serene countryside
-          retreat, or bustling commercial space, we have it all under one roof.
-        </div> */}
       </div>
     </>
   )
