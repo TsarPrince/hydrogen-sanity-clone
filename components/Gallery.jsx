@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 import CircleButton from './elements/CircleButton'
 import { ArrowRightIcon } from './icons/ArrowRight'
+import ImageWithBlurredBackground from './ImageWithBlurredBackground'
 
 export default function Gallery({ media }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -51,12 +52,16 @@ export default function Gallery({ media }) {
       <div className="h-full overflow-hidden flex" ref={emblaRef}>
         <div className="flex items-center md:items-start w-full md:h-full">
           {/* Slides */}
-          {media.map((med, key) => {
+          {media.map(({ alt, src, backgroundImage }, key) => {
             return (
-              <div key={key} className="w-full md:h-full shrink-0 grow-0">
-                <img
-                  src={med}
-                  className="h-full select-none mx-auto object-cover"
+              <div
+                key={key}
+                className="w-full md:h-full flex items-center justify-center shrink-0 grow-0"
+              >
+                <ImageWithBlurredBackground
+                  alt={alt}
+                  src={src}
+                  backgroundImage={backgroundImage}
                 />
               </div>
             )

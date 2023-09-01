@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
@@ -42,13 +41,16 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
                 }`}
               >
-                <img className="max-w-[120px]" src="/wilen-logo.webp"></img>
+                <img
+                  className="max-w-[80px] lg:max-w-[120px]"
+                  src="/wilen-logo.webp"
+                ></img>
                 {/* WILEN REALTY */}
               </div>
               <p
                 className={`${
                   trigger ? 'opacity-0' : ''
-                }  lg:font-bold lg:text-md text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
+                } text-xs font-bold lg:text-md text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
               >
                 COLDWELL BANKER
               </p>
