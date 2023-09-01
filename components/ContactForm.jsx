@@ -7,7 +7,7 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="max-w-full lg:max-w-sm xl:max-w-md xl:mx-auto justify-center flex flex-col items-start"
+        className="max-w-full lg:max-w-sm xl:max-w-lg xl:ml-auto justify-center flex flex-col items-start"
       >
         <div className="flex items-center mb-5 space-x-2">
           <h2 className="whitespace-pre-line text-[28px] sm:text-2xl font-semibold uppercase">

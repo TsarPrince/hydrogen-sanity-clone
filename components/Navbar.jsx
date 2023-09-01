@@ -141,9 +141,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
                   strokeWidth="1.2"
                 ></circle>
               </svg>
-              <div className="inline-flex items-center font-bold">
-                Properties
-              </div>
+              <div className="inline-flex items-center font-bold">Menu</div>
             </button>
             <div
               hidden=""
