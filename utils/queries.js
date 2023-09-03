@@ -81,7 +81,7 @@ const getPropertiesByQueryParams = (page, pageSize, q) =>
 const getPropertiesByListPrice = (page, pageSize) =>
   qs.stringify(
     {
-      sort: ['ListPrice:DESC', 'id:ASC'],
+      sort: ['ModificationTimestamp:DESC', 'id:ASC'],
       pagination: {
         page,
         pageSize,
