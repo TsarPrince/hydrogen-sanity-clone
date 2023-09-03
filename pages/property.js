@@ -78,8 +78,6 @@ const IndivdualProperty = () => {
     BathroomsTotalInteger,
   } = property.attributes
 
-  console.log(property.attributes)
-
   return (
     <div className="mt-[70px] lg:mt-[100px]">
       <Navbar />
