@@ -62,13 +62,18 @@ const getPropertiesByQueryParams = (page, pageSize, q) =>
               $eq: q,
             },
           },
-          // search on Numerical fields startshere
+          // search on Numerical fields starts here
           Number(q)
-            ? {
+            ? ({
                 ListPrice: {
                   $eq: q,
                 },
-              }
+              },
+              {
+                StreetNumber: {
+                  $eq: q,
+                },
+              })
             : {},
         ],
       },
