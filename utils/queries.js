@@ -31,6 +31,13 @@ const getPropertiesByQueryParams = (page, pageSize, q) =>
       },
       populate: 'Photos',
       filters: {
+        $and: [
+          {
+            StandardStatus: {
+              $in: ['Active', 'Coming Soon'],
+            },
+          },
+        ],
         $or: [
           {
             City: {
