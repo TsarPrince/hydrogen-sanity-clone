@@ -58,7 +58,9 @@ const Card = ({
                 alt={Photos?.data?.[0]?.attributes.alternativeText}
                 decoding="async"
                 loading="lazy"
-                src={Photos?.data?.[0]?.attributes.url}
+                src={
+                  Photos?.data?.[0]?.attributes.url || '/PhotosComingSoon.webp'
+                }
                 className={`h-full w-full object-cover object-center transition-opacity ${
                   loaded ? 'opacity-100' : 'opacity-0'
                 }}`}
