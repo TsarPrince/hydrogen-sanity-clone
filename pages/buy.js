@@ -8,14 +8,14 @@ import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
 import useFetch from '../hooks/useFetch'
 
-const StandardStatus = () => {
+const BuyPage = () => {
   const router = useRouter()
   let { page, pageSize } = router.query
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
   const { data, error, isLoading } = useFetch({ page, pageSize })
-
+  console.log({ data, error, isLoading })
   const properties = data?.data
   const pagination = data?.meta?.pagination
 
@@ -52,4 +52,4 @@ const StandardStatus = () => {
   )
 }
 
-export default StandardStatus
+export default BuyPage

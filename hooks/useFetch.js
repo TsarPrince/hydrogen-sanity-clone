@@ -36,7 +36,7 @@ const useFetch = ({ page, pageSize, standardStatus, q }) => {
       // sort d.attributes.Photos.data based on the Order in d.attributes.Media
       data.data.forEach((d) => {
         const media = {}
-        d.attributes.Media.forEach((m) => (media[m.MediaKey] = m.Order))
+        d.attributes.Media?.forEach((m) => (media[m.MediaKey] = m.Order))
         d.attributes.Photos.data?.sort(
           (a, b) => media[a.attributes.caption] - media[b.attributes.caption]
         )
