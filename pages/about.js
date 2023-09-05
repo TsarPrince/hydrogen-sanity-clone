@@ -11,8 +11,6 @@ const About = ({ aboutpost }) => {
       <div className="text-red-500 pt-40">
         {aboutpost.length > 0 &&
           aboutpost
-            .slice(0)
-            .reverse()
             .map((post, index) => <AboutItem key={index} post={post} />)}
       </div>
     </>
