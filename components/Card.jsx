@@ -35,13 +35,9 @@ const Card = ({
         <Link
           className="absolute left-0 top-0 h-full w-full"
           href={{
-            pathname: '/listing',
+            pathname: '/property',
             query: {
-              q,
-              standardStatus,
               id: ListingId,
-              page,
-              pageSize,
             },
           }}
         >
