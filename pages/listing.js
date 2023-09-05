@@ -65,16 +65,16 @@ const IndivdualProperty = ({ property }) => {
         <meta property="og:description" content={PublicRemarks} />
         <meta
           property="og:image"
-          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail.url}
+          content={Photos?.data?.[0]?.attributes?.url}
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta
           property="og:image:width"
-          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail.width}
+          content={Photos?.data?.[0]?.attributes?.width}
         />
         <meta
           property="og:image:height"
-          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail.height}
+          content={Photos?.data?.[0]?.attributes?.height}
         />
 
         <meta
@@ -84,7 +84,7 @@ const IndivdualProperty = ({ property }) => {
         <meta name="twitter:description" content={PublicRemarks} />
         <meta
           name="twitter:image"
-          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail.url}
+          content={Photos?.data?.[0]?.attributes?.url}
         />
         <meta property="twitter:image:type" content="image/jpeg" />
       </Head>
