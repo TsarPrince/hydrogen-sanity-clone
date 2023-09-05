@@ -58,6 +58,7 @@ const IndivdualProperty = ({ property }) => {
         <title>
           {`${ListingAddressCombined} | ${ListingId} | Mike Wilen Realty`}
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"
           content={`${ListingAddressCombined} | ${ListingId} | Mike Wilen Realty`}
@@ -65,18 +66,19 @@ const IndivdualProperty = ({ property }) => {
         <meta property="og:description" content={PublicRemarks} />
         <meta
           property="og:image"
-          content={Photos?.data?.[0]?.attributes?.url}
+          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail?.url}
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta
           property="og:image:width"
-          content={Photos?.data?.[0]?.attributes?.width}
+          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail?.width}
         />
         <meta
           property="og:image:height"
-          content={Photos?.data?.[0]?.attributes?.height}
+          content={Photos?.data?.[0]?.attributes?.formats?.thumbnail?.height}
         />
-
+        {/* Twitter will read the og:title, og:image and og:description tags for their card */}
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta
           name="twitter:title"
           content={`${ListingAddressCombined} | ${ListingId} | Mike Wilen Realty`}

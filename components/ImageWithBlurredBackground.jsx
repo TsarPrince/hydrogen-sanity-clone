@@ -22,6 +22,8 @@ const ImageWithBlurredBackground = ({ alt, src, backgroundImage }) => {
           setLoaded(true)
         }}
         onError={() => setLoaded(true)}
+        decoding="async"
+        loading="lazy"
       />
     </div>
   )
