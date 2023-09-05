@@ -48,7 +48,6 @@ const IndivdualProperty = ({ property }) => {
     BedroomsTotal,
     BathroomsTotalInteger,
   } = property.attributes
-  console.log(Photos)
 
   const ListingAddressCombined = `${StreetNumber} ${StreetName} ${StreetSuffix}, ${City} ${StateOrProvince} ${PostalCode}`
 
