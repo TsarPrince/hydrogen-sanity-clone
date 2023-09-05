@@ -21,6 +21,30 @@ const getPropertiesByStandardStatus = (page, pageSize, standardStatus) =>
     }
   )
 
+const getPropertiesByListingId = (ListingId) =>
+  qs.stringify(
+    {
+      populate: 'Photos',
+      filters: {
+        $and: [
+          {
+            StandardStatus: {
+              $in: ['Active', 'Coming Soon'],
+            },
+          },
+          {
+            ListingId: {
+              $eq: ListingId,
+            },
+          },
+        ],
+      },
+    },
+    {
+      encodeValuesOnly: true, // prettify URL
+    }
+  )
+
 const getPropertiesByQueryParams = (page, pageSize, q) =>
   qs.stringify(
     {
@@ -116,6 +140,7 @@ const getPropertiesByListPrice = (page, pageSize) =>
 
 export {
   getPropertiesByStandardStatus,
+  getPropertiesByListingId,
   getPropertiesByQueryParams,
   getPropertiesByListPrice,
 }
