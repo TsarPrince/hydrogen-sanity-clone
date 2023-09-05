@@ -9,9 +9,9 @@ const About = ({ aboutpost }) => {
     <>
       <Navbar />
       <div className="text-red-500 pt-40">
-        {aboutpost.length > 0 &&
-          aboutpost
-            .map((post, index) => <AboutItem key={index} post={post} />)}
+        {aboutpost &&
+          aboutpost.length > 0 &&
+          aboutpost.map((post, index) => <AboutItem key={index} post={post} />)}
       </div>
     </>
   )
