@@ -19,31 +19,23 @@ const Footer = () => {
 
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
-        <div className="flex flex-wrap xl:flex-nowrap items-start pt-8 sm:pt-12 px-4 xl:px-8 justify-between max-w-[1400px] mx-auto">
-          <div className="w-full sm:w-1/2 xl:w-full">
-            <div className="lg:max-w-sm xl:max-w-xl">
-              <img
-                src="/footer-logoWILEN.png"
-                className="max-w-full sm:max-w-[400px] mb-6 sm:mb-8"
-                alt="wilen logo"
-              />
-              <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[30px] leading-[130%]">
-                Wilen is made up of highly experienced, multidisciplinary real
-                estate professionals whose highest priority is serving you.
-                Utilizing our unprecedented resources, we will craft a unique
-                and winning strategy to sell your real estate. Let us put our
-                experience to work for you.
-              </p>
-            </div>
-          </div>
-          <div className="w-full xl:mx-4  mt-8 sm:mt-0 xl:mt-12 sm:w-1/2 xl:hidden xl:w-full flex sm:justify-end xl:justify-center">
-            <FooterLinks />
-          </div>
-          <div className="w-full mt-8 sm:mt-12 xl:mt-0">
-            <ContactForm />
-          </div>
+        <div className="pt-8 sm:pt-12 px-4 xl:px-8 max-w-[1240px] mx-auto text-center">
+          <img
+            src="/footer-logoWILEN.png"
+            className="max-w-full sm:max-w-[400px] mb-6 sm:mb-8 mx-auto"
+            alt="wilen logo"
+          />
+          <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[30px] leading-[130%]">
+            Wilen is made up of highly experienced, multidisciplinary real
+            estate professionals whose highest priority is serving you.
+            Utilizing our unprecedented resources, we will craft a unique and
+            winning strategy to sell your real estate. Let us put our experience
+            to work for you.
+          </p>
+
+          <ContactForm />
         </div>
-        <div className="w-full mx-4  mt-12  sm:w-1/2 hidden xl:flex xl:w-full sm:justify-center">
+        <div className="w-full sm:mx-4 pt-8 flex flex-col items-center space-y-8 justify-center">
           <FooterLinks />
         </div>
         <div className="mx-4 lg:mx-20 py-8 sm:py-12">
