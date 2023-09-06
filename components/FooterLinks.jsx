@@ -92,7 +92,7 @@ const FooterLinks = () => {
                 >
                   <stop stopColor="#3771C8" />
                   <stop offset="0.128" stopColor="#3771C8" />
-                  <stop offset="1" stopColor="#6600FF" stop-opacity="0" />
+                  <stop offset="1" stopColor="#6600FF" stopOpacity="0" />
                 </radialGradient>
                 <clipPath id="clip0_1_2">
                   <rect width="256" height="256" fill="white" />
