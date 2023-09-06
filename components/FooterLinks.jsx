@@ -54,7 +54,7 @@ const FooterLinks = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1_2)">
+              <g clipPath="url(#clip0_1_2)">
                 <path
                   d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z"
                   fill="url(#paint0_radial_1_2)"
@@ -77,10 +77,10 @@ const FooterLinks = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(68 275.717) rotate(-90) scale(253.715 235.975)"
                 >
-                  <stop stop-color="#FFDD55" />
-                  <stop offset="0.1" stop-color="#FFDD55" />
-                  <stop offset="0.5" stop-color="#FF543E" />
-                  <stop offset="1" stop-color="#C837AB" />
+                  <stop stopColor="#FFDD55" />
+                  <stop offset="0.1" stopColor="#FFDD55" />
+                  <stop offset="0.5" stopColor="#FF543E" />
+                  <stop offset="1" stopColor="#C837AB" />
                 </radialGradient>
                 <radialGradient
                   id="paint1_radial_1_2"
@@ -90,9 +90,9 @@ const FooterLinks = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(-42.881 18.441) rotate(78.681) scale(113.412 467.488)"
                 >
-                  <stop stop-color="#3771C8" />
-                  <stop offset="0.128" stop-color="#3771C8" />
-                  <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                  <stop stopColor="#3771C8" />
+                  <stop offset="0.128" stopColor="#3771C8" />
+                  <stop offset="1" stopColor="#6600FF" stop-opacity="0" />
                 </radialGradient>
                 <clipPath id="clip0_1_2">
                   <rect width="256" height="256" fill="white" />
