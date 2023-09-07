@@ -36,7 +36,7 @@ const AboutItem = ({ post }) => {
                     <h2 className="mb-4 lg:mb-8 !font-bold">
                       {block.children[0].text}
                     </h2>
-                  ) : (
+                  ) : block?.markDefs[0]?._type === 'link' ? null : (
                     <h2 className="mb-4 lg:mb-8">{block.children[0].text}</h2>
                   )}
                   {block.style === 'normal' && <GenerateLinks block={block} />}
