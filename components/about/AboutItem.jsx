@@ -31,8 +31,9 @@ const AboutItem = ({ post }) => {
               {/* Process different block styles */}
               {block._type === 'block' && (
                 <React.Fragment>
-                  {block.style === 'h2' &&
-                  block.children[0].marks[0] === 'strong' ? (
+                  {block.style === 'h2' ||
+                  (block.style === 'h1' &&
+                    block.children[0].marks[0] === 'strong') ? (
                     <h2 className="mb-4 lg:mb-8 !font-bold">
                       {block.children[0].text}
                     </h2>
