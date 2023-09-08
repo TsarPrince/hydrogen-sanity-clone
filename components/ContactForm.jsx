@@ -6,11 +6,6 @@ const ContactForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="mt-12">
-        <div className="flex items-center mb-5 space-x-2 justify-center">
-          <h2 className="text-[28px] sm:text-2xl font-semibold uppercase w-full mx-auto text-center">
-            SELL WITH US
-          </h2>
-        </div>
         <input
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           value={formData.name}

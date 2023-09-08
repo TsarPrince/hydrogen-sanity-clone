@@ -20,11 +20,9 @@ const Footer = () => {
       {/* Part 2 */}
       <div className="-my-overlap bg-[#121923] pt-overlap text-white">
         <div className="pt-8 sm:pt-12 px-4 xl:px-8 max-w-[1240px] mx-auto text-center">
-          <img
-            src="/footer-logoWILEN.png"
-            className="max-w-full sm:max-w-[400px] mb-6 sm:mb-8 mx-auto"
-            alt="wilen logo"
-          />
+          <h2 className="text-[28px] sm:text-2xl font-semibold uppercase w-full mx-auto text-center mb-5">
+            SELL WITH US
+          </h2>
           <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[30px] leading-[130%]">
             Wilen is made up of highly experienced, multidisciplinary real
             estate professionals whose highest priority is serving you.
@@ -35,9 +33,17 @@ const Footer = () => {
 
           <ContactForm />
         </div>
+
+        <img
+          src="/footer-logoWILEN.png"
+          className="max-w-[90%] sm:max-w-[400px] mt-8 mx-auto px-3"
+          alt="wilen logo"
+        />
+
         <div className="w-full sm:mx-4 pt-8 flex flex-col items-center space-y-8 justify-center">
           <FooterLinks />
         </div>
+
         <div className="mx-4 lg:mx-20 py-8 sm:py-12">
           <div className="mx-auto max-w-[66rem] sm:px-4 text-center text-md leading-caption md:px-8">
             <p>
