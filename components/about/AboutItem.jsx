@@ -28,7 +28,6 @@ const AboutItem = ({ post }) => {
         <div>
           {post.body.map((block, index) => (
             <div key={index} className="about-heading-stylee">
-              {/* Process different block styles */}
               {block._type === 'block' && (
                 <React.Fragment>
                   {block.style === 'h2' ||
