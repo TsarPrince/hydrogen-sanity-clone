@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-# Host: https://hydrogen-sanity-clone.vercel.app/
+Host: https://1mw.com/
 
 # Sitemaps
-# Sitemap: https://hydrogen-sanity-clone.vercel.app/sitemap.xml
+Sitemap: https://1mw.com/sitemap.xml
