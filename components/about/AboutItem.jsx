@@ -28,15 +28,15 @@ const AboutItem = ({ post }) => {
         <div>
           {post.body.map((block, index) => (
             <div key={index} className="about-heading-stylee">
-              {/* Process different block styles */}
               {block._type === 'block' && (
                 <React.Fragment>
-                  {block.style === 'h2' &&
-                  block.children[0].marks[0] === 'strong' ? (
+                  {block.style === 'h2' ||
+                  (block.style === 'h1' &&
+                    block.children[0].marks[0] === 'strong') ? (
                     <h2 className="mb-4 lg:mb-8 !font-bold">
                       {block.children[0].text}
                     </h2>
-                  ) : (
+                  ) : block?.markDefs[0]?._type === 'link' ? null : (
                     <h2 className="mb-4 lg:mb-8">{block.children[0].text}</h2>
                   )}
                   {block.style === 'normal' && <GenerateLinks block={block} />}

@@ -5,6 +5,7 @@ import AboutItem from '../components/about/AboutItem'
 import { client } from '../utils/client'
 
 const About = ({ aboutpost }) => {
+  console.log(aboutpost)
   return (
     <>
       <Navbar />
