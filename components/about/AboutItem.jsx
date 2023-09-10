@@ -51,23 +51,34 @@ const AboutItem = ({ post }) => {
                           : 'font-medium'
                       } `}
                     >
-                      {block.children[0].text}
+                      {block.children.map((child, childIndex) => (
+                        <span key={childIndex}>{child.text}</span>
+                      ))}
                     </h1>
                   )}
                   {block.style === 'h2' && (
                     <h2
-                      className={`mb-4 lg:mb-8 text-[36px] md:text-[44px]  text-black leading-[140%] break-words ${
-                        block.children[0]?.marks[0] === 'strong'
-                          ? 'font-bold'
-                          : 'font-medium'
-                      } `}
+                      className={`mb-4 lg:mb-8 text-[36px] md:text-[44px]  text-black leading-[140%] break-words  `}
                     >
-                      {block.children[0].text}
+                      {block.children.map((childitem, childIndex) => (
+                        <span
+                          key={childIndex}
+                          className={`${
+                            childitem?.marks[0] === 'strong'
+                              ? 'font-bold'
+                              : 'font-medium'
+                          }`}
+                        >
+                          {childitem.text}
+                        </span>
+                      ))}
                     </h2>
                   )}
                   {block.style === 'normal' && (
                     <p className="mb-4 lg:mb-8 text-black text-[22px] font-normal leading-[140%] break-words">
-                      {block.children[0].text}
+                      {block.children.map((child, childIndex) => (
+                        <span key={childIndex}>{child.text}</span>
+                      ))}
                     </p>
                   )}
                   {block.style === 'normal' && <GenerateLinks block={block} />}
