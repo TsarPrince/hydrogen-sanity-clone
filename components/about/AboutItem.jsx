@@ -21,13 +21,16 @@ const AboutItem = ({ post }) => {
         )}
 
         {post.title === 'Untitled' ? null : (
-          <h2 className="about-heading-stylee !font-bold mb-4 lg:mb-8">
+          <h2 className="text-black text-[36px] md:text-[44px] leading-[140%] break-words font-montserrat font-bold mb-4 lg:mb-8">
             {post.title}
           </h2>
         )}
         <div>
           {post.body.map((block, index) => (
-            <div key={index} className="about-heading-stylee">
+            <div
+              key={index}
+              className="font-medium text-black text-[36px] md:text-[44px] leading-[140%] break-words font-montserrat"
+            >
               {block._type === 'block' && (
                 <React.Fragment>
                   {block.style === 'h2' ||
