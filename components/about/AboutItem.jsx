@@ -21,7 +21,7 @@ const AboutItem = ({ post }) => {
           </div>
         )}
 
-        {post.title !== 'Untitled' && (
+        {/* {post.title !== 'Untitled' && (
           <h2
             className={`text-black ${
               post.title === 'h1'
@@ -36,7 +36,7 @@ const AboutItem = ({ post }) => {
           >
             {post.title}
           </h2>
-        )}
+        )} */}
 
         <div>
           {post.body.map((block, index) => (
