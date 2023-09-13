@@ -74,8 +74,80 @@ const AboutItem = ({ post }) => {
                       ))}
                     </h2>
                   )}
+                  {block.style === 'h3' && (
+                    <h2
+                      className={`mb-4 lg:mb-8 text-[28px] md:text-[40px]  text-black leading-[140%] break-words  `}
+                    >
+                      {block.children.map((childitem, childIndex) => (
+                        <span
+                          key={childIndex}
+                          className={`${
+                            childitem?.marks[0] === 'strong'
+                              ? 'font-bold'
+                              : 'font-medium'
+                          }`}
+                        >
+                          {childitem.text}
+                        </span>
+                      ))}
+                    </h2>
+                  )}
+                  {block.style === 'h4' && (
+                    <h2
+                      className={`mb-4 lg:mb-8 text-[24px] md:text-[36px]  text-black leading-[140%] break-words  `}
+                    >
+                      {block.children.map((childitem, childIndex) => (
+                        <span
+                          key={childIndex}
+                          className={`${
+                            childitem?.marks[0] === 'strong'
+                              ? 'font-bold'
+                              : 'font-medium'
+                          }`}
+                        >
+                          {childitem.text}
+                        </span>
+                      ))}
+                    </h2>
+                  )}
+                  {block.style === 'h5' && (
+                    <h2
+                      className={`mb-4 lg:mb-8 text-[22px] md:text-[30px]  text-black leading-[140%] break-words  `}
+                    >
+                      {block.children.map((childitem, childIndex) => (
+                        <span
+                          key={childIndex}
+                          className={`${
+                            childitem?.marks[0] === 'strong'
+                              ? 'font-bold'
+                              : 'font-medium'
+                          }`}
+                        >
+                          {childitem.text}
+                        </span>
+                      ))}
+                    </h2>
+                  )}
+                  {block.style === 'h5' && (
+                    <h2
+                      className={`mb-4 lg:mb-8 text-[18px] md:text-[26px]  text-black leading-[140%] break-words  `}
+                    >
+                      {block.children.map((childitem, childIndex) => (
+                        <span
+                          key={childIndex}
+                          className={`${
+                            childitem?.marks[0] === 'strong'
+                              ? 'font-bold'
+                              : 'font-medium'
+                          }`}
+                        >
+                          {childitem.text}
+                        </span>
+                      ))}
+                    </h2>
+                  )}
                   {block.style === 'normal' && (
-                    <p className="mb-4 lg:mb-8 text-black text-[22px] font-normal leading-[140%] break-words">
+                    <p className="mb-4 lg:mb-8 text-black text-[16px] md:text-[22px] font-normal leading-[140%] break-words">
                       {block.children.map((child, childIndex) => (
                         <span key={childIndex}>{child.text}</span>
                       ))}
