@@ -19,12 +19,12 @@ const Header = () => {
                 muted
                 playsInline
                 autoPlay
-                src="/header.mp4"
+                src="/video/hero-home.mp4"
                 poster="/header_poster_image.png"
               >
                 Sorry, your browser doesn&apos;t support embedded videos, but
                 don&apos;t worry, you can
-                <a href="/header.mp4">download it</a>
+                <a href="/video/hero-home.mp4">download it</a>
                 and watch it with your favorite video player!
               </video>
               {/* <img

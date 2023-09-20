@@ -147,9 +147,6 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
               </div>
             </div>
             <div className="mt-8 px-8">
-              <div className="text-lg font-bold">New Arrivals</div>
-              <p className="mt-4">Will be updated soon!</p>
-
               {/* <ul className="mt-3 grid grid-cols-1 gap-2">
                 <li>
                   <a href="/products/punkt-coaster">
