@@ -21,9 +21,6 @@ const Card = ({
   PostalCode,
   page,
   pageSize,
-  // params for defining which query to use for cache
-  q,
-  standardStatus,
 }) => {
   const [loaded, setLoaded] = useState(false)
 

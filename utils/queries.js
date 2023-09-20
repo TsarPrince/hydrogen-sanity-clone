@@ -27,6 +27,9 @@ const getPropertiesByListingId = (ListingId) =>
       populate: 'Photos',
       filters: {
         $and: [
+          /*
+          COMMENT OFF TO SHOW LISINGS WHICH ARE CANCELED, PENDING, OR HOLD
+          */
           {
             StandardStatus: {
               $in: ['Active', 'Coming Soon'],

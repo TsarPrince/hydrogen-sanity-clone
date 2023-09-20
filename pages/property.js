@@ -49,7 +49,18 @@ const IndivdualProperty = ({ property }) => {
     BathroomsTotalInteger,
   } = property.attributes
 
-  const ListingAddressCombined = `${StreetNumber} ${StreetName} ${StreetSuffix}, ${City} ${StateOrProvince} ${PostalCode}`
+  console.log({
+    StreetNumber,
+    StreetName,
+    StreetSuffix,
+    City,
+    StateOrProvince,
+    PostalCode,
+  })
+
+  const ListingAddressCombined = `${StreetNumber ?? ''} ${StreetName ?? ''} ${
+    StreetSuffix ?? ''
+  }, ${City ?? ''} ${StateOrProvince ?? ''} ${PostalCode ?? ''}`
 
   return (
     <>
