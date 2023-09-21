@@ -59,6 +59,44 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
             </div>
             <div className="px-8">
               <div className="relative mt-3 grid grid-cols-2 gap-2">
+                <Link href={'/buy'} onClick={() => setDialogOpen(!dialogOpen)}>
+                  <div
+                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    // style={{ background: 'rgb(207, 232, 229)' }}
+                    style={{ background: '#c3e2e6' }}
+                  >
+                    <div
+                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
+                      style={{
+                        background: '#c3e2e6',
+                        WebkitMask:
+                          'url(/masks/3.svg) center center / contain no-repeat',
+                      }}
+                    ></div>
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
+                      Buy
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/about" onClick={() => setDialogOpen(!dialogOpen)}>
+                  <div
+                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    // style={{ background: 'rgb(255, 229, 240)' }}
+                    style={{ background: '#cfccdf' }}
+                  >
+                    <div
+                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
+                      style={{
+                        background: '#cfccdf',
+                        WebkitMask:
+                          'url(/masks/4.svg) center center / contain no-repeat',
+                      }}
+                    ></div>
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline">
+                      Sell
+                    </div>
+                  </div>
+                </Link>
                 <Link
                   href="/Active"
                   onClick={() => setDialogOpen(!setDialogOpen)}
@@ -81,27 +119,6 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <div onClick={() => setDialogOpen(!dialogOpen)}>
-                  <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(207, 232, 229)' }}
-                    style={{ background: '#c3e2e6' }}
-                  >
-                    <div
-                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
-                      style={{
-                        background: '#c3e2e6',
-                        WebkitMask:
-                          'url(/masks/3.svg) center center / contain no-repeat',
-                      }}
-                    ></div>
-                    <div className="relative text-center text-md sm:text-lg font-bold ">
-                      <a className="hover:underline" href="tel:+612-400-9000">
-                        612-400-9000
-                      </a>{' '}
-                    </div>
-                  </div>
-                </div>
                 <Link
                   href="/Coming Soon"
                   onClick={() => setDialogOpen(!dialogOpen)}
@@ -122,25 +139,6 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
                       Coming <br />
                       Soon
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/about" onClick={() => setDialogOpen(!dialogOpen)}>
-                  <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(255, 229, 240)' }}
-                    style={{ background: '#cfccdf' }}
-                  >
-                    <div
-                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
-                      style={{
-                        background: '#cfccdf',
-                        WebkitMask:
-                          'url(/masks/4.svg) center center / contain no-repeat',
-                      }}
-                    ></div>
-                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline">
-                      Sell
                     </div>
                   </div>
                 </Link>

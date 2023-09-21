@@ -40,6 +40,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content={1200} />
         <meta property="og:image:height" content={630} />
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <NextNProgress color="#3b53ca" />
       <Component {...pageProps} />

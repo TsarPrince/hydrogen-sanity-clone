@@ -94,10 +94,10 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
             ></path>
           </svg>
         </button>
-        <nav className="relative hidden items-stretch justify-start gap-6 text-sm font-bold lg:flex">
+        <nav className="relative hidden items-stretch justify-start gap-6 text-md font-bold lg:flex">
           <div className="relative flex items-center">
             <button
-              className="-mx-3 flex h-[2.4rem] items-center rounded-sm bg-darkGray bg-opacity-0 py-2 pl-2 pr-3 text-sm duration-150 hover:bg-opacity-10"
+              className="-mx-3 flex h-[2.4rem] items-center rounded-sm bg-darkGray bg-opacity-0 py-2 pl-2 pr-3 text-md duration-150 hover:bg-opacity-10"
               onClick={() => {
                 setDialogOpen(!dialogOpen)
               }}
@@ -143,14 +143,6 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
               </svg>
               <div className="inline-flex items-center font-bold">Menu</div>
             </button>
-            <div
-              hidden=""
-              // style="display:none"
-            >
-              <div
-              // style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none"
-              ></div>
-            </div>
           </div>
           <div className="flex items-center">
             <Link className="linkTextNavigation" href="/buy">
@@ -160,6 +152,11 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
           <div className="flex items-center">
             <Link className="linkTextNavigation" href="/about">
               Sell
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <Link className="linkTextNavigation" href="tel:6124009000">
+              612-400-9000
             </Link>
           </div>
         </nav>
