@@ -3,6 +3,7 @@ import React from 'react'
 
 import Card from '../components/Card'
 import ErrorComponent from '../components/ErrorComponent'
+import InputNumber from '../components/forms/InputNumber'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
@@ -22,6 +23,9 @@ const StandardStatus = () => {
 
   const properties = data?.data
   const pagination = data?.meta?.pagination
+  const onSubmit = (e) => {
+    // e.preventDefault()
+  }
 
   if (error) return <ErrorComponent />
 
@@ -35,6 +39,29 @@ const StandardStatus = () => {
         ) : (
           <>
             <div className="text-darkGray text-2xl pt-6 pb-12 text-center">
+              {/* <form onSubmit={onSubmit}>
+                <input type="text" placeholder="Search query" />
+                <select id="PropertyType">
+                  <option value={''}>Select property type</option>
+                  <option value={'Land'}>Land</option>
+                  <option value={'Farm'}>Farm</option>
+                  <option value={'Residential'}>Residential</option>
+                  <option value={'Residential Income'}>
+                    Residential Income
+                  </option>
+                  <option value={'Commercial Sale'}>Commercial Sale</option>
+                  <option value={'Residential Lease'}>Residential Lease</option>
+                </select>
+                <InputNumber min={0} max={12} deafultValue={4} />
+                <input id="BedroomsTotal" type="range" max={12} />
+                <input id="BathroomsTotalInteger" type="range" max={12} />
+                <input
+                  id="BathroomsTotalInteger"
+                  type="range"
+                  max={60000000}
+                  step={1}
+                />
+              </form> */}
               {properties?.length ? (
                 <p>
                   Search result(s) for{' '}

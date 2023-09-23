@@ -1,11 +1,11 @@
-import React from 'react'
 import groq from 'groq'
-import Navbar from '../components/Navbar'
+import React from 'react'
+
 import AboutItem from '../components/about/AboutItem'
+import Navbar from '../components/Navbar'
 import { client } from '../utils/client'
 
 const About = ({ aboutpost }) => {
-  console.log(aboutpost)
   return (
     <>
       <Navbar />

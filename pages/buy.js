@@ -15,7 +15,6 @@ const BuyPage = () => {
   if (!pageSize) pageSize = 10
 
   const { data, error, isLoading } = useFetch({ page, pageSize })
-  console.log({ data, error, isLoading })
   const properties = data?.data
   const pagination = data?.meta?.pagination
 

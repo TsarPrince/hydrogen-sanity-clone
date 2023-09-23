@@ -131,3 +131,20 @@ input::-webkit-inner-spin-button {
 .swal2-html-container {
   color: #757575 !important;
 }
+
+/* REAL GOOD CSS UNLIKE BS TAILWIND */
+
+.group .skem {
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateX(-45deg);
+  transform-origin: top;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  perspective: 1000px;
+}
+
+.group:focus-within .skem {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0deg);
+}
