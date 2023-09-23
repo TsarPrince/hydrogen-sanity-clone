@@ -11,12 +11,8 @@ const Searchbar = ({ setDialogOpen }) => {
   useEffect(() => {
     const getSuggestions = async () => {
       try {
-        if (q.length > 2) {
-          const res = await axios.post('/api/suggest', { q })
-          setSuggestions(res.data?.data?.hits)
-        } else {
-          setSuggestions([])
-        }
+        const res = await axios.post('/api/suggest', { q })
+        setSuggestions(res.data?.data?.hits)
       } catch (error) {
         console.log(error)
       }
@@ -58,50 +54,51 @@ const Searchbar = ({ setDialogOpen }) => {
               <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
             </svg>
           </button>
-          <div className="skem absolute bg-white top-12 w-full px-2 py-4 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
-            {!suggestions.length && (
-              <p>Type atleast 3 characters to get started...</p>
-            )}
-            <div>
-              {suggestions?.map(
-                (
-                  {
-                    StreetName,
-                    StreetNumber,
-                    StreetSuffix,
-                    City,
-                    StateOrProvince,
-                    PostalCode,
-                    ListingId,
-                  },
-                  key
-                ) => {
-                  const address = `${StreetNumber ?? ''} ${StreetName ?? ''} ${
-                    StreetSuffix ?? ''
-                  }, ${City ?? ''} ${StateOrProvince ?? ''} ${PostalCode ?? ''}`
+          {!!suggestions.length && (
+            <div className="skem absolute bg-white top-12 w-full px-2 py-4 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
+              <div>
+                {suggestions?.map(
+                  (
+                    {
+                      StreetName,
+                      StreetNumber,
+                      StreetSuffix,
+                      City,
+                      StateOrProvince,
+                      PostalCode,
+                      ListingId,
+                    },
+                    key
+                  ) => {
+                    const address = `${StreetNumber ?? ''} ${
+                      StreetName ?? ''
+                    } ${StreetSuffix ?? ''}, ${City ?? ''} ${
+                      StateOrProvince ?? ''
+                    } ${PostalCode ?? ''}`
 
-                  const c = RegExp(q, 'gi').exec(q)
-                  console.log(c)
-                  return (
-                    <div key={key} className="">
-                      <Link href={`/property?id=${ListingId}`}>
-                        <div className="flex items-center hover:bg-gray/40 p-3 rounded space-x-2">
-                          <svg
-                            className="w-5 m-2"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM6 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001Z"></path>
-                          </svg>
-                          <p className="">{address}</p>
-                        </div>
-                      </Link>
-                    </div>
-                  )
-                }
-              )}
+                    const c = RegExp(q, 'gi').exec(q)
+                    console.log(c)
+                    return (
+                      <div key={key} className="">
+                        <Link href={`/property?id=${ListingId}`}>
+                          <div className="flex items-center hover:bg-gray/40 p-3 rounded space-x-2">
+                            <svg
+                              className="w-5 m-2 flex-shrink-0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM6 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001Z"></path>
+                            </svg>
+                            <p className="">{address}</p>
+                          </div>
+                        </Link>
+                      </div>
+                    )
+                  }
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </form>
     </div>
