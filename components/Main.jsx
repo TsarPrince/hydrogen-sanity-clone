@@ -109,7 +109,6 @@ const Main = () => {
                     src="/comingSoon.jpg"
                     width="100"
                     className="absolute h-full w-full transform bg-cover bg-center object-cover object-center ease-in-out"
-                    // style="width:100%;aspect-ratio:1606/1606"
                   />
                   <div className="absolute left-4 top-4">
                     <div className="flex place-content-center rounded-sm bg-white px-1.5 py-1 leading-none text-sm border-red text-red">

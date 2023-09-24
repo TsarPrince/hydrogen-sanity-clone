@@ -155,6 +155,11 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
             </Link>
           </div>
           <div className="flex items-center">
+            <Link className="linkTextNavigation" href="/contact">
+              Contact
+            </Link>
+          </div>
+          <div className="flex items-center">
             <Link className="linkTextNavigation" href="tel:6124009000">
               612-400-9000
             </Link>

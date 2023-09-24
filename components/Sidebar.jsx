@@ -58,87 +58,118 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
               <Searchbar setDialogOpen={setDialogOpen} />
             </div>
             <div className="px-8">
-              <div className="relative mt-3 grid grid-cols-2 gap-2">
-                <Link href={'/buy'} onClick={() => setDialogOpen(!dialogOpen)}>
+              <div className="relative mt-3 grid grid-cols-1 gap-2">
+                <Link href={'/'} onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(207, 232, 229)' }}
-                    style={{ background: '#c3e2e6' }}
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: '#c3e2e6',
+                        background: '#FFE1D1',
                         WebkitMask:
                           'url(/masks/3.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
-                      Buy
+                      HOME
+                    </div>
+                  </div>
+                </Link>
+                <Link href={'/'} onClick={() => setDialogOpen(!dialogOpen)}>
+                  <div
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
+                  >
+                    <div
+                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
+                      style={{
+                        background: '#FFE1D1',
+                        WebkitMask:
+                          'url(/masks/3.svg) center center / contain no-repeat',
+                      }}
+                    ></div>
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
+                      ACTIVE LISTINGS
+                    </div>
+                  </div>
+                </Link>
+                <Link href={'/'} onClick={() => setDialogOpen(!dialogOpen)}>
+                  <div
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
+                  >
+                    <div
+                      className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
+                      style={{
+                        background: '#FFE1D1',
+                        WebkitMask:
+                          'url(/masks/3.svg) center center / contain no-repeat',
+                      }}
+                    ></div>
+                    <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
+                      COMING SOON LISTINGS
                     </div>
                   </div>
                 </Link>
                 <Link href="/about" onClick={() => setDialogOpen(!dialogOpen)}>
                   <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(255, 229, 240)' }}
-                    style={{ background: '#cfccdf' }}
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: '#cfccdf',
+                        background: '#FFE1D1',
                         WebkitMask:
                           'url(/masks/4.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline">
-                      Sell
+                      SELL WITH US
                     </div>
                   </div>
                 </Link>
                 <Link
-                  href="/Active"
+                  href="tel:6124009000"
                   onClick={() => setDialogOpen(!setDialogOpen)}
                 >
                   <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(255, 238, 211)' }}
-                    style={{ background: '#fff2e1' }}
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: '#fff2e1',
+                        background: '#FFE1D1',
                         WebkitMask:
                           'url(/masks/2.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
-                      Active
+                      612-400-9000
                     </div>
                   </div>
                 </Link>
                 <Link
-                  href="/Coming Soon"
+                  href="mailto:info@1mw.com"
                   onClick={() => setDialogOpen(!dialogOpen)}
                 >
                   <div
-                    className="group relative flex aspect-[4/3] items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
-                    // style={{ background: 'rgb(227, 216, 255)' }}
-                    style={{ background: '#f7dae5' }}
+                    className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
+                    style={{ background: '#FFE1D1' }}
                   >
                     <div
                       className="absolute bottom-2 left-2 right-1 top-2 duration-1000 ease-out group-hover:scale-[1.03]"
                       style={{
-                        background: '#f7dae5',
+                        background: '#FFE1D1',
                         WebkitMask:
                           'url(/masks/1.svg) center center / contain no-repeat',
                       }}
                     ></div>
                     <div className="relative text-center text-md sm:text-lg font-bold group-hover:underline ">
-                      Coming <br />
-                      Soon
+                      INFO@1MW.COM
                     </div>
                   </div>
                 </Link>
