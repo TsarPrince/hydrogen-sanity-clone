@@ -136,7 +136,7 @@ const Card = ({
                 <p className="hidden md:block px-1">
                   {BathroomsTotalInteger > 1 ? ' Baths ' : ' Bath '}
                 </p>
-                <p className="hidden md:block">
+                <p className="hidden lg:block">
                   {'(' +
                     [
                       BathroomsFull + ' F',
