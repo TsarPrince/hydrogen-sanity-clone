@@ -31,7 +31,7 @@ const Contact = () => {
           Access to the Most Exclusive Real Estate Offerings
         </p>
         <p className="text-primary font-semibold text-[18px] md:text-[24px] font-sans ">
-          Discover Our Calculated Mutli-Channel Marketing Sequence
+          Discover Our Calculated Multi-Channel Marketing Sequence
         </p>
         <form onSubmit={handleSubmit} className="mt-12">
           <input
