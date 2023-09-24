@@ -19,10 +19,15 @@ export default async function handler(req, res) {
     }
 
     const response = await axios.post(
-      'https://meilisearch.1mwa-strapi.tech/indexes/property/search',
+      `${process.env.MEILISEARCH_HOST}/indexes/property/search`,
       {
         q: req.body.q,
         limit: 10,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.MEILISEARCH_DEFAULT_SEARCH_API_KEY}`,
+        },
       }
     )
     res.status(200).json({
