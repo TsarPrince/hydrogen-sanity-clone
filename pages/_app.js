@@ -5,8 +5,11 @@ import Script from 'next/script'
 import NextNProgress from 'nextjs-progressbar'
 
 import Footer from '../components/Footer'
+import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+
   return (
     <>
       <Script
@@ -44,7 +47,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <NextNProgress color="#3b53ca" />
       <Component {...pageProps} />
-      <Footer />
+      {!(router.asPath === '/contact') && <Footer />}
     </>
   )
 }
