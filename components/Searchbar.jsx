@@ -55,7 +55,7 @@ const Searchbar = ({ setDialogOpen }) => {
             </svg>
           </button>
           {!!suggestions.length && (
-            <div className="skem absolute bg-white top-12 w-full px-2 py-4 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
+            <div className="skem absolute bg-white top-12 w-full p-2 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
               <div>
                 {suggestions?.map(
                   (
@@ -76,8 +76,6 @@ const Searchbar = ({ setDialogOpen }) => {
                       StateOrProvince ?? ''
                     } ${PostalCode ?? ''}`
 
-                    const c = RegExp(q, 'gi').exec(q)
-                    console.log(c)
                     return (
                       <div key={key} className="">
                         <Link href={`/property?id=${ListingId}`}>
