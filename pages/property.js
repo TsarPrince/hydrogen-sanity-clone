@@ -127,13 +127,11 @@ const IndivdualProperty = ({ property }) => {
               </div>
 
               <ul className="first:mt-0 last:mb-0 my-8 space-y-0.5 leading-paragraph list-outside ml-8">
-                <li className="font-bold uppercase">
+                <li className="font-bold">
                   {StandardStatus} {Contingency !== 'None' && Contingency}
                 </li>
-                <li className="font-bold uppercase">
-                  {ListingAddressCombined}
-                </li>
-                <li className="font-bold uppercase">{PropertyType}</li>
+                <li className="font-bold">{ListingAddressCombined}</li>
+                <li className="font-bold">{PropertyType}</li>
                 <li>
                   {(DaysOnMarket && prettifyNumber(DaysOnMarket)) || '—'} Days
                   on Market
@@ -159,7 +157,7 @@ const IndivdualProperty = ({ property }) => {
                 <li>
                   {NST_LakeAcres ? 'Lakefront available' : 'No Lakefront'}
                 </li>
-                <li>{ListOfficeName}</li>
+                <li>Listed by:{ListOfficeName}</li>
               </ul>
 
               <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">

@@ -14,6 +14,7 @@ const useFetch = ({ page, pageSize, standardStatus, q, sort }) => {
   if (!pageSize) pageSize = 10
 
   let sortByArray = []
+
   switch (sort) {
     case 'ListPrice:DESC':
       sortByArray = ['ListPrice:DESC', 'id:ASC']
@@ -27,9 +28,14 @@ const useFetch = ({ page, pageSize, standardStatus, q, sort }) => {
     case 'DaysOnMarket:DESC':
       sortByArray = ['DaysOnMarket:DESC', 'id:ASC']
       break
+    case 'ModificationTimestamp:DESC':
+      sortByArray = ['ModificationTimestamp:DESC', 'id:ASC']
+      break
     default:
       sortByArray = ['id:ASC']
   }
+
+  console.log({ sort, sortByArray })
 
   let jsonToUrlEncodedQuery
   if (q) {

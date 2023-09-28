@@ -75,7 +75,7 @@ const StandardStatus = () => {
         )}
 
         {/* Pagination */}
-        <Pagination pagination={pagination} q={q} />
+        <Pagination pagination={pagination} q={q} sort={sort} />
       </div>
     </div>
   )

@@ -11,11 +11,11 @@ import useFetch from '../hooks/useFetch'
 
 const BuyPage = () => {
   const router = useRouter()
-  let { page, pageSize } = router.query
+  let { page, pageSize, sort } = router.query
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
-  const { data, error, isLoading } = useFetch({ page, pageSize })
+  const { data, error, isLoading } = useFetch({ page, pageSize, sort })
   const properties = data?.data
   const pagination = data?.meta?.pagination
 
@@ -30,6 +30,9 @@ const BuyPage = () => {
           <LoadingState />
         ) : (
           <>
+            <div className="py-4">
+              <TabFilters />
+            </div>
             <div
               className={`mx-auto max-w-[96rem] grid md:grid-cols-2 md:gap-x-[2rem] xl:gap-x-[12rem] gap-y-8`}
             >
@@ -46,7 +49,7 @@ const BuyPage = () => {
         )}
 
         {/* Pagination */}
-        <Pagination pagination={pagination} />
+        <Pagination pagination={pagination} sort={sort} />
       </div>
     </div>
   )

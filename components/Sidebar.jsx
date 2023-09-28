@@ -77,7 +77,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href={'/'} onClick={() => setDialogOpen(!dialogOpen)}>
+                <Link
+                  href={'/Active'}
+                  onClick={() => setDialogOpen(!dialogOpen)}
+                >
                   <div
                     className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: '#FFE1D1' }}
@@ -95,7 +98,10 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                     </div>
                   </div>
                 </Link>
-                <Link href={'/'} onClick={() => setDialogOpen(!dialogOpen)}>
+                <Link
+                  href={'/Coming Soon'}
+                  onClick={() => setDialogOpen(!dialogOpen)}
+                >
                   <div
                     className="group relative flex  py-8 items-center justify-center rounded bg-lightGray transition-[border-radius] duration-500 ease-out hover:rounded-xl"
                     style={{ background: '#FFE1D1' }}

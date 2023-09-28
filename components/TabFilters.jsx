@@ -115,6 +115,10 @@ const TabFilters = () => {
                         key: 'Oldest first',
                         value: 'DaysOnMarket:DESC',
                       },
+                      {
+                        key: 'Recently updated first',
+                        value: 'ModificationTimestamp:DESC',
+                      },
                     ].map((option, key) => (
                       <label
                         key={key}
