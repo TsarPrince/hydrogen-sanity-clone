@@ -6,6 +6,7 @@ import ErrorComponent from '../components/ErrorComponent'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
+import TabFilters from '../components/TabFilters'
 import useFetch from '../hooks/useFetch'
 
 const BuyPage = () => {

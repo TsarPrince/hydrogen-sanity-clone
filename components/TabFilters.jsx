@@ -68,7 +68,7 @@ const TabFilters = () => {
     const onSubmit = (e, close) => {
       e.preventDefault()
       close()
-      router.push(`/search?q=${q}&sort=${e.target.value}`)
+      router.push(`${router.pathname}?q=${q}&sort=${e.target.value}`)
     }
 
     return (

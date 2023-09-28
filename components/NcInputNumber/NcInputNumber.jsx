@@ -1,17 +1,7 @@
-import React, { FC, useEffect, useState } from 'react'
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/solid'
+import React, { useEffect, useState } from 'react'
 
-export interface NcInputNumberProps {
-  className?: string
-  defaultValue?: number
-  min?: number
-  max?: number
-  onChange?: (value: number) => void
-  label?: string
-  desc?: string
-}
-
-const NcInputNumber: FC<NcInputNumberProps> = ({
+const NcInputNumber = ({
   className = 'w-full',
   defaultValue = 0,
   min = 0,

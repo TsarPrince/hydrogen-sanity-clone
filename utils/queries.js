@@ -1,10 +1,14 @@
 import qs from 'qs'
 
-const getPropertiesByStandardStatus = (page, pageSize, standardStatus) =>
+const getPropertiesByStandardStatus = (
+  page,
+  pageSize,
+  standardStatus,
+  sortByArray
+) =>
   qs.stringify(
     {
-      // sort: ['ListPrice:DESC', 'id:ASC'],
-      sort: ['id:ASC'],
+      sort: sortByArray,
       pagination: {
         page,
         pageSize,
@@ -21,9 +25,10 @@ const getPropertiesByStandardStatus = (page, pageSize, standardStatus) =>
     }
   )
 
-const getPropertiesByListingId = (ListingId) =>
+const getPropertiesByListingId = (ListingId, sortByArray) =>
   qs.stringify(
     {
+      sort: sortByArray,
       populate: 'Photos',
       filters: {
         $and: [
