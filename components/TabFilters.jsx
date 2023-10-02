@@ -63,8 +63,6 @@ const TabFilters = () => {
   }
 
   const renderTabsSort = () => {
-    console.log({ q, sort })
-
     const onSubmit = (e, close) => {
       e.preventDefault()
       close()

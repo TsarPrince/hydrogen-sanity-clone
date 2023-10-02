@@ -146,9 +146,37 @@ const getPropertiesByListPrice = (page, pageSize, sortByArray) =>
     }
   )
 
+const getPropertiesForHeader = () =>
+  qs.stringify({
+    pagination: {
+      limit: 6,
+    },
+    populate: 'Photos',
+    filters: {
+      $and: [
+        {
+          StreetName: {
+            $in: ['Hennepin', 'Dakota', 'Scott', 'Carver'],
+          },
+        },
+        {
+          ListPrice: {
+            $gte: 700000,
+          },
+        },
+        {
+          StandardStatus: {
+            $in: ['Active', 'Coming Soon'],
+          },
+        },
+      ],
+    },
+  })
+
 export {
   getPropertiesByStandardStatus,
   getPropertiesByListingId,
   getPropertiesByQueryParams,
   getPropertiesByListPrice,
+  getPropertiesForHeader,
 }

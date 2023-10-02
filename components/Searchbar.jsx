@@ -10,6 +10,8 @@ const Searchbar = ({ setDialogOpen }) => {
 
   useEffect(() => {
     const getSuggestions = async () => {
+      if (!q.trim().length) return
+
       try {
         const res = await axios.post('/api/suggest', { q })
         setSuggestions(res.data?.data?.hits)

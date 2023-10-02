@@ -1,7 +1,12 @@
-import Link from 'next/link'
 import React from 'react'
 
+import useFetch from '../hooks/useFetch'
+import Card from './Card'
+import LoadingState from './LoadingState'
+
 const Header = () => {
+  const { data, error, isLoading } = useFetch({ type: 'header' })
+
   return (
     <>
       <div className="flex flex-col items-center rounded-b-xl bg-peach px-4 pb-4 pt-24 md:px-8 md:pb-8 md:pt-20">
@@ -34,6 +39,22 @@ const Header = () => {
                 src="/header.jpg"
               /> */}
             </div>
+          </div>
+
+          {/* Custom grid of properties */}
+          <div className=" bg-white p-8 rounded-md mt-8">
+            <p className="text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[90px] py-4">
+              $7M+ Exclusive Collections
+            </p>
+            {isLoading ? (
+              <LoadingState />
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                {data?.data?.map((property, key) => (
+                  <Card key={key} {...property.attributes} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

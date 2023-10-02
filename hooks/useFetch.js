@@ -5,11 +5,23 @@ import {
   getPropertiesByListPrice,
   getPropertiesByQueryParams,
   getPropertiesByStandardStatus,
+  getPropertiesForHeader,
 } from '../utils/queries'
 
 const fetcher = (...args) => axios.get(...args).then((data) => data.data)
 
-const useFetch = ({ page, pageSize, standardStatus, q, sort }) => {
+const useFetch = ({
+  page,
+  pageSize,
+  sort,
+  // getPropertiesForHeader
+  type,
+  // getPropertiesByStandardStatus
+  standardStatus,
+  // getPropertiesByQueryParams
+  q,
+  // getPropertiesByListPrice
+}) => {
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
@@ -35,8 +47,6 @@ const useFetch = ({ page, pageSize, standardStatus, q, sort }) => {
       sortByArray = ['id:ASC']
   }
 
-  console.log({ sort, sortByArray })
-
   let jsonToUrlEncodedQuery
   if (q) {
     jsonToUrlEncodedQuery = getPropertiesByQueryParams(
@@ -52,6 +62,8 @@ const useFetch = ({ page, pageSize, standardStatus, q, sort }) => {
       standardStatus,
       sortByArray
     )
+  } else if (type === 'header') {
+    jsonToUrlEncodedQuery = getPropertiesForHeader()
   } else {
     jsonToUrlEncodedQuery = getPropertiesByListPrice(
       page,
