@@ -161,7 +161,7 @@ const getPropertiesForHeader = () =>
         },
         {
           ListPrice: {
-            $gte: 700000,
+            $gte: 600000,
           },
         },
         {
