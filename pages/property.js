@@ -157,7 +157,7 @@ const IndivdualProperty = ({ property }) => {
                 <li>
                   {NST_LakeAcres ? 'Lakefront available' : 'No Lakefront'}
                 </li>
-                <li>Listed by:{ListOfficeName}</li>
+                <li>Listed by: {ListOfficeName}</li>
               </ul>
 
               <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
