@@ -148,6 +148,7 @@ const getPropertiesByListPrice = (page, pageSize, sortByArray) =>
 
 const getPropertiesForHeader = () =>
   qs.stringify({
+    sort: 'ModificationTimestamp:DESC',
     pagination: {
       limit: 6,
     },
@@ -155,13 +156,37 @@ const getPropertiesForHeader = () =>
     filters: {
       $and: [
         {
-          StreetName: {
-            $in: ['Hennepin', 'Dakota', 'Scott', 'Carver'],
+          City: {
+            $in: [
+              'Wayzata',
+              'Eden Prairie',
+              'Edina',
+              'Minneapolis',
+              'Bloomington',
+              'Minnetrista',
+              'Woodland',
+              'Orono',
+              'Woodbury',
+              'Afton',
+              'Marine On Saint Croix',
+              'Saint Paul',
+              'North Oaks',
+              'Golden Valley',
+              'Saint Louis Park',
+              'Eagan',
+              'Lakeville',
+              'Prior Lake',
+            ],
           },
         },
         {
           ListPrice: {
             $gte: 600000,
+          },
+        },
+        {
+          ListOfficeName: {
+            $eq: 'Coldwell Banker Realty',
           },
         },
         {
