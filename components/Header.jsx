@@ -42,9 +42,9 @@ const Header = () => {
           </div>
 
           {/* Custom grid of properties */}
-          <div className=" bg-white p-8 rounded-md mt-8">
+          <div className="p-8 rounded-md mt-8">
             <p className="text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[90px] py-4">
-              New & Featured Twin Cities Collection
+              New & Updated Listings
             </p>
             {isLoading ? (
               <LoadingState />
