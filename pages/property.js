@@ -1,5 +1,16 @@
 import Head from 'next/head'
 import React from 'react'
+import {
+  BiBed,
+  BiDollarCircle,
+  BiSolidCarGarage,
+  BiTimeFive,
+  BiWater,
+} from 'react-icons/bi'
+import { GrStatusGood } from 'react-icons/gr'
+import { LuBath, LuRuler, LuSchool, LuWarehouse } from 'react-icons/lu'
+import { PiHouseBold } from 'react-icons/pi'
+import { SlSizeFullscreen } from 'react-icons/sl'
 
 import ErrorComponent from '../components/ErrorComponent'
 import Gallery from '../components/Gallery'
@@ -103,14 +114,14 @@ const IndivdualProperty = ({ property }) => {
             }))}
           />
           <div className="w-full lg:w-[calc(100%-315px)]">
-            <div className="portableText max-w-[660px] px-4 pb-24 pt-8 md:px-8">
+            <div className="portableText px-4 pb-24 pt-8 md:px-8">
               <div className="first:mt-0 last:mb-0 relative my-12 w-screen px-6 md:px-8 -ml-6 md:-ml-8">
                 <div className="">
                   <div
                     className="mr-auto flex flex-col items-start"
                     style={{ color: '#3d7544' }}
                   >
-                    <div className="max-w-[60rem] text-2xl md:text-4xl">
+                    <div className="text-2xl md:text-4xl">
                       ${prettifyNumber(ListPrice)}
                     </div>
                     {/* <div className="mt-4">
@@ -123,48 +134,100 @@ const IndivdualProperty = ({ property }) => {
                     </a>
                   </div> */}
                   </div>
+                  <div>
+                    <p className="pt-3 text-xl md:text-2xl font-semibold text-offBlack">
+                      {ListingAddressCombined}
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <ul className="first:mt-0 last:mb-0 my-8 space-y-0.5 leading-paragraph list-outside ml-8">
-                <li className="font-bold">
-                  {StandardStatus} {Contingency !== 'None' && Contingency}
-                </li>
-                <li className="font-bold">{ListingAddressCombined}</li>
-                <li className="font-bold">{PropertyType}</li>
-                <li>
-                  {(DaysOnMarket && prettifyNumber(DaysOnMarket)) || '—'} Days
-                  on Market
-                </li>
-                <li>{BedroomsTotal} Bedrooms</li>
-                <li>{BathroomsTotalInteger} Bathrooms</li>
-                <li>
-                  {prettifyNumber(Math.round(LotSizeSquareFeet)) ||
-                    prettifyNumber(Math.round(NST_SqFtTotal)) ||
-                    '—'}{' '}
-                  Total Finished SqFt
-                </li>
-                <li>{Basement?.join(', ') || '—'} Basement</li>
-                <li>
-                  {LotSizeArea} {LotSizeUnits}
-                </li>
-                <li>{GarageSpaces || '—'} Garage Stalls</li>
-                <li>
-                  {HighSchoolDistrict}{' '}
-                  <span className=""> High School District</span>
-                </li>
-                <li>${prettifyNumber(TaxAnnualAmount)} Annual Taxes</li>
-                <li>
-                  {NST_LakeAcres ? 'Lakefront available' : 'No Lakefront'}
-                </li>
-                <li>Listed by: {ListOfficeName}</li>
-              </ul>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    title: 'Status',
+                    value: StandardStatus,
+                    icon: <GrStatusGood />,
+                  },
+                  {
+                    title: 'Property Type',
+                    value: PropertyType,
+                    icon: <PiHouseBold />,
+                  },
+                  {
+                    title: 'Days On Market',
+                    value:
+                      (DaysOnMarket && prettifyNumber(DaysOnMarket)) || '—',
+                    icon: <BiTimeFive />,
+                  },
+                  {
+                    title: 'Beds',
+                    value: BedroomsTotal,
+                    icon: <BiBed />,
+                  },
+                  {
+                    title: 'Baths',
+                    value: BathroomsTotalInteger,
+                    icon: <LuBath />,
+                  },
+                  {
+                    title: 'Total Finished SqFt',
+                    value:
+                      prettifyNumber(Math.round(LotSizeSquareFeet)) ||
+                      prettifyNumber(Math.round(NST_SqFtTotal)) ||
+                      '—',
+                    icon: <SlSizeFullscreen />,
+                  },
+                  {
+                    title: 'Basement',
+                    value: Basement?.join(', ') || '—',
+                    icon: <LuWarehouse />,
+                  },
+                  {
+                    title: 'Area',
+                    value: LotSizeArea + ' ' + LotSizeUnits,
+                    icon: <LuRuler />,
+                  },
+                  {
+                    title: 'Garage Stalls',
+                    value: GarageSpaces || '—',
+                    icon: <BiSolidCarGarage />,
+                  },
+                  {
+                    title: 'Lakefront',
+                    value: NST_LakeAcres ? 'Available' : 'Not available',
+                    icon: <BiWater />,
+                  },
+                  {
+                    title: 'School District',
+                    value: HighSchoolDistrict,
+                    icon: <LuSchool />,
+                  },
+                  {
+                    title: 'Annual Taxes',
+                    value: '$' + prettifyNumber(TaxAnnualAmount),
+                    icon: <BiDollarCircle />,
+                  },
+                ].map((cell, key) => (
+                  <div key={key}>
+                    <div className="flex">
+                      <div className="w-6 h-6 hidden md:block">{cell.icon}</div>
+                      <p className="font-bold md:text-lg">{cell.title}</p>
+                    </div>
+                    <p>{cell.value}</p>
+                  </div>
+                ))}
+              </div>
 
               <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
                 Description
               </h2>
-              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
+              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph max-w-[660px] ">
                 {PublicRemarks}
+              </p>
+              <p>
+                <span className="font-semibold">Listed by:</span>{' '}
+                {ListOfficeName}
               </p>
             </div>
           </div>

@@ -1,5 +1,7 @@
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 
 import { prettifyNumber } from '../utils'
@@ -29,6 +31,7 @@ const Card = ({
   pageSize,
 }) => {
   const [loaded, setLoaded] = useState(false)
+  const router = useRouter()
 
   const formattedListPrice = prettifyNumber(ListPrice)
 
@@ -103,7 +106,12 @@ const Card = ({
             {StreetNumber} {StreetName} {StreetSuffix}, {City} {StateOrProvince}{' '}
             {PostalCode}
           </Link>
-          <div className="text-darkGray flex items-center space-x-2 divide-x divide-black">
+          <div
+            className={clsx(
+              `text-darkGray flex items-center space-x-2 divide-x divide-black`,
+              router.pathname === '/' ? 'hidden' : 'block'
+            )}
+          >
             <div>{`${PropertyType} — ${LotSizeArea} ${LotSizeUnits}`}</div>
           </div>
         </div>

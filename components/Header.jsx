@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
 import useFetch from '../hooks/useFetch'
 import Card from './Card'
+import GoogleMap from './GoogleMapComponent'
 import LoadingState from './LoadingState'
 
 const Header = () => {
@@ -42,10 +44,8 @@ const Header = () => {
           </div>
 
           {/* Custom grid of properties */}
-          <div className="p-8 rounded-md mt-8">
-            <p className="text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[90px] py-4">
-              New & Updated Listings
-            </p>
+          <div className="rounded-md mt-8">
+            <p className="text-2xl md:text-4xl py-4">New & Updated Listings</p>
             {isLoading ? (
               <LoadingState />
             ) : (
@@ -56,6 +56,9 @@ const Header = () => {
               </div>
             )}
           </div>
+
+          {/* Google MAPS */}
+          {/* <GoogleMap /> */}
         </div>
       </div>
     </>
