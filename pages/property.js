@@ -224,7 +224,7 @@ const IndivdualProperty = ({ property }) => {
               <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
                 {/* Description */}
               </h2>
-              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
+              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph max-w-[820px]">
                 {PublicRemarks}
               </p>
               <p>
