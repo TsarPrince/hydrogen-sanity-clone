@@ -118,8 +118,8 @@ const IndivdualProperty = ({ property }) => {
               <div className="first:mt-0 last:mb-0 relative my-12 w-screen px-6 md:px-8 -ml-6 md:-ml-8">
                 <div className="">
                   <div
-                    className="mr-auto flex flex-col items-start"
-                    style={{ color: '#3d7544' }}
+                    className="mr-auto flex flex-col items-start text-offBlack"
+                    // style={{ color: '#3d7544' }}
                   >
                     <div className="text-2xl md:text-4xl">
                       ${prettifyNumber(ListPrice)}
@@ -135,7 +135,7 @@ const IndivdualProperty = ({ property }) => {
                   </div> */}
                   </div>
                   <div>
-                    <p className="pt-3 text-xl md:text-2xl font-semibold text-offBlack">
+                    <p className="pt-3 text-xl md:text-2xl font-semibold text-offBlack/75">
                       {ListingAddressCombined}
                     </p>
                   </div>
@@ -212,7 +212,7 @@ const IndivdualProperty = ({ property }) => {
                   <div key={key}>
                     <div className="flex">
                       {/* <div className="w-6 h-6 hidden md:block">{cell.icon}</div> */}
-                      <p className="font-bold md:text-lg uppercase">
+                      <p className="font-bold md:text-xl uppercase">
                         {cell.title}
                       </p>
                     </div>
