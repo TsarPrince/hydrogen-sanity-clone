@@ -211,8 +211,10 @@ const IndivdualProperty = ({ property }) => {
                 ].map((cell, key) => (
                   <div key={key}>
                     <div className="flex">
-                      <div className="w-6 h-6 hidden md:block">{cell.icon}</div>
-                      <p className="font-bold md:text-lg">{cell.title}</p>
+                      {/* <div className="w-6 h-6 hidden md:block">{cell.icon}</div> */}
+                      <p className="font-bold md:text-lg uppercase">
+                        {cell.title}
+                      </p>
                     </div>
                     <p>{cell.value}</p>
                   </div>
@@ -220,9 +222,9 @@ const IndivdualProperty = ({ property }) => {
               </div>
 
               <h2 className="first:mt-0 last:mb-0 mb-4 mt-16 text-xl font-bold">
-                Description
+                {/* Description */}
               </h2>
-              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph max-w-[660px] ">
+              <p className="first:mt-0 last:mb-0 relative my-4 leading-paragraph">
                 {PublicRemarks}
               </p>
               <p>
