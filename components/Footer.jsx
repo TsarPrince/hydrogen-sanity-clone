@@ -8,11 +8,14 @@ const Footer = () => {
     <footer className="-mt-overlap" role="contentinfo">
       <div className="align-start relative overflow-hidden xl:space-x-10 rounded-xl bg-peach px-4 py-8 md:px-12 md:py-10">
         <div className="w-full mx-auto text-center pb-8 py-6">
-          <h2 className="whitespace-pre-line text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[90px] font-bold uppercase">
-            LIST WITH THE EXPERTS
+          <h2 className="whitespace-pre-line text-[36px] sm:text-3xl lg:text-4xl 2xl:text-[80px] font-bold uppercase">
+            EXPERIENCE THE DIFFERENCE
           </h2>
           <div className="mt-5 xl:mt-8 leading-paragraph max-w-[970px] mx-auto">
             <p className="font-bold text-xl">
+              We invite you to experience The Wilen Selling Method for precisely
+              pairing your property with the most qualified audience. Benefit
+              from unrivaled expertise, as we work purposefully on your behalf.
               More specialized resources, more value, and more compelling
               results.
             </p>{' '}
@@ -26,15 +29,15 @@ const Footer = () => {
           {/* <h2 className="text-[28px] sm:text-2xl font-semibold uppercase w-full mx-auto text-center mb-5">
             SELL WITH US
           </h2> */}
-          <p className="text-white font-semibold text-[20px] sm:text-[24px] xl:text-[30px] leading-[130%]">
-            Wilen is made up of highly experienced, multidisciplinary
-            professionals whose highest priority is serving you. Utilizing our
-            proprietary algorithmic-data and marketing technology, we will craft
-            a unique and winning strategy to sell your real estate. Let us put
-            our experience to work for you.
+          <p className="text-white font-semibold text-[24px] xl:text-[52px] leading-[130%]">
+            LET’S CONNECT
           </p>
 
           <ContactForm />
+        </div>
+
+        <div className="w-full sm:mx-4 py-8 flex flex-col items-center space-y-8 justify-center">
+          <FooterLinks />
         </div>
 
         <img
@@ -42,11 +45,6 @@ const Footer = () => {
           className="max-w-[90%] sm:max-w-[450px] mt-8 mx-auto px-3"
           alt="wilen logo"
         />
-
-        <div className="w-full sm:mx-4 pt-8 flex flex-col items-center space-y-8 justify-center">
-          <FooterLinks />
-        </div>
-
         <div className="mx-4 lg:mx-20 py-8 sm:py-12">
           <div className="mx-auto max-w-[66rem] sm:px-4 text-center text-md leading-caption md:px-8">
             <p>
