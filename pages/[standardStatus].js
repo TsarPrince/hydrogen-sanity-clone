@@ -6,11 +6,12 @@ import ErrorComponent from '../components/ErrorComponent'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
+import TabFilters from '../components/TabFilters'
 import useFetch from '../hooks/useFetch'
 
 const StandardStatus = () => {
   const router = useRouter()
-  const { page, pageSize } = router.query
+  const { page, pageSize, sort } = router.query
   const standardStatus = router.query.standardStatus?.replace(/\+/g, ' ')
 
   const { data, error, isLoading } = useFetch({
@@ -38,23 +39,30 @@ const StandardStatus = () => {
         {isLoading ? (
           <LoadingState />
         ) : (
-          <div
-            className={`mx-auto max-w-[96rem] grid md:grid-cols-2 md:gap-x-[2rem] xl:gap-x-[12rem] gap-y-8`}
-          >
-            {properties?.map((property) => (
-              <Card
-                key={property.id}
-                {...property.attributes}
-                page={page}
-                pageSize={pageSize}
-                standardStatus={standardStatus}
-              />
-            ))}
-          </div>
+          <>
+            <div className="py-4">{/* <TabFilters /> */}</div>
+            <div
+              className={`mx-auto max-w-[96rem] grid md:grid-cols-2 md:gap-x-[2rem] xl:gap-x-[12rem] gap-y-8`}
+            >
+              {properties?.map((property) => (
+                <Card
+                  key={property.id}
+                  {...property.attributes}
+                  page={page}
+                  pageSize={pageSize}
+                  standardStatus={standardStatus}
+                />
+              ))}
+            </div>
+          </>
         )}
 
         {/* Pagination */}
-        <Pagination pagination={pagination} standardStatus={standardStatus} />
+        <Pagination
+          pagination={pagination}
+          standardStatus={standardStatus}
+          sort={sort}
+        />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Pagination = ({ standardStatus, q, pagination }) => {
+const Pagination = ({ standardStatus, q, sort, pagination }) => {
   const pages = []
   if (pagination) {
     for (let i = 1; i <= pagination.pageCount; i++) {
@@ -35,7 +35,7 @@ const Pagination = ({ standardStatus, q, pagination }) => {
                 <Link
                   href={{
                     pathname,
-                    query: { q, page, pageSize: 10 },
+                    query: { q, page, pageSize: 10, sort },
                   }}
                 >
                   <button

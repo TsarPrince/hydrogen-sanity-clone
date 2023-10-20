@@ -1,7 +1,14 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 
+import useFetch from '../hooks/useFetch'
+import Card from './Card'
+import GoogleMap from './GoogleMapComponent'
+import LoadingState from './LoadingState'
+
 const Header = () => {
+  const { data, error, isLoading } = useFetch({ type: 'header' })
+
   return (
     <>
       <div className="flex flex-col items-center rounded-b-xl bg-peach px-4 pb-4 pt-24 md:px-8 md:pb-8 md:pt-20">
@@ -35,6 +42,25 @@ const Header = () => {
               /> */}
             </div>
           </div>
+
+          {/* Custom grid of properties */}
+          <div className="rounded-md mt-8">
+            <p className="text-xl md:text-2xl font-bold py-4">
+              New & Updated Listings
+            </p>
+            {isLoading ? (
+              <LoadingState />
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                {data?.data?.map((property, key) => (
+                  <Card key={key} {...property.attributes} />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Google MAPS */}
+          {/* <GoogleMap /> */}
         </div>
       </div>
     </>

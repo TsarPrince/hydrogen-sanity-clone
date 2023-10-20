@@ -5,25 +5,71 @@ import {
   getPropertiesByListPrice,
   getPropertiesByQueryParams,
   getPropertiesByStandardStatus,
+  getPropertiesForHeader,
 } from '../utils/queries'
 
 const fetcher = (...args) => axios.get(...args).then((data) => data.data)
 
-const useFetch = ({ page, pageSize, standardStatus, q }) => {
+const useFetch = ({
+  page,
+  pageSize,
+  sort,
+  // getPropertiesForHeader
+  type,
+  // getPropertiesByStandardStatus
+  standardStatus,
+  // getPropertiesByQueryParams
+  q,
+  // getPropertiesByListPrice
+}) => {
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
+  let sortByArray = []
+
+  switch (sort) {
+    case 'ListPrice:DESC':
+      sortByArray = ['ListPrice:DESC', 'id:ASC']
+      break
+    case 'ListPrice:ASC':
+      sortByArray = ['ListPrice:ASC', 'id:ASC']
+      break
+    case 'DaysOnMarket:ASC':
+      sortByArray = ['DaysOnMarket:ASC', 'id:ASC']
+      break
+    case 'DaysOnMarket:DESC':
+      sortByArray = ['DaysOnMarket:DESC', 'id:ASC']
+      break
+    case 'ModificationTimestamp:DESC':
+      sortByArray = ['ModificationTimestamp:DESC', 'id:ASC']
+      break
+    default:
+      sortByArray = ['id:ASC']
+  }
+
   let jsonToUrlEncodedQuery
   if (q) {
-    jsonToUrlEncodedQuery = getPropertiesByQueryParams(page, pageSize, q)
+    jsonToUrlEncodedQuery = getPropertiesByQueryParams(
+      page,
+      pageSize,
+      q,
+      sortByArray
+    )
   } else if (standardStatus) {
     jsonToUrlEncodedQuery = getPropertiesByStandardStatus(
       page,
       pageSize,
-      standardStatus
+      standardStatus,
+      sortByArray
     )
+  } else if (type === 'header') {
+    jsonToUrlEncodedQuery = getPropertiesForHeader()
   } else {
-    jsonToUrlEncodedQuery = getPropertiesByListPrice(page, pageSize)
+    jsonToUrlEncodedQuery = getPropertiesByListPrice(
+      page,
+      pageSize,
+      sortByArray
+    )
   }
 
   const query = `/api/properties?${jsonToUrlEncodedQuery}`

@@ -1,10 +1,14 @@
 import qs from 'qs'
 
-const getPropertiesByStandardStatus = (page, pageSize, standardStatus) =>
+const getPropertiesByStandardStatus = (
+  page,
+  pageSize,
+  standardStatus,
+  sortByArray
+) =>
   qs.stringify(
     {
-      // sort: ['ListPrice:DESC', 'id:ASC'],
-      sort: ['id:ASC'],
+      sort: sortByArray,
       pagination: {
         page,
         pageSize,
@@ -21,9 +25,10 @@ const getPropertiesByStandardStatus = (page, pageSize, standardStatus) =>
     }
   )
 
-const getPropertiesByListingId = (ListingId) =>
+const getPropertiesByListingId = (ListingId, sortByArray) =>
   qs.stringify(
     {
+      sort: sortByArray,
       populate: 'Photos',
       filters: {
         $and: [
@@ -48,10 +53,10 @@ const getPropertiesByListingId = (ListingId) =>
     }
   )
 
-const getPropertiesByQueryParams = (page, pageSize, q) =>
+const getPropertiesByQueryParams = (page, pageSize, q, sortByArray) =>
   qs.stringify(
     {
-      sort: ['ListPrice:DESC', 'id:ASC'],
+      sort: sortByArray,
       pagination: {
         page,
         pageSize,
@@ -117,10 +122,10 @@ const getPropertiesByQueryParams = (page, pageSize, q) =>
     }
   )
 
-const getPropertiesByListPrice = (page, pageSize) =>
+const getPropertiesByListPrice = (page, pageSize, sortByArray) =>
   qs.stringify(
     {
-      sort: ['ModificationTimestamp:DESC', 'id:ASC'],
+      sort: sortByArray,
       pagination: {
         page,
         pageSize,
@@ -141,9 +146,62 @@ const getPropertiesByListPrice = (page, pageSize) =>
     }
   )
 
+const getPropertiesForHeader = () =>
+  qs.stringify({
+    sort: 'ModificationTimestamp:DESC',
+    pagination: {
+      limit: 6,
+    },
+    populate: 'Photos',
+    filters: {
+      $and: [
+        {
+          City: {
+            $in: [
+              'Wayzata',
+              'Eden Prairie',
+              'Edina',
+              'Minneapolis',
+              'Bloomington',
+              'Minnetrista',
+              'Woodland',
+              'Orono',
+              'Woodbury',
+              'Afton',
+              'Marine On Saint Croix',
+              'Saint Paul',
+              'North Oaks',
+              'Golden Valley',
+              'Saint Louis Park',
+              'Eagan',
+              'Lakeville',
+              'Prior Lake',
+            ],
+          },
+        },
+        {
+          ListPrice: {
+            $gte: 600000,
+          },
+        },
+        {
+          ListOfficeName: {
+            $eq: 'Coldwell Banker Realty',
+          },
+        },
+        {
+          StandardStatus: {
+            $in: ['Active', 'Coming Soon'],
+          },
+        },
+      ],
+    },
+  })
+
 export {
   getPropertiesByStandardStatus,
   getPropertiesByListingId,
   getPropertiesByQueryParams,
   getPropertiesByListPrice,
+  getPropertiesForHeader,
 }

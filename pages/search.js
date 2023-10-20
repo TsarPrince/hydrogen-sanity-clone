@@ -7,11 +7,12 @@ import InputNumber from '../components/forms/InputNumber'
 import LoadingState from '../components/LoadingState'
 import Navbar from '../components/Navbar'
 import Pagination from '../components/Pagination'
+import TabFilters from '../components/TabFilters'
 import useFetch from '../hooks/useFetch'
 
 const StandardStatus = () => {
   const router = useRouter()
-  let { q, page, pageSize } = router.query
+  let { q, page, pageSize, sort } = router.query
   if (!page) page = 1
   if (!pageSize) pageSize = 10
 
@@ -19,13 +20,11 @@ const StandardStatus = () => {
     page,
     pageSize,
     q,
+    sort,
   })
 
   const properties = data?.data
   const pagination = data?.meta?.pagination
-  const onSubmit = (e) => {
-    // e.preventDefault()
-  }
 
   if (error) return <ErrorComponent />
 
@@ -38,35 +37,15 @@ const StandardStatus = () => {
           <LoadingState />
         ) : (
           <>
-            <div className="text-darkGray text-2xl pt-6 pb-12 text-center">
-              {/* <form onSubmit={onSubmit}>
-                <input type="text" placeholder="Search query" />
-                <select id="PropertyType">
-                  <option value={''}>Select property type</option>
-                  <option value={'Land'}>Land</option>
-                  <option value={'Farm'}>Farm</option>
-                  <option value={'Residential'}>Residential</option>
-                  <option value={'Residential Income'}>
-                    Residential Income
-                  </option>
-                  <option value={'Commercial Sale'}>Commercial Sale</option>
-                  <option value={'Residential Lease'}>Residential Lease</option>
-                </select>
-                <InputNumber min={0} max={12} deafultValue={4} />
-                <input id="BedroomsTotal" type="range" max={12} />
-                <input id="BathroomsTotalInteger" type="range" max={12} />
-                <input
-                  id="BathroomsTotalInteger"
-                  type="range"
-                  max={60000000}
-                  step={1}
-                />
-              </form> */}
+            <div className="text-darkGray text-2xl pt-6 pb-12 md:text-center">
               {properties?.length ? (
-                <p>
-                  Search result(s) for{' '}
-                  <span className=" text-offBlack">{q}</span>
-                </p>
+                <div className="flex flex-col space-y-4 md:flex-row md:justify-center md:space-x-12 md:space-y-0">
+                  <p>
+                    Search result(s) for{' '}
+                    <span className=" text-offBlack">{q}</span>
+                  </p>
+                  <TabFilters />
+                </div>
               ) : (
                 <>
                   <p>
@@ -96,7 +75,7 @@ const StandardStatus = () => {
         )}
 
         {/* Pagination */}
-        <Pagination pagination={pagination} q={q} />
+        <Pagination pagination={pagination} q={q} sort={sort} />
       </div>
     </div>
   )

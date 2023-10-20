@@ -1,13 +1,17 @@
 import '../styles/globals.css'
 
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Script from 'next/script'
 import NextNProgress from 'nextjs-progressbar'
 
 import Footer from '../components/Footer'
-import { useRouter } from 'next/router'
+import { usePreserveScroll } from '../hooks/usePreserveScroll'
 
 function MyApp({ Component, pageProps }) {
+  // scroll to last position when navigating back
+  usePreserveScroll()
+
   const router = useRouter()
 
   return (
