@@ -154,7 +154,7 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
           </div>
           <div className="flex items-center">
             <Link className="linkTextNavigation" href="/about">
-              Sell
+              About
             </Link>
           </div>
           <div className="flex items-center">
