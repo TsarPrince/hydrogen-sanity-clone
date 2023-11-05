@@ -15,7 +15,7 @@ const ImageWithBlurredBackground = ({ alt, src, backgroundImage }) => {
       <img
         src={src}
         alt={alt}
-        className={`h-full select-none object-cover transition-opacity ${
+        className={`md:h-full select-none object-cover transition-opacity ${
           loaded ? 'opacity-100' : 'opacity-0'
         }`}
         onLoad={() => {

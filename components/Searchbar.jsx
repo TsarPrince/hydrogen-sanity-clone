@@ -57,7 +57,7 @@ const Searchbar = ({ setDialogOpen }) => {
             </svg>
           </button>
           {!!suggestions.length && (
-            <div className="skem absolute bg-white top-12 w-full p-2 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
+            <div className="opacity-0 group-focus-within:opacity-100 absolute bg-white top-12 w-full p-2 mt-2 shadow rounded-lg  backdrop-blur-lg backdrop-filter bg-opacity-90">
               <div>
                 {suggestions?.map(
                   (

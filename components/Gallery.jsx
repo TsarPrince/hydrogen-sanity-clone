@@ -50,13 +50,13 @@ export default function Gallery({ media }) {
       tabIndex={-1}
     >
       <div className="h-full overflow-hidden flex" ref={emblaRef}>
-        <div className="flex items-center md:items-start w-full md:h-full">
+        <div className="flex items-center md:items-start w-full md:h-full space-x-2">
           {/* Slides */}
           {media.map(({ alt, src, backgroundImage }, key) => {
             return (
               <div
                 key={key}
-                className="w-full md:h-full flex items-center justify-center shrink-0 grow-0"
+                className="w-full md:w-auto md:h-full flex items-center justify-center shrink-0 grow-0"
               >
                 <ImageWithBlurredBackground
                   alt={alt}
@@ -77,14 +77,18 @@ export default function Gallery({ media }) {
 
       {/* Navigation */}
       {media.length > 1 && (
-        <div className="absolute bottom-8 left-8 flex gap-3">
-          <CircleButton onClick={handlePrevious}>
-            <ArrowRightIcon className="rotate-180" />
-          </CircleButton>
-          <CircleButton onClick={handleNext}>
-            <ArrowRightIcon />
-          </CircleButton>
-        </div>
+        <>
+          <div className="absolute top-1/2 -translate-y-1/2 left-2 md:left-8">
+            <CircleButton onClick={handlePrevious}>
+              <ArrowRightIcon className="rotate-180" />
+            </CircleButton>
+          </div>
+          <div className="absolute top-1/2 -translate-y-1/2 right-2 md:right-8">
+            <CircleButton onClick={handleNext}>
+              <ArrowRightIcon />
+            </CircleButton>
+          </div>
+        </>
       )}
     </div>
   )
