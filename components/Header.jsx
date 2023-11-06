@@ -18,8 +18,9 @@ const Header = () => {
         >
           Buy properties NOW!
         </Link> */}
+
         <div className="mt-6 w-full md:mt-12">
-          <div className="relative flex w-full place-content-center overflow-hidden rounded-md bg-lightGray">
+          {/* <div className="relative flex w-full place-content-center overflow-hidden rounded-md bg-lightGray">
             <div className="relative w-full">
               <video
                 className="w-full"
@@ -34,17 +35,11 @@ const Header = () => {
                 <a href="/video/wilenhomevidoe.webm">download it</a>
                 and watch it with your favorite video player!
               </video>
-              {/* <img
-                className="w-full"
-                decoding="async"
-                sizes="100vw"
-                src="/header.jpg"
-              /> */}
             </div>
-          </div>
+          </div> */}
 
           {/* Custom grid of properties */}
-          <div className="rounded-md mt-8">
+          <div className="rounded-md">
             <p className="text-xl md:text-2xl font-bold py-4">
               New & Updated Listings
             </p>

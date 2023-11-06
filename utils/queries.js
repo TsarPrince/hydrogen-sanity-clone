@@ -150,7 +150,7 @@ const getPropertiesForHeader = () =>
   qs.stringify({
     sort: 'ModificationTimestamp:DESC',
     pagination: {
-      limit: 6,
+      limit: 9,
     },
     populate: 'Photos',
     filters: {
