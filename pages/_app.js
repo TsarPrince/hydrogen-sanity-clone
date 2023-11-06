@@ -32,15 +32,15 @@ function MyApp({ Component, pageProps }) {
                 `}
       </Script>
       <Head>
-        <title>Real Estate & Homes For Sale – Mike Wilen Realty</title>
+        <title>Mike Wilen Realty - Minnesota Real Estate & Homes</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="title"
-          content="Real Estate & Homes For Sale – Mike Wilen Realty"
+          content="Mike Wilen Realty - Minnesota Real Estate & Homes"
         />
         <meta
           name="description"
-          content="Headed by industry leader Mike Wilen and supported by twelve highly experienced, multidisciplinary professionals. The Group has methodically built and developed a powerhouse real estate practice that sits prominently where buyer’s find real estate for sale. Utilizing our unprecedented resources, we will craft a unique and winning strategy to sell your real estate. Let us put our experience to work for you."
+          content="Discover Minnesota's Premier Real Estate Destination with Mike Wilen: Your Trusted Brokerage for Exceptional Properties. From charming suburban homes to picturesque lakeside estates, Mike Wilen leads the way in helping you find the perfect piece of Minnesota. Explore our exclusive listings and expert guidance today.          "
         />
         <meta name="author" content="tsarprince" />
         <meta property="og:image" content={'https://1mw.com/og.png'} />

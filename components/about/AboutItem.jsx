@@ -8,6 +8,8 @@ const AboutItem = ({ post }) => {
     return imageUrlBuilder(client).image(source)
   }
 
+  console.log(post)
+
   return (
     <>
       <div className="p-8">
@@ -39,7 +41,7 @@ const AboutItem = ({ post }) => {
         )} */}
 
         <div>
-          {post.body.map((block, index) => (
+          {post?.body?.map((block, index) => (
             <div key={index} className="font-montserrat">
               {block._type === 'block' && (
                 <React.Fragment>
