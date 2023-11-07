@@ -37,12 +37,19 @@ const BuyPage = () => {
               className={`mx-auto max-w-[96rem] grid md:grid-cols-2 md:gap-x-[2rem] xl:gap-x-[12rem] gap-y-8`}
             >
               {properties?.map((property) => (
-                <Card
-                  key={property.id}
-                  {...property.attributes}
-                  page={page}
-                  pageSize={pageSize}
-                />
+                <div key={property.id}>
+                  <Card
+                    {...property.attributes}
+                    page={page}
+                    pageSize={pageSize}
+                  />
+
+                  <img
+                    className="w-full object-cover mt-3"
+                    src="/Banner-bar-home.png"
+                    alt="Banner-bar"
+                  />
+                </div>
               ))}
             </div>
           </>

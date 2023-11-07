@@ -13,11 +13,9 @@ const Footer = () => {
           </h2>
           <div className="mt-5 xl:mt-8 leading-paragraph max-w-[970px] mx-auto">
             <p className="font-bold text-xl">
-              We invite you to experience The Wilen Selling Method for precisely
-              pairing your property with the most qualified audience. Benefit
-              from unrivaled expertise, as we work purposefully on your behalf.
-              More specialized resources, more value, and more compelling
-              results.
+              Benefit from unrivaled expertise, as we work purposefully on your
+              behalf. More specialized resources, more value, and more
+              compelling results.
             </p>{' '}
           </div>
         </div>
