@@ -46,7 +46,7 @@ export default function Gallery({ media }) {
 
   return (
     <div
-      className="relative h-[calc(100vh-70px)] lg:h-[calc(100vh-100px)] bg-lightGray"
+      className="relative md:h-[calc(100vh-70px)] lg:h-[calc(100vh-100px)] bg-lightGray"
       tabIndex={-1}
     >
       <div className="h-full overflow-hidden flex" ref={emblaRef}>
