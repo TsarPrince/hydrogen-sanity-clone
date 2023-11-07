@@ -80,7 +80,7 @@ export default function Gallery({ media }) {
         <>
           <div className="absolute top-1/2 -translate-y-1/2 left-2 md:left-8">
             <CircleButton onClick={handlePrevious}>
-              <ArrowRightIcon className="rotate-180" />
+              <ArrowRightIcon className="rotate-180 w-[18px] md:w-[24px]" />
             </CircleButton>
           </div>
           <div className="absolute top-1/2 -translate-y-1/2 right-2 md:right-8">

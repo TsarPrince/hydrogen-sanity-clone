@@ -1,6 +1,12 @@
 export function ArrowRightIcon(props) {
   return (
-    <svg fill="none" height="24" viewBox="0 0 24 24" width="24" {...props}>
+    <svg
+      className="w-[18px] md:w-[24px]"
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      {...props}
+    >
       <path
         className="fill-offBlack"
         clipRule="evenodd"
