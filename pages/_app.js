@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/errorpage.css'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -13,6 +14,9 @@ function MyApp({ Component, pageProps }) {
   usePreserveScroll()
 
   const router = useRouter()
+  const is404 = Component.isNotFoundPage
+
+  console.log(is404)
 
   return (
     <>
@@ -51,7 +55,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <NextNProgress color="#3b53ca" />
       <Component {...pageProps} />
-      {!(router.asPath === '/contact') && <Footer />}
+      {!(router.asPath === '/contact' || is404) && <Footer />}
     </>
   )
 }
