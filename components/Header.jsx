@@ -48,14 +48,7 @@ const Header = () => {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 {data?.data?.map((property, key) => (
-                  <>
-                    <Card key={key} {...property.attributes} />
-                    <img
-                      className="w-full object-cover"
-                      src="/Banner-bar-home.png"
-                      alt="Banner-bar"
-                    />
-                  </>
+                  <Card key={key} {...property.attributes} />
                 ))}
               </div>
             )}

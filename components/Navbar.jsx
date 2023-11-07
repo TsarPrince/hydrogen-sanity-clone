@@ -35,25 +35,18 @@ const Navbar = ({ blendIntoColor = 'bg-white' }) => {
 
           {/* Main logo */}
           <Link href="/">
-            <div className="absolute bottom-0 left-1/2 top-0 flex w-[400px] -translate-x-1/2 items-center lg:w-[300px]">
+            <div className="absolute bottom-0 left-1/2 top-0 flex -translate-x-1/2 items-center">
               <div
                 className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 top-4 lg:top-6 ${
                   trigger ? '!top-1/2 -translate-y-1/2' : ''
                 }`}
               >
                 <img
-                  className="max-w-[80px] lg:max-w-[120px]"
-                  src="/wilen-logo.webp"
-                ></img>
+                  src="/logo-WilenTall.png"
+                  className="max-w-xs lg:max-w-sm object-cover"
+                />
                 {/* WILEN REALTY */}
               </div>
-              <p
-                className={`${
-                  trigger ? 'opacity-0' : ''
-                } text-xs font-bold lg:text-md text-darkGray absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 transition-opacity duration-500`}
-              >
-                COLDWELL BANKER
-              </p>
             </div>
           </Link>
         </div>
