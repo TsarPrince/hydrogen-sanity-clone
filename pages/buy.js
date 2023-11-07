@@ -37,9 +37,8 @@ const BuyPage = () => {
               className={`mx-auto max-w-[96rem] grid md:grid-cols-2 md:gap-x-[2rem] xl:gap-x-[12rem] gap-y-8`}
             >
               {properties?.map((property) => (
-                <div>
+                <div key={property.id}>
                   <Card
-                    key={property.id}
                     {...property.attributes}
                     page={page}
                     pageSize={pageSize}
