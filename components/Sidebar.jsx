@@ -25,7 +25,6 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
           <div className="pb-10">
             <header className="flex h-header-sm items-center justify-between px-6 sm:px-8 lg:h-header-lg">
               <div>
-                {' '}
                 <h2 className="text-[22px] xl:text-xl font-bold uppercase">
                   MINNESOTA Real Estate
                 </h2>
@@ -98,7 +97,7 @@ const Sidebar = ({ dialogOpen, setDialogOpen }) => {
                   href="mailto:mike@1mw.com"
                   onClick={() => setDialogOpen(!dialogOpen)}
                 >
-                  <p className="py-1 text-md sm:text-lg font-bold group-hover:underline">
+                  <p className="uppercase py-1 text-md sm:text-lg font-bold group-hover:underline">
                     mike@1mw.com
                   </p>
                 </Link>
